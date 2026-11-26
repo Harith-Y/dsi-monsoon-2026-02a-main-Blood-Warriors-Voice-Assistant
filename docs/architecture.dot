@@ -1,0 +1,41 @@
+// Render: dot -Tpng -Gdpi=150 docs/architecture.dot -o docs/architecture.png
+digraph bw {
+  rankdir=LR; fontname="Helvetica"; nodesep=0.35; ranksep=0.45;
+  node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#FFFFFF", color="#444444"];
+  edge [fontname="Helvetica", fontsize=9, color="#444444"];
+
+  user  [label="Caregiver / donor\nspeaks Telugu or\nTelugu-English", shape=oval, fillcolor="#F4E4E8"];
+  asr   [label="1. ASR\ntranscribe(audio)"];
+  norm  [label="2. Normalise\ncode-mix terms"];
+  safe  [label="3. Safety gate\nis_urgent()\nBEFORE retrieval / LLM", fillcolor="#FBE3E8", color="#B3163A", penwidth=2];
+  ret   [label="4. Retrieve\nLaBSE + FAISS\ntop-3 + scores"];
+  thr   [label="5. Confidence\ntop score >= threshold?", shape=diamond, style="filled", fillcolor="#FFF4D6"];
+  gen   [label="6. Generate (Groq LLM)\nanswers ONLY from passages\nreturns source_id"];
+  grd   [label="7. Guardrails in code\nNO_ANSWER / bad or missing\nsource_id / bad JSON -> fallback", fillcolor="#FFF4D6"];
+  tts   [label="8. TTS\nTelugu audio\n(text kept if TTS fails)"];
+  out   [label="Spoken Telugu answer\n+ text + English caption\n+ source id", shape=oval, fillcolor="#E3F1E5"];
+  fb    [label="Hand-off: saved as a request\n(reference BW-1042)\n+ Chat with coordinator on WhatsApp", shape=oval, fillcolor="#B3163A", fontcolor="white", color="#B3163A"];
+  dash  [label="Coordinator dashboard (/dashboard)\nqueue + LLM summary and urgency\nreply by voice, read back, yes", fillcolor="#FDEBEE", color="#B3163A"];
+  teach [label="Teach by voice (/teach)\n/kb/draft -> read back -> /kb/confirm\ntranslate, save, live index update, undo", fillcolor="#FDEBEE", color="#B3163A"];
+  hist  [label="SQLite\nrequests + kb_versions", shape=cylinder, fillcolor="#E8EEF7"];
+  kb    [label="Knowledge base\nkb/entries.json", shape=cylinder, fillcolor="#E8EEF7"];
+  log   [label="Request log\nlogs/requests.jsonl", shape=note, fillcolor="#EEEEEE"];
+
+  user -> asr -> norm -> safe;
+  safe -> ret [label="not urgent"];
+  kb -> ret [style=dashed];
+  ret -> thr -> gen [label="yes"];
+  gen -> grd -> tts -> out;
+
+  asr  -> fb [label="asr_error", style=dashed, color="#B3163A", fontcolor="#B3163A"];
+  safe -> fb [label="urgent", style=dashed, color="#B3163A", fontcolor="#B3163A"];
+  thr  -> fb [label="low_confidence", style=dashed, color="#B3163A", fontcolor="#B3163A"];
+  gen  -> fb [label="llm_error", style=dashed, color="#B3163A", fontcolor="#B3163A"];
+  grd  -> fb [label="not_covered", style=dashed, color="#B3163A", fontcolor="#B3163A"];
+
+  out -> log [style=dotted]; fb -> log [style=dotted];
+  fb -> hist [style=dotted]; hist -> dash [style=dashed];
+  dash -> user [label="Check my reply\n(caregiver's language)", style=dashed];
+  dash -> teach [label="Make this an FAQ", style=dashed];
+  teach -> kb [label="on yes", color="#1E8E4E", fontcolor="#1E8E4E"]; teach -> hist [style=dotted];
+}

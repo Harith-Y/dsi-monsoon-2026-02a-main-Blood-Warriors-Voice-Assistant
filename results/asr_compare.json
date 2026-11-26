@@ -1,0 +1,112 @@
+{
+  "references": "pilot_transcripts.json",
+  "clips": 5,
+  "models": {
+    "indicconformer": {
+      "load_seconds": 19.4,
+      "wer": 0.333,
+      "cer": 0.148,
+      "mean_seconds_per_clip": 0.61,
+      "per_clip": [
+        {
+          "clip_id": "asr01",
+          "variant": "code_mixed",
+          "seconds": 0.44,
+          "reference": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+          "hypothesis": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+          "wer": 0.0,
+          "cer": 0.0
+        },
+        {
+          "clip_id": "asr02",
+          "variant": "code_mixed",
+          "seconds": 0.68,
+          "reference": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+          "hypothesis": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను",
+          "wer": 0.556,
+          "cer": 0.259
+        },
+        {
+          "clip_id": "asr03",
+          "variant": "code_mixed",
+          "seconds": 0.53,
+          "reference": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+          "hypothesis": "పకి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చెయ్యొచ్చా",
+          "wer": 0.571,
+          "cer": 0.271
+        },
+        {
+          "clip_id": "asr04",
+          "variant": "telugu",
+          "seconds": 0.59,
+          "reference": "మా బాబుకి మళ్ళీ రక్తం ఎక్కించడం ఎప్పుడు",
+          "hypothesis": "దకి మళ్ళీ రక్తం ఎక్కించడం ఎప్పుడు",
+          "wer": 0.333,
+          "cer": 0.179
+        },
+        {
+          "clip_id": "asr05",
+          "variant": "telugu",
+          "seconds": 0.79,
+          "reference": "రక్తదానం చేసిన తర్వాత మళ్ళీ ఎన్ని రోజులకి రక్తం ఇవ్వచ్చు",
+          "hypothesis": "రక్తదానం చేసిన తర్వాత మళ్ళీ ఎన్ని రోజులకి రక్తం ఇవ్వచ్చు",
+          "wer": 0.0,
+          "cer": 0.0
+        }
+      ]
+    },
+    "indicwhisper": {
+      "load_seconds": 88.2,
+      "wer": 0.364,
+      "cer": 0.197,
+      "mean_seconds_per_clip": 103.48,
+      "per_clip": [
+        {
+          "clip_id": "asr01",
+          "variant": "code_mixed",
+          "seconds": 79.29,
+          "reference": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+          "hypothesis": "6 ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+          "wer": 0.333,
+          "cer": 0.25
+        },
+        {
+          "clip_id": "asr02",
+          "variant": "code_mixed",
+          "seconds": 96.28,
+          "reference": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+          "hypothesis": "డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జులాయ్ లో ఇచ్చాను",
+          "wer": 0.333,
+          "cer": 0.278
+        },
+        {
+          "clip_id": "asr03",
+          "variant": "code_mixed",
+          "seconds": 97.19,
+          "reference": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+          "hypothesis": "దీనికి ఫివర్ ఉంది ట్రాన్స్ఫిజన్ చేయొచ్చా",
+          "wer": 0.714,
+          "cer": 0.292
+        },
+        {
+          "clip_id": "asr04",
+          "variant": "telugu",
+          "seconds": 127.59,
+          "reference": "మా బాబుకి మళ్ళీ రక్తం ఎక్కించడం ఎప్పుడు",
+          "hypothesis": "దీనికి మళ్ళీ రక్తం ఎక్కించడం ఎప్పుడూ",
+          "wer": 0.5,
+          "cer": 0.205
+        },
+        {
+          "clip_id": "asr05",
+          "variant": "telugu",
+          "seconds": 117.04,
+          "reference": "రక్తదానం చేసిన తర్వాత మళ్ళీ ఎన్ని రోజులకి రక్తం ఇవ్వచ్చు",
+          "hypothesis": "రక్తదానం చేసిన తర్వాత మళ్ళీ ఎన్ని రోజులకి రక్తం ఇవ్వచ్చు",
+          "wer": 0.0,
+          "cer": 0.0
+        }
+      ]
+    }
+  }
+}

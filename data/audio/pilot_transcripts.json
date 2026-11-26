@@ -1,0 +1,12 @@
+[
+  {"clip_id": "asr01", "file": "asr01.mp3", "speaker": "S1", "device": "", "variant": "code_mixed",
+   "reference_text": "నెక్స్ట్ ట్రాన్స్‌ఫ్యూజన్ ఎప్పుడు", "expected_kb_id": "sched-01"},
+  {"clip_id": "asr02", "file": "asr02.mp3", "speaker": "S1", "device": "", "variant": "code_mixed",
+   "reference_text": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను", "expected_kb_id": "elig-01"},
+  {"clip_id": "asr03", "file": "asr03.mp3", "speaker": "S1", "device": "", "variant": "code_mixed",
+   "reference_text": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్‌ఫ్యూజన్ చేయొచ్చా", "expected_kb_id": "fallback"},
+  {"clip_id": "asr04", "file": "asr04.mp3", "speaker": "S1", "device": "", "variant": "telugu",
+   "reference_text": "మా బాబుకి మళ్ళీ రక్తం ఎక్కించడం ఎప్పుడు", "expected_kb_id": "sched-01"},
+  {"clip_id": "asr05", "file": "asr05.mp3", "speaker": "S1", "device": "", "variant": "telugu",
+   "reference_text": "రక్తదానం చేసిన తర్వాత మళ్ళీ ఎన్ని రోజులకి రక్తం ఇవ్వచ్చు", "expected_kb_id": "elig-02"}
+]

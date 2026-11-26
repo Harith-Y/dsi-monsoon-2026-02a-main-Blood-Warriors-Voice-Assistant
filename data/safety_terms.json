@@ -1,0 +1,26 @@
+{
+  "_note": "Urgent/medical terms. Any match sends the user to the coordinator, no retrieval, no LLM. Latin terms match at a word start (so 'fits' does not match 'benefits'); Telugu and Hindi (Devanagari) terms match as substrings (suffixes attach to words). Romanised Hindi avoids prefixes of common English words (no bare 'ulti', which would match 'ultimately'). Telugu and Hindi entries need a native speaker's review.",
+  "english": [
+    "fever", "bleed", "breath", "unconscious", "faint", "emergency",
+    "chest pain", "seizure", "fits", "vomit", "jaundice", "admit", "ambulance",
+    "dose", "dosage", "overdose", "medicine", "tablet", "injection"
+  ],
+  "romanised": [
+    "jvaram", "jwaram", "jvaramu", "raktham kar", "rakthasravam", "oopiri", "upiri aad",
+    "spruha", "ayasam", "swasa", "shwasa", "swaasa", "vanthulu", "vaanthulu", "murcha", "hospital lo", "emergency undi",
+    "mandu", "mandulu", "matralu",
+    "bukhar", "bukhaar", "behosh", "saans", "khoon beh", "khoon aa", "ulti ho", "ulti aa", "ultiyan",
+    "chakkar", "seene mein dard", "seene me dard", "peeliya", "dawai", "dawaai", "davai"
+  ],
+  "telugu": [
+    "జ్వరం", "జ్వరము", "ఫీవర్", "రక్తస్రావం", "రక్తం కారు", "ఊపిరి ఆడ", "ఊపిరి తీసుకోలే",
+    "ఆయాసం", "శ్వాస", "స్పృహ", "అపస్మారక", "అత్యవసర", "ఎమర్జెన్సీ", "ఛాతీ నొప్పి", "గుండె నొప్పి",
+    "మూర్ఛ", "ఫిట్స్", "వాంతు", "పచ్చకామెర్లు", "ఆసుపత్రిలో చేర్చ", "అడ్మిట్", "అంబులెన్స్",
+    "డోస్", "మందు", "మాత్రలు", "టాబ్లెట్", "ఇంజెక్షన్"
+  ],
+  "hindi": [
+    "बुखार", "बुख़ार", "खून बह", "ख़ून बह", "सांस", "साँस", "बेहोश", "उल्टी", "दौरे पड़",
+    "इमरजेंसी", "आपातकाल", "एम्बुलेंस", "एंबुलेंस", "सीने में दर्द", "छाती में दर्द", "पीलिया",
+    "भर्ती", "चक्कर", "दवा", "दवाई", "गोली", "इंजेक्शन", "डोज़", "डोज"
+  ]
+}

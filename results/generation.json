@@ -1,0 +1,2012 @@
+{
+  "summary": {
+    "total": 71,
+    "answers_without_valid_source": 0,
+    "fallback_expected_but_answered": [],
+    "answer_expected_but_fallback": [
+      "q11",
+      "q25",
+      "q39",
+      "q43",
+      "q49",
+      "q51",
+      "q57",
+      "q58"
+    ],
+    "wrong_source": [
+      "q24"
+    ],
+    "llm_errors": [],
+    "passed": 63
+  },
+  "results": [
+    {
+      "id": "q01",
+      "variant_type": "rephrase",
+      "question": "మా బాబుకి మళ్ళీ రక్తం ఎక్కించేది ఏ రోజు?",
+      "expected_kb_id": "sched-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.771
+        },
+        {
+          "id": "gen-03",
+          "score": 0.712
+        },
+        {
+          "id": "sched-03",
+          "score": 0.662
+        }
+      ],
+      "answer": "మీ బాబుకి రక్తం ఎక్కించేది శనివారం, అక్టోబర్ 3, 2026.",
+      "source_id": "sched-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1225,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q02",
+      "variant_type": "code_mixed",
+      "question": "Next transfusion eppudu?",
+      "expected_kb_id": "sched-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.907
+        },
+        {
+          "id": "sched-03",
+          "score": 0.8
+        },
+        {
+          "id": "sched-04",
+          "score": 0.783
+        }
+      ],
+      "answer": "మీ తదుపరి ట్రాన్స్‌ఫ్యూజన్ శనివారం, అక్టోబర్ 3, 2026, ఉదయం 9:30కి ఉంది.",
+      "source_id": "sched-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 853,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q03",
+      "variant_type": "informal",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ డేట్ ఎప్పుడు, ఏ హాస్పిటల్?",
+      "expected_kb_id": "sched-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.798
+        },
+        {
+          "id": "sched-02",
+          "score": 0.773
+        },
+        {
+          "id": "elig-15",
+          "score": 0.68
+        }
+      ],
+      "answer": "శనివారం, అక్టోబర్ 3, 2026 న ట్రాన్స్‌ఫ్యూజన్ ఉంది. హైదరాబాద్‌లోని నిలోఫర్ హాస్పిటల్‌కి వెళ్లండి.",
+      "source_id": "sched-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 852,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q04",
+      "variant_type": "rephrase",
+      "question": "ఆ రోజు నేను రాలేను, ట్రాన్స్‌ఫ్యూజన్ వేరే రోజుకి మార్చగలమా?",
+      "expected_kb_id": "sched-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-02",
+          "score": 0.869
+        },
+        {
+          "id": "sched-01",
+          "score": 0.701
+        },
+        {
+          "id": "sched-04",
+          "score": 0.694
+        }
+      ],
+      "answer": "తేదీ మార్చడానికి మీ కోఆర్డినేటర్‌కి ఫోన్ చేసి అడగండి.",
+      "source_id": "sched-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 884,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q05",
+      "variant_type": "code_mixed",
+      "question": "Thalassemia pillalaki entha frequent ga transfusion kavali?",
+      "expected_kb_id": "sched-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-03",
+          "score": 0.782
+        },
+        {
+          "id": "gen-08",
+          "score": 0.762
+        },
+        {
+          "id": "elig-04",
+          "score": 0.761
+        }
+      ],
+      "answer": "తీవ్రమైన తలసేమియాలో సాధారణంగా నెలకి ఒకసారి ట్రాన్స్‌ఫ్యూజన్ అవసరం ఉంటుంది.",
+      "source_id": "sched-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 2094,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q06",
+      "variant_type": "informal",
+      "question": "ట్రాన్స్‌ఫ్యూజన్‌కి వెళ్ళేటప్పుడు ఏం పట్టుకెళ్ళాలి?",
+      "expected_kb_id": "sched-04",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-04",
+          "score": 0.913
+        },
+        {
+          "id": "sched-01",
+          "score": 0.697
+        },
+        {
+          "id": "req-03",
+          "score": 0.642
+        }
+      ],
+      "answer": "మీ కోఆర్డినేటర్‌ను అడిగి, ట్రాన్స్‌ఫ్యూజన్ రోజున మీరు ఏమి తీసుకెళ్లాలో తెలుసుకోండి.",
+      "source_id": "sched-04",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1545,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q07",
+      "variant_type": "code_mixed",
+      "question": "Nenu blood donate cheyacha? Last time July lo ichanu.",
+      "expected_kb_id": "elig-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.824
+        },
+        {
+          "id": "elig-07",
+          "score": 0.768
+        },
+        {
+          "id": "elig-11",
+          "score": 0.73
+        }
+      ],
+      "answer": "అవును, మీరు అక్టోబర్ 3, 2026 నుండి మళ్లీ బ్లడ్ డొనేట్ చేయవచ్చు.",
+      "source_id": "elig-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 913,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q08",
+      "variant_type": "telugu",
+      "question": "జూలైలో రక్తదానం చేశాను, ఇప్పుడు మళ్ళీ ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.829
+        },
+        {
+          "id": "elig-06",
+          "score": 0.726
+        },
+        {
+          "id": "elig-11",
+          "score": 0.696
+        }
+      ],
+      "answer": "మీ చివరి దానం జూలై 5, 2026. మీరు అక్టోబర్ 3, 2026 నుండి మళ్ళీ దానం చేయవచ్చు.",
+      "source_id": "elig-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1148,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q09",
+      "variant_type": "rephrase",
+      "question": "ఒకసారి రక్తం ఇచ్చాక మళ్ళీ ఇవ్వడానికి ఎన్ని నెలలు ఆగాలి?",
+      "expected_kb_id": "elig-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.906
+        },
+        {
+          "id": "sched-03",
+          "score": 0.828
+        },
+        {
+          "id": "sched-01",
+          "score": 0.728
+        }
+      ],
+      "answer": "పురుషులు 3 నెలలు, మహిళలు 4 నెలలు వేచిచూడాలి.",
+      "source_id": "elig-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 974,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q10",
+      "variant_type": "code_mixed",
+      "question": "Women ki blood donation gap enni days?",
+      "expected_kb_id": "elig-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.804
+        },
+        {
+          "id": "elig-07",
+          "score": 0.775
+        },
+        {
+          "id": "elig-03",
+          "score": 0.715
+        }
+      ],
+      "answer": "మహిళలకు 120 రోజులు (నాలుగు నెలలు) గ్యాప్ ఉంటుంది.",
+      "source_id": "elig-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1096,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q11",
+      "variant_type": "rephrase",
+      "question": "నాకు 17 ఏళ్ళు, నేను రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-19",
+          "score": 0.748
+        },
+        {
+          "id": "elig-18",
+          "score": 0.74
+        },
+        {
+          "id": "elig-17",
+          "score": 0.738
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 1364,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q12",
+      "variant_type": "informal",
+      "question": "బరువు తక్కువ ఉంటే బ్లడ్ ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-03",
+          "score": 0.959
+        },
+        {
+          "id": "elig-18",
+          "score": 0.835
+        },
+        {
+          "id": "elig-08",
+          "score": 0.813
+        }
+      ],
+      "answer": "కనీసం 45 కిలోల బరువు ఉండాలి; బరువు తక్కువ ఉంటే బ్లడ్ ఇవ్వలేరు.",
+      "source_id": "elig-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 904,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q13",
+      "variant_type": "code_mixed",
+      "question": "Naaku thalassemia minor undi, blood donate cheyocha?",
+      "expected_kb_id": "elig-04",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-04",
+          "score": 0.96
+        },
+        {
+          "id": "elig-11",
+          "score": 0.83
+        },
+        {
+          "id": "elig-14",
+          "score": 0.786
+        }
+      ],
+      "answer": "అవును, తలసేమియా ట్రెయిట్ ఉన్నవారు హిమోగ్లోబిన్ సరిపడితే బ్లడ్ డొనేట్ చేయవచ్చు. బ్లడ్ సెంటర్‌లో ముందుగా చెక్ చేస్తారు.",
+      "source_id": "elig-04",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1140,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q14",
+      "variant_type": "rephrase",
+      "question": "ఎవరికైనా నా బ్లడ్ కావాలని రిక్వెస్ట్ వచ్చిందా?",
+      "expected_kb_id": "req-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 1.013
+        },
+        {
+          "id": "elig-18",
+          "score": 0.653
+        },
+        {
+          "id": "elig-12",
+          "score": 0.631
+        }
+      ],
+      "answer": "అవును, ఆరవ్ కుటుంబానికి B+ రక్తం అవసరం.",
+      "source_id": "req-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1964,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q15",
+      "variant_type": "code_mixed",
+      "question": "Naku emaina donation request vachinda?",
+      "expected_kb_id": "req-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 0.904
+        },
+        {
+          "id": "elig-01",
+          "score": 0.779
+        },
+        {
+          "id": "req-02",
+          "score": 0.773
+        }
+      ],
+      "answer": "అవును, మీకు ఒక రిక్వెస్ట్ వచ్చింది. ఆరవ్ కుటుంబానికి B+ బ్లడ్ అవసరం.",
+      "source_id": "req-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1252,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q16",
+      "variant_type": "rephrase",
+      "question": "ఈసారి నేను డొనేట్ చేయలేను, ఎవరికి చెప్పాలి?",
+      "expected_kb_id": "req-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-02",
+          "score": 0.791
+        },
+        {
+          "id": "gen-04",
+          "score": 0.713
+        },
+        {
+          "id": "elig-01",
+          "score": 0.597
+        }
+      ],
+      "answer": "మీ కోఆర్డినేటర్‌కు చెప్పండి.",
+      "source_id": "req-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1605,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q17",
+      "variant_type": "informal",
+      "question": "డొనేషన్ ముందు ఏమైనా తినాలా?",
+      "expected_kb_id": "req-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.774
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.636
+        },
+        {
+          "id": "req-01",
+          "score": 0.611
+        }
+      ],
+      "answer": "డొనేట్ చేయడానికి కనీసం 4 గంటల ముందు భోజనం చేయండి, ఖాళీ కడుపుతో రాకండి. డొనేషన్ ముందు ఆల్కహాల్ తాగకండి.",
+      "source_id": "req-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1477,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q18",
+      "variant_type": "code_mixed",
+      "question": "HPLC test ante enti?",
+      "expected_kb_id": "hplc-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 0.968
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.877
+        },
+        {
+          "id": "gen-06",
+          "score": 0.708
+        }
+      ],
+      "answer": "HPLC అనేది మీ రక్తంలో వివిధ హిమోగ్లోబిన్ రకాల్ని కొలిచే బ్లడ్ టెస్ట్.",
+      "source_id": "hplc-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 876,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q19",
+      "variant_type": "telugu",
+      "question": "హెచ్‌పీఎల్‌సీ పరీక్ష ఎందుకు చేస్తారు?",
+      "expected_kb_id": "hplc-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 1.03
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.805
+        },
+        {
+          "id": "gen-03",
+          "score": 0.676
+        }
+      ],
+      "answer": "హెచ్‌పీఎల్‌సీ పరీక్ష రక్తంలో ఉన్న వివిధ హిమోగ్లోబిన్‌లను కొలిచి, బీటా తలసేమియా ట్రెయిట్ ఉందో లేదో తెలుసుకోవడానికి చేస్తారు.",
+      "source_id": "hplc-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1022,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q20",
+      "variant_type": "rephrase",
+      "question": "పెళ్ళికి ముందు తలసేమియా టెస్ట్ చేయించుకోవాలా?",
+      "expected_kb_id": "hplc-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-02",
+          "score": 1.084
+        },
+        {
+          "id": "req-03",
+          "score": 0.635
+        },
+        {
+          "id": "hplc-01",
+          "score": 0.609
+        }
+      ],
+      "answer": "అవును, పెళ్ళి తర్వాత పిల్లల్ని ప్లాన్ చేసే ముందు క్యారియర్ టెస్ట్ చేయించుకోవడం మంచిది. ఇది ఇద్దరి జీన్‌లను తెలుసుకోవడానికి సహాయపడుతుంది.",
+      "source_id": "hplc-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1060,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q21",
+      "variant_type": "informal",
+      "question": "నాకు, నా భార్యకి ఇద్దరికీ ట్రెయిట్ ఉంది, పుట్టబోయే బిడ్డకి వస్తుందా?",
+      "expected_kb_id": "hplc-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-03",
+          "score": 0.654
+        },
+        {
+          "id": "elig-06",
+          "score": 0.6
+        },
+        {
+          "id": "elig-04",
+          "score": 0.595
+        }
+      ],
+      "answer": "ఇద్దరూ ట్రెయిట్ ఉంటే, ప్రతి బిడ్డకి ¼ chance thalassemia రావడానికి, ½ chance క్యారియర్‌కి, ¼ chance ఏమీ లేకుండా ఉండటానికి ఉంటుంది.",
+      "source_id": "hplc-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 788,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q22",
+      "variant_type": "code_mixed",
+      "question": "Thalassemia ante enti?",
+      "expected_kb_id": "gen-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-07",
+          "score": 1.065
+        },
+        {
+          "id": "gen-01",
+          "score": 0.937
+        },
+        {
+          "id": "gen-08",
+          "score": 0.895
+        }
+      ],
+      "answer": "తలసేమియా అనేది అమ్మ‑నాన్నల జీన్స్ ద్వారా పిల్లలకు వచ్చే, రక్తంలోని హిమోగ్లోబిన్‌పై ప్రభావం చూపించే వారసత్వ రోగం.",
+      "source_id": "gen-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 2486,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q23",
+      "variant_type": "rephrase",
+      "question": "తలసేమియా క్యారియర్ అయితే నా ఆరోగ్యానికి ఏమైనా ప్రమాదమా?",
+      "expected_kb_id": "gen-02",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-02",
+          "score": 0.837
+        },
+        {
+          "id": "hplc-03",
+          "score": 0.629
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.58
+        }
+      ],
+      "answer": "లేదు, క్యారియర్‌కి తలసేమియా రాదు, సాధారణంగా ఆరోగ్య సమస్యలు ఉండవు.",
+      "source_id": "gen-02",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 3038,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q24",
+      "variant_type": "informal",
+      "question": "ప్రతి నెలా బ్లడ్ ఎందుకు ఎక్కించాలి?",
+      "expected_kb_id": "gen-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-03",
+          "score": 1.07
+        },
+        {
+          "id": "sched-03",
+          "score": 0.817
+        },
+        {
+          "id": "elig-02",
+          "score": 0.743
+        }
+      ],
+      "answer": "తీవ్రమైన తలసేమియాలో రక్తహీనతను నియంత్రించడానికి సాధారణంగా నెలకు ఒకసారి ట్రాన్స్‌ఫ్యూజన్ అవసరం. ఇది రక్తహీనతను తగ్గించి, ఆరోగ్యాన్ని నిలుపుతుంది.",
+      "source_id": "sched-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1879,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q25",
+      "variant_type": "code_mixed",
+      "question": "Coordinator number enti?",
+      "expected_kb_id": "gen-04",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.848
+        },
+        {
+          "id": "elig-02",
+          "score": 0.457
+        },
+        {
+          "id": "gen-05",
+          "score": 0.456
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 870,
+      "llm_attempts": 2,
+      "ok": false
+    },
+    {
+      "id": "q26",
+      "variant_type": "informal",
+      "question": "నువ్వు ఏమేం చెప్పగలవు?",
+      "expected_kb_id": "gen-05",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-05",
+          "score": 0.932
+        },
+        {
+          "id": "gen-04",
+          "score": 0.578
+        },
+        {
+          "id": "gen-01",
+          "score": 0.527
+        }
+      ],
+      "answer": "మీ తదుపరి ట్రాన్స్‌ఫ్యూజన్ తేదీ, బ్లడ్ డొనేట్ చేయగల సమయం, డొనేషన్ రిక్వెస్ట్‌లు, తలసేమియా మరియు HPLC టెస్ట్ గురించి బేసిక్ విషయాలు చెప్పగలను.",
+      "source_id": "gen-05",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1105,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q27",
+      "variant_type": "out_of_scope",
+      "question": "హైదరాబాద్‌లో ఈరోజు వాతావరణం ఎలా ఉంది?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "sched-04",
+          "score": 0.575
+        },
+        {
+          "id": "gen-04",
+          "score": 0.559
+        },
+        {
+          "id": "req-03",
+          "score": 0.528
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 977,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q28",
+      "variant_type": "out_of_scope",
+      "question": "Cricket match score enti?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "hplc-04",
+          "score": 0.451
+        },
+        {
+          "id": "elig-21",
+          "score": 0.449
+        },
+        {
+          "id": "hplc-01",
+          "score": 0.43
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 703,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q29",
+      "variant_type": "out_of_scope",
+      "question": "దగ్గరలో ATM ఎక్కడ ఉంది?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.605
+        },
+        {
+          "id": "gen-05",
+          "score": 0.578
+        },
+        {
+          "id": "elig-01",
+          "score": 0.553
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 926,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q30",
+      "variant_type": "out_of_scope",
+      "question": "బోన్ మ్యారో ట్రాన్స్‌ప్లాంట్‌కి ఎంత ఖర్చు అవుతుంది?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "sched-03",
+          "score": 0.587
+        },
+        {
+          "id": "sched-01",
+          "score": 0.574
+        },
+        {
+          "id": "sched-04",
+          "score": 0.551
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 640,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q31",
+      "variant_type": "out_of_scope",
+      "question": "Blood Warriors lo volunteer ga ela join avvali?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.618
+        },
+        {
+          "id": "elig-18",
+          "score": 0.607
+        },
+        {
+          "id": "elig-16",
+          "score": 0.574
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 839,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q32",
+      "variant_type": "medical",
+      "question": "Naa child ki fever undi, transfusion cheyacha?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "elig-06",
+          "score": 0.755
+        },
+        {
+          "id": "elig-11",
+          "score": 0.676
+        },
+        {
+          "id": "elig-22",
+          "score": 0.672
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "urgent",
+      "generate_ms": 0,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q33",
+      "variant_type": "medical",
+      "question": "మా పాపకి ఊపిరి ఆడటం లేదు, ఏం చేయాలి?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "req-02",
+          "score": 0.585
+        },
+        {
+          "id": "sched-01",
+          "score": 0.574
+        },
+        {
+          "id": "gen-03",
+          "score": 0.555
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "urgent",
+      "generate_ms": 0,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q34",
+      "variant_type": "medical",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ తర్వాత బాబుకి ముక్కు నుండి రక్తం కారుతోంది",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.576
+        },
+        {
+          "id": "elig-06",
+          "score": 0.54
+        },
+        {
+          "id": "sched-01",
+          "score": 0.537
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "urgent",
+      "generate_ms": 0,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q35",
+      "variant_type": "medical",
+      "question": "మా బిడ్డకి ఐరన్ తగ్గించే మందు డోస్ ఎంత ఇవ్వాలి?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "hplc-03",
+          "score": 0.662
+        },
+        {
+          "id": "gen-03",
+          "score": 0.652
+        },
+        {
+          "id": "sched-03",
+          "score": 0.599
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "urgent",
+      "generate_ms": 0,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q36",
+      "variant_type": "code_mixed",
+      "question": "Aarav ki next blood transfusion ye roju?",
+      "expected_kb_id": "sched-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.882
+        },
+        {
+          "id": "elig-11",
+          "score": 0.774
+        },
+        {
+          "id": "sched-03",
+          "score": 0.719
+        }
+      ],
+      "answer": "మీ తదుపరి ట్రాన్స్‌ఫ్యూజన్ శనివారం, అక్టోబర్ 3, 2026 న ఉంది.",
+      "source_id": "sched-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1355,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q37",
+      "variant_type": "telugu",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ ఎంత తరచుగా అవసరం?",
+      "expected_kb_id": "sched-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.759
+        },
+        {
+          "id": "sched-03",
+          "score": 0.745
+        },
+        {
+          "id": "sched-04",
+          "score": 0.71
+        }
+      ],
+      "answer": "తీవ్రమైన తలసేమియాలో సాధారణంగా నెలకు ఒకసారి ట్రాన్స్‌ఫ్యూజన్ అవసరం ఉంటుంది.",
+      "source_id": "sched-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1963,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q38",
+      "variant_type": "informal",
+      "question": "లాస్ట్ డొనేషన్ అయిపోయి మూడు నెలలు అయింది, ఇప్పుడు ఇవ్వనా?",
+      "expected_kb_id": "elig-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.584
+        },
+        {
+          "id": "elig-06",
+          "score": 0.58
+        },
+        {
+          "id": "elig-11",
+          "score": 0.554
+        }
+      ],
+      "answer": "మీరు ఇప్పుడు బ్లడ్ ఇవ్వవచ్చు.",
+      "source_id": "elig-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1283,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q39",
+      "variant_type": "code_mixed",
+      "question": "50 kg unna, blood ivvacha?",
+      "expected_kb_id": "elig-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-19",
+          "score": 0.695
+        },
+        {
+          "id": "elig-06",
+          "score": 0.634
+        },
+        {
+          "id": "elig-05",
+          "score": 0.621
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 932,
+      "llm_attempts": 2,
+      "ok": false
+    },
+    {
+      "id": "q40",
+      "variant_type": "informal",
+      "question": "ఎవరైనా బ్లడ్ అడిగారా నన్ను?",
+      "expected_kb_id": "req-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 0.883
+        },
+        {
+          "id": "elig-01",
+          "score": 0.68
+        },
+        {
+          "id": "elig-18",
+          "score": 0.677
+        }
+      ],
+      "answer": "అవును, ఆరవ్ కుటుంబానికి బి+ రక్తం అవసరం ఉంది.",
+      "source_id": "req-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1566,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q41",
+      "variant_type": "code_mixed",
+      "question": "Blood ichche mundu breakfast cheyala?",
+      "expected_kb_id": "req-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.74
+        },
+        {
+          "id": "elig-17",
+          "score": 0.702
+        },
+        {
+          "id": "req-01",
+          "score": 0.701
+        }
+      ],
+      "answer": "అవును, ఖాళీ కడుపుతో రాకండి. బ్లడ్ దానం ముందు కనీసం 4 గంటల ముందు భోజనం చేయండి.",
+      "source_id": "req-03",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1265,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q42",
+      "variant_type": "rephrase",
+      "question": "హిమోగ్లోబిన్ రకాలు చూసే టెస్ట్ ఏది?",
+      "expected_kb_id": "hplc-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 0.742
+        },
+        {
+          "id": "gen-07",
+          "score": 0.6
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.576
+        }
+      ],
+      "answer": "హిమోగ్లోబిన్ రకాలు చూసే టెస్ట్ HPLC.",
+      "source_id": "hplc-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1854,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q43",
+      "variant_type": "code_mixed",
+      "question": "Iddariki trait unte pillalaki chance entha?",
+      "expected_kb_id": "hplc-03",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-21",
+          "score": 0.631
+        },
+        {
+          "id": "elig-03",
+          "score": 0.551
+        },
+        {
+          "id": "elig-02",
+          "score": 0.543
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 902,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q44",
+      "variant_type": "rephrase",
+      "question": "తలసేమియా అనే జబ్బు ఏంటి?",
+      "expected_kb_id": "gen-01",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-01",
+          "score": 1.093
+        },
+        {
+          "id": "gen-07",
+          "score": 0.803
+        },
+        {
+          "id": "gen-08",
+          "score": 0.706
+        }
+      ],
+      "answer": "తలసేమియా అనేది తల్లిదండ్రుల జీన్స్ ద్వారా పిల్లలకు వచ్చే వారసత్వ రోగం, ఇది రక్తంలోని హిమోగ్లోబిన్‌పై ప్రభావం చూపుతుంది. తీవ్రమైన రోగులకు రెగ్యులర్ బ్లడ్ ట్రాన్స్‌ఫ్యూజన్ అవసరం.",
+      "source_id": "gen-01",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1015,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q45",
+      "variant_type": "informal",
+      "question": "కోఆర్డినేటర్‌తో మాట్లాడాలి, ఎలా?",
+      "expected_kb_id": "gen-04",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.913
+        },
+        {
+          "id": "req-02",
+          "score": 0.525
+        },
+        {
+          "id": "gen-05",
+          "score": 0.473
+        }
+      ],
+      "answer": "ఈ స్క్రీన్‌లోని Call coordinator బటన్ నొక్కండి లేదా మీకు ఇచ్చిన కోఆర్డినేటర్ నంబర్‌కు ఫోన్ చేయండి.",
+      "source_id": "gen-04",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 988,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q46",
+      "variant_type": "out_of_scope",
+      "question": "Blood bank timings enti?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.723
+        },
+        {
+          "id": "elig-03",
+          "score": 0.69
+        },
+        {
+          "id": "elig-18",
+          "score": 0.663
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 1195,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q47",
+      "variant_type": "out_of_scope",
+      "question": "నా పాన్ కార్డ్ ఎలా అప్‌డేట్ చేయాలి?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.701
+        },
+        {
+          "id": "elig-01",
+          "score": 0.641
+        },
+        {
+          "id": "sched-02",
+          "score": 0.634
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 690,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q48",
+      "variant_type": "code_mixed",
+      "question": "Last month tattoo veyinchukunna, ippudu donate cheyacha?",
+      "expected_kb_id": "elig-05",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.705
+        },
+        {
+          "id": "elig-08",
+          "score": 0.678
+        },
+        {
+          "id": "elig-22",
+          "score": 0.658
+        }
+      ],
+      "answer": "లేదు, టాటూ తర్వాత 12 నెలలు వేచిచూడాలి.",
+      "source_id": "elig-05",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 707,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q49",
+      "variant_type": "rephrase",
+      "question": "బాలింతలు రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-06",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-17",
+          "score": 0.856
+        },
+        {
+          "id": "elig-19",
+          "score": 0.824
+        },
+        {
+          "id": "elig-04",
+          "score": 0.803
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 897,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q50",
+      "variant_type": "code_mixed",
+      "question": "Periods time lo blood ivvadam safe aa?",
+      "expected_kb_id": "elig-07",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.867
+        },
+        {
+          "id": "elig-08",
+          "score": 0.652
+        },
+        {
+          "id": "elig-15",
+          "score": 0.648
+        }
+      ],
+      "answer": "పీరియడ్స్ జరుగుతున్నప్పుడు రక్తం ఇవ్వకూడదు. పీరియడ్స్ ముగిసిన తర్వాత మాత్రమే ఇవ్వండి.",
+      "source_id": "elig-07",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 895,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q51",
+      "variant_type": "informal",
+      "question": "నాకు జలుబు చేసింది, రేపు డొనేట్ చేయనా?",
+      "expected_kb_id": "elig-08",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.759
+        },
+        {
+          "id": "elig-17",
+          "score": 0.732
+        },
+        {
+          "id": "elig-05",
+          "score": 0.686
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 802,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q52",
+      "variant_type": "code_mixed",
+      "question": "Dentist dagra pannu teeyinchukunna, blood ivvocha?",
+      "expected_kb_id": "elig-09",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.873
+        },
+        {
+          "id": "elig-09",
+          "score": 0.818
+        },
+        {
+          "id": "elig-11",
+          "score": 0.805
+        }
+      ],
+      "answer": "పన్ను తీయించిన తర్వాత 6 నెలలు ఆగాలి, ఇప్పుడే రక్తం ఇవ్వలేరు.",
+      "source_id": "elig-09",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 2909,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q53",
+      "variant_type": "rephrase",
+      "question": "రెండు నెలల క్రితం చిన్న ఆపరేషన్ అయింది, ఇప్పుడు డొనేట్ చేయొచ్చా?",
+      "expected_kb_id": "elig-10",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.671
+        },
+        {
+          "id": "elig-10",
+          "score": 0.667
+        },
+        {
+          "id": "elig-06",
+          "score": 0.61
+        }
+      ],
+      "answer": "లేదు, చిన్న ఆపరేషన్ తర్వాత కనీసం 6 నెలలు వేచిచూడాలి.",
+      "source_id": "elig-10",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 886,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q54",
+      "variant_type": "code_mixed",
+      "question": "Gatha samvatsaram naaku blood ekkincharu, ippudu donate cheyyocha?",
+      "expected_kb_id": "elig-11",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.986
+        },
+        {
+          "id": "elig-22",
+          "score": 0.812
+        },
+        {
+          "id": "elig-14",
+          "score": 0.75
+        }
+      ],
+      "answer": "అవును, 12 నెలలు గడిచినందున మీరు ఇప్పుడు దానం చేయవచ్చు.",
+      "source_id": "elig-11",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1047,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q55",
+      "variant_type": "rephrase",
+      "question": "మలేరియా తగ్గి నెల అయింది, రక్తం ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-12",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-12",
+          "score": 1.021
+        },
+        {
+          "id": "elig-07",
+          "score": 0.805
+        },
+        {
+          "id": "elig-14",
+          "score": 0.803
+        }
+      ],
+      "answer": "మలేరియా పూర్తిగా తగ్గిన తర్వాత 3 నెలలు వేచిచూడాలి, ఒక నెల మాత్రమే అయినందున ఇంకా ఇవ్వలేరు.",
+      "source_id": "elig-12",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1024,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q56",
+      "variant_type": "code_mixed",
+      "question": "Typhoid vachi taggindi, blood eppudu ivvali?",
+      "expected_kb_id": "elig-13",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-13",
+          "score": 0.924
+        },
+        {
+          "id": "elig-12",
+          "score": 0.783
+        },
+        {
+          "id": "elig-22",
+          "score": 0.765
+        }
+      ],
+      "answer": "టైఫాయిడ్ పూర్తిగా తగ్గిన తర్వాత 12 నెలలు వేచి డొనేట్ చేయాలి.",
+      "source_id": "elig-13",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 700,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q57",
+      "variant_type": "rephrase",
+      "question": "డెంగ్యూ తర్వాత రక్తదానానికి ఎంత గ్యాప్?",
+      "expected_kb_id": "elig-14",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.8
+        },
+        {
+          "id": "elig-13",
+          "score": 0.733
+        },
+        {
+          "id": "elig-06",
+          "score": 0.71
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 2209,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q58",
+      "variant_type": "informal",
+      "question": "నిన్న టీకా వేశారు, బ్లడ్ డొనేట్ చేయొచ్చా?",
+      "expected_kb_id": "elig-15",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.878
+        },
+        {
+          "id": "elig-11",
+          "score": 0.838
+        },
+        {
+          "id": "elig-17",
+          "score": 0.798
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 1829,
+      "llm_attempts": 1,
+      "ok": false
+    },
+    {
+      "id": "q59",
+      "variant_type": "code_mixed",
+      "question": "Lorry driver ni, duty mundu blood ivvocha?",
+      "expected_kb_id": "elig-16",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-16",
+          "score": 0.903
+        },
+        {
+          "id": "elig-12",
+          "score": 0.678
+        },
+        {
+          "id": "elig-17",
+          "score": 0.676
+        }
+      ],
+      "answer": "లేదు, లాంగ్ డిస్టెన్స్ డ్రైవర్లు తదుపరి డ్యూటీకి 24 గంటల ముందు డొనేట్ చేయకూడదు.",
+      "source_id": "elig-16",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1559,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q60",
+      "variant_type": "rephrase",
+      "question": "షుగర్ పేషెంట్లు రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-17",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-17",
+          "score": 0.884
+        },
+        {
+          "id": "elig-19",
+          "score": 0.86
+        },
+        {
+          "id": "elig-16",
+          "score": 0.724
+        }
+      ],
+      "answer": "షుగర్ (డయాబెటిస్) డైట్ లేదా మౌఖిక మందులతో బాగా నియంత్రించబడితే, గత 4 వారాల్లో డోస్ మారకపోతే, ఇతర సమస్యలు లేకపోతే రక్తదానం చేయవచ్చు; ఇన్సులిన్ తీసుకునేవారు చేయకూడదు.",
+      "source_id": "elig-17",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1096,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q61",
+      "variant_type": "code_mixed",
+      "question": "BP unna kuda blood donate cheyocha?",
+      "expected_kb_id": "elig-18",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-18",
+          "score": 1.127
+        },
+        {
+          "id": "elig-07",
+          "score": 0.844
+        },
+        {
+          "id": "elig-22",
+          "score": 0.822
+        }
+      ],
+      "answer": "అవును, మీ బీపీ 100‑140 (పై) మరియు 60‑90 (కింద) మధ్య ఉంటే, ఇతర సమస్యలు లేకపోతే మీరు డొనేట్ చేయవచ్చు. మందుల మోతాదు గత 28 రోజుల్లో మారకపోతే బాగుంటుంది.",
+      "source_id": "elig-18",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1206,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q62",
+      "variant_type": "rephrase",
+      "question": "హెపటైటిస్ సి ఉంటే డొనేషన్ చేయొచ్చా?",
+      "expected_kb_id": "elig-19",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-19",
+          "score": 0.839
+        },
+        {
+          "id": "elig-17",
+          "score": 0.712
+        },
+        {
+          "id": "elig-08",
+          "score": 0.676
+        }
+      ],
+      "answer": "లేదు, హెపటైటిస్ సి ఉన్నవారు బ్లడ్ డొనేట్ చేయకూడదు.",
+      "source_id": "elig-19",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 906,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q63",
+      "variant_type": "code_mixed",
+      "question": "Antibiotic course ayyi oka week ayyindi, donate cheyocha?",
+      "expected_kb_id": "elig-20",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-20",
+          "score": 0.805
+        },
+        {
+          "id": "elig-15",
+          "score": 0.765
+        },
+        {
+          "id": "elig-22",
+          "score": 0.656
+        }
+      ],
+      "answer": "లేదు, యాంటీబయాటిక్స్ చివరి డోస్ తర్వాత 2 వారాలు వేచిచూడాలి.",
+      "source_id": "elig-20",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 887,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q64",
+      "variant_type": "rephrase",
+      "question": "ప్లేట్‌లెట్ డొనేషన్ వారానికి ఎన్నిసార్లు చేయొచ్చు?",
+      "expected_kb_id": "elig-21",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-21",
+          "score": 0.927
+        },
+        {
+          "id": "sched-03",
+          "score": 0.8
+        },
+        {
+          "id": "elig-02",
+          "score": 0.702
+        }
+      ],
+      "answer": "వారానికి గరిష్టంగా 2 సార్లు ప్లేట్‌లెట్ డొనేషన్ చేయవచ్చు.",
+      "source_id": "elig-21",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1291,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q65",
+      "variant_type": "code_mixed",
+      "question": "Ammavaru (chickenpox) vachi taggindi, blood ivvocha?",
+      "expected_kb_id": "elig-22",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "elig-22",
+          "score": 0.89
+        },
+        {
+          "id": "elig-12",
+          "score": 0.851
+        },
+        {
+          "id": "elig-15",
+          "score": 0.78
+        }
+      ],
+      "answer": "చికెన్‌పాక్స్ పూర్తిగా తగ్గిన తర్వాత 2 వారాలు వేచిచూసి, ఆ తర్వాత రక్తం ఇవ్వవచ్చు.",
+      "source_id": "elig-22",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1044,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q66",
+      "variant_type": "code_mixed",
+      "question": "HPLC report vachindi, adi chusi cheppagalara?",
+      "expected_kb_id": "hplc-04",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 1.01
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.89
+        },
+        {
+          "id": "elig-18",
+          "score": 0.506
+        }
+      ],
+      "answer": "నేను రిపోర్ట్‌లు చూసి చెప్పలేను. దయచేసి మీ హెచ్‌పీఎల్‌సీ రిపోర్ట్‌ని డాక్టర్‌కి లేదా కోఆర్డినేటర్‌కి చూపించండి.",
+      "source_id": "hplc-04",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 1313,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q67",
+      "variant_type": "rephrase",
+      "question": "శరీరంలో ఐరన్ తగ్గించే ట్రీట్‌మెంట్ పేరు ఏంటి?",
+      "expected_kb_id": "gen-06",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-06",
+          "score": 0.711
+        },
+        {
+          "id": "gen-03",
+          "score": 0.71
+        },
+        {
+          "id": "elig-03",
+          "score": 0.542
+        }
+      ],
+      "answer": "కీలేషన్",
+      "source_id": "gen-06",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 953,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q68",
+      "variant_type": "code_mixed",
+      "question": "Beta thalassemia major ante enti?",
+      "expected_kb_id": "gen-07",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-07",
+          "score": 1.109
+        },
+        {
+          "id": "gen-08",
+          "score": 0.769
+        },
+        {
+          "id": "gen-01",
+          "score": 0.764
+        }
+      ],
+      "answer": "Beta thalassemia major అనేది బీటా తలసేమియా లో అత్యంత తీవ్రమైన రకం.",
+      "source_id": "gen-07",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 941,
+      "llm_attempts": 2,
+      "ok": true
+    },
+    {
+      "id": "q69",
+      "variant_type": "informal",
+      "question": "మా బాబుకి తలసేమియా ఎప్పటికైనా నయం అవుతుందా?",
+      "expected_kb_id": "gen-08",
+      "expects_fallback": false,
+      "top_hits": [
+        {
+          "id": "gen-08",
+          "score": 0.677
+        },
+        {
+          "id": "hplc-03",
+          "score": 0.677
+        },
+        {
+          "id": "gen-02",
+          "score": 0.548
+        }
+      ],
+      "answer": "తలసేమియా పూర్తిగా నయం చేయడానికి స్టెమ్ సెల్ లేదా బోన్ మ్యారో ట్రాన్స్‌ప్లాంట్ మాత్రమే సాధ్యమే, కానీ దీనికి పెద్ద రిస్క్‌లు ఉంటాయి.",
+      "source_id": "gen-08",
+      "fallback": false,
+      "reason": null,
+      "generate_ms": 826,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q70",
+      "variant_type": "out_of_scope",
+      "question": "Donation tarvata emi tinali?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.999
+        },
+        {
+          "id": "elig-02",
+          "score": 0.882
+        },
+        {
+          "id": "elig-01",
+          "score": 0.811
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 829,
+      "llm_attempts": 1,
+      "ok": true
+    },
+    {
+      "id": "q71",
+      "variant_type": "out_of_scope",
+      "question": "Blood donate chesthe certificate istara?",
+      "expected_kb_id": null,
+      "expects_fallback": true,
+      "top_hits": [
+        {
+          "id": "elig-18",
+          "score": 0.809
+        },
+        {
+          "id": "elig-05",
+          "score": 0.801
+        },
+        {
+          "id": "elig-07",
+          "score": 0.776
+        }
+      ],
+      "answer": "ఇది నేను ఖచ్చితంగా చెప్పలేను. దయచేసి మీ కోఆర్డినేటర్‌ను సంప్రదించండి.",
+      "source_id": null,
+      "fallback": true,
+      "reason": "not_covered",
+      "generate_ms": 940,
+      "llm_attempts": 1,
+      "ok": true
+    }
+  ]
+}

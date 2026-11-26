@@ -1,0 +1,951 @@
+{
+  "summary": {
+    "requests": 40,
+    "rounds": 2,
+    "clips": 20,
+    "warmup_first_request_ms": 5016,
+    "llm_errors_excluded": 0,
+    "latency_ms_all": {
+      "asr": {
+        "p50": 272,
+        "p95": 349
+      },
+      "retrieve": {
+        "p50": 33,
+        "p95": 36
+      },
+      "generate": {
+        "p50": 948,
+        "p95": 1826
+      },
+      "tts": {
+        "p50": 385,
+        "p95": 1442
+      },
+      "total": {
+        "p50": 1615,
+        "p95": 3106
+      },
+      "wall": {
+        "p50": 1624,
+        "p95": 3114
+      }
+    },
+    "latency_ms_answered_cold_tts": {
+      "asr": {
+        "p50": 272,
+        "p95": 349
+      },
+      "retrieve": {
+        "p50": 33,
+        "p95": 37
+      },
+      "generate": {
+        "p50": 1067,
+        "p95": 1612
+      },
+      "tts": {
+        "p50": 1000,
+        "p95": 1473
+      },
+      "total": {
+        "p50": 2408,
+        "p95": 3111
+      },
+      "wall": {
+        "p50": 2414,
+        "p95": 3118
+      }
+    },
+    "latency_ms_answered_cached_tts": {
+      "asr": {
+        "p50": 270,
+        "p95": 346
+      },
+      "retrieve": {
+        "p50": 33,
+        "p95": 36
+      },
+      "generate": {
+        "p50": 1061,
+        "p95": 2031
+      },
+      "tts": {
+        "p50": 0,
+        "p95": 1496
+      },
+      "total": {
+        "p50": 1727,
+        "p95": 3044
+      },
+      "wall": {
+        "p50": 1736,
+        "p95": 3052
+      }
+    },
+    "under_budget_p95": true,
+    "outcome_correct": "31/40",
+    "fallback_reasons": {
+      "None": 0,
+      "low_confidence": 4,
+      "not_covered": 2,
+      "urgent": 4
+    },
+    "demo_journeys": {
+      "c01": {
+        "expected": "sched-01",
+        "passed_runs": "0/2"
+      },
+      "c02": {
+        "expected": "elig-01",
+        "passed_runs": "2/2"
+      },
+      "c03": {
+        "expected": "urgent",
+        "passed_runs": "2/2"
+      }
+    }
+  },
+  "results": [
+    {
+      "round": 1,
+      "clip_id": "t01",
+      "variant": "telugu",
+      "expected": "sched-01",
+      "transcript": "మళ్ళీ రక్తం ఎక్కించేది ఎప్పుడు",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-01",
+      "score": 0.9052579795041316,
+      "audio_url": "/audio/5e759402902b2ebe.mp3",
+      "latency_ms": {
+        "asr": 224,
+        "retrieve": 33,
+        "generate": 891,
+        "tts": 0,
+        "total": 1151
+      },
+      "wall_ms": 1161,
+      "ok": false
+    },
+    {
+      "round": 1,
+      "clip_id": "t02",
+      "variant": "telugu",
+      "expected": "sched-02",
+      "transcript": "వచ్చే తేదీని మార్చుకోవచ్చా",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-02",
+      "score": 0.9043677717654968,
+      "audio_url": "/audio/bd285877671eec75.mp3",
+      "latency_ms": {
+        "asr": 181,
+        "retrieve": 36,
+        "generate": 726,
+        "tts": 415,
+        "total": 1362
+      },
+      "wall_ms": 1370,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t03",
+      "variant": "telugu",
+      "expected": "sched-03",
+      "transcript": "తలసేమియా ఉన్న పిల్లలకి ఎన్ని రోజులకి ఒకసారి రక్తం ఎక్కించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-03",
+      "score": 1.0156067027982227,
+      "audio_url": "/audio/bef80c17fea0e8c9.mp3",
+      "latency_ms": {
+        "asr": 371,
+        "retrieve": 36,
+        "generate": 1067,
+        "tts": 371,
+        "total": 1846
+      },
+      "wall_ms": 1856,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t04",
+      "variant": "telugu",
+      "expected": "sched-04",
+      "transcript": "రక్తం ఎక్కించే రోజు మేము ఏం తీసుకోవాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-04",
+      "score": 0.8611469363293056,
+      "audio_url": "/audio/01493037328a41ae.mp3",
+      "latency_ms": {
+        "asr": 304,
+        "retrieve": 32,
+        "generate": 900,
+        "tts": 404,
+        "total": 1642
+      },
+      "wall_ms": 1650,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t05",
+      "variant": "telugu",
+      "expected": "elig-02",
+      "transcript": "రెండు సార్లు రక్తదానం చేయడానికి మధ్య ఎన్ని రోజులు ఆగాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-02",
+      "score": 0.9723550963757037,
+      "audio_url": "/audio/9e78eac84d5af90f.mp3",
+      "latency_ms": {
+        "asr": 272,
+        "retrieve": 33,
+        "generate": 860,
+        "tts": 422,
+        "total": 1588
+      },
+      "wall_ms": 1597,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t06",
+      "variant": "telugu",
+      "expected": "elig-03",
+      "transcript": "ఎవరెవరు రక్తదానం చేయొచ్చు వయస్సు బరువు ఎంత ఉండాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-03",
+      "score": 1.0120532975402767,
+      "audio_url": "/audio/dbf56d3e2e0555da.mp3",
+      "latency_ms": {
+        "asr": 272,
+        "retrieve": 34,
+        "generate": 1390,
+        "tts": 1429,
+        "total": 3126
+      },
+      "wall_ms": 3130,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t07",
+      "variant": "telugu",
+      "expected": "elig-04",
+      "transcript": "కమియా ట్రేట్ ఉంది నేను రక్తదానం చేయొచ్చా",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-04",
+      "score": 0.7505756466998433,
+      "audio_url": "/audio/f57e8532ba84a647.mp3",
+      "latency_ms": {
+        "asr": 253,
+        "retrieve": 32,
+        "generate": 1824,
+        "tts": 772,
+        "total": 2885
+      },
+      "wall_ms": 2893,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t08",
+      "variant": "telugu",
+      "expected": "req-01",
+      "transcript": "నాకు ఎవరైనా రక్తదాన్ అభివృద్ధి వచ్చిందా",
+      "fallback": true,
+      "fallback_reason": "not_covered",
+      "source_id": null,
+      "score": 0.7486922738162917,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 294,
+        "retrieve": 32,
+        "generate": 1198,
+        "tts": 0,
+        "total": 1526
+      },
+      "wall_ms": 1536,
+      "ok": false
+    },
+    {
+      "round": 1,
+      "clip_id": "t09",
+      "variant": "telugu",
+      "expected": "req-02",
+      "transcript": "రక్తదాన్ అభివృద్ధానికి ఒప్పుకోవాలంటే ఏం చేయాలి",
+      "fallback": true,
+      "fallback_reason": "low_confidence",
+      "source_id": null,
+      "score": 0.6173740052848172,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 348,
+        "retrieve": 36,
+        "generate": 0,
+        "tts": 0,
+        "total": 385
+      },
+      "wall_ms": 393,
+      "ok": false
+    },
+    {
+      "round": 1,
+      "clip_id": "t10",
+      "variant": "telugu",
+      "expected": "hplc-01",
+      "transcript": "హెచ్పిఎల్సీ టెస్ట్ అంటే ఏమిటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-01",
+      "score": 1.039497667290519,
+      "audio_url": "/audio/d96b3e9f9551a195.mp3",
+      "latency_ms": {
+        "asr": 294,
+        "retrieve": 32,
+        "generate": 1090,
+        "tts": 1130,
+        "total": 2548
+      },
+      "wall_ms": 2553,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t11",
+      "variant": "telugu",
+      "expected": "hplc-02",
+      "transcript": "తలసేమియా క్యారియర్ టెస్ట్ ఎవరు చేయించుకోవాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-02",
+      "score": 1.061536332336658,
+      "audio_url": "/audio/6ffbfba2a8543885.mp3",
+      "latency_ms": {
+        "asr": 307,
+        "retrieve": 33,
+        "generate": 1169,
+        "tts": 1217,
+        "total": 2729
+      },
+      "wall_ms": 2737,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t12",
+      "variant": "telugu",
+      "expected": "gen-01",
+      "transcript": "తలసేమియా అంటే ఏమిటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "gen-01",
+      "score": 1.0784688334859616,
+      "audio_url": "/audio/bf1591af1199a713.mp3",
+      "latency_ms": {
+        "asr": 246,
+        "retrieve": 39,
+        "generate": 1242,
+        "tts": 1576,
+        "total": 3105
+      },
+      "wall_ms": 3113,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t13",
+      "variant": "telugu",
+      "expected": "gen-03",
+      "transcript": "మా పిల్లలకి ఎందుకు ఎప్పుడో రక్తం ఎక్కించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-03",
+      "score": 1.014452861587021,
+      "audio_url": "/audio/2911c65f6025be5e.mp3",
+      "latency_ms": {
+        "asr": 339,
+        "retrieve": 33,
+        "generate": 971,
+        "tts": 1000,
+        "total": 2345
+      },
+      "wall_ms": 2352,
+      "ok": false
+    },
+    {
+      "round": 1,
+      "clip_id": "t14",
+      "variant": "telugu",
+      "expected": "gen-04",
+      "transcript": "నా కోఆర్డినేటర్ ని ఎలా సంప్రదించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "gen-04",
+      "score": 1.089171930365638,
+      "audio_url": "/audio/523916c4f7ed8b26.mp3",
+      "latency_ms": {
+        "asr": 295,
+        "retrieve": 32,
+        "generate": 942,
+        "tts": 1136,
+        "total": 2408
+      },
+      "wall_ms": 2414,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "t15",
+      "variant": "telugu",
+      "expected": "fallback",
+      "transcript": "ఈ మందు ఎంత నోట్లో వేసుకోవాలి",
+      "fallback": true,
+      "fallback_reason": "urgent",
+      "source_id": null,
+      "score": null,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 227,
+        "retrieve": 0,
+        "generate": 0,
+        "tts": 0,
+        "total": 228
+      },
+      "wall_ms": 235,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "c01",
+      "variant": "code_mixed",
+      "expected": "sched-01",
+      "transcript": "కన్ఫ్యూజన్ ఎప్పుడు",
+      "fallback": true,
+      "fallback_reason": "low_confidence",
+      "source_id": null,
+      "score": 0.6439079899217643,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 136,
+        "retrieve": 33,
+        "generate": 0,
+        "tts": 0,
+        "total": 170
+      },
+      "wall_ms": 180,
+      "ok": false
+    },
+    {
+      "round": 1,
+      "clip_id": "c02",
+      "variant": "code_mixed",
+      "expected": "elig-01",
+      "transcript": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-01",
+      "score": 0.8466363404943367,
+      "audio_url": "/audio/ba6a6caa126d2b41.mp3",
+      "latency_ms": {
+        "asr": 267,
+        "retrieve": 36,
+        "generate": 747,
+        "tts": 475,
+        "total": 1528
+      },
+      "wall_ms": 1536,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "c03",
+      "variant": "code_mixed",
+      "expected": "fallback",
+      "transcript": "నా చెైలుకి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+      "fallback": true,
+      "fallback_reason": "urgent",
+      "source_id": null,
+      "score": null,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 319,
+        "retrieve": 0,
+        "generate": 0,
+        "tts": 0,
+        "total": 320
+      },
+      "wall_ms": 327,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "c04",
+      "variant": "code_mixed",
+      "expected": "hplc-01",
+      "transcript": "హెచ్పి సిఎల్ టెస్ట్ అంటే ఏంటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-01",
+      "score": 1.0219298264531795,
+      "audio_url": "/audio/c37bce629621f9eb.mp3",
+      "latency_ms": {
+        "asr": 252,
+        "retrieve": 33,
+        "generate": 1077,
+        "tts": 1213,
+        "total": 2577
+      },
+      "wall_ms": 2585,
+      "ok": true
+    },
+    {
+      "round": 1,
+      "clip_id": "c05",
+      "variant": "code_mixed",
+      "expected": "req-02",
+      "transcript": "డొనేషన్ రిక్వెస్ట్కి ఎస్ ఎలా చెప్పాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "req-02",
+      "score": 0.8008406055441839,
+      "audio_url": "/audio/832206a68b994456.mp3",
+      "latency_ms": {
+        "asr": 273,
+        "retrieve": 33,
+        "generate": 1521,
+        "tts": 1022,
+        "total": 2852
+      },
+      "wall_ms": 2861,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t01",
+      "variant": "telugu",
+      "expected": "sched-01",
+      "transcript": "మళ్ళీ రక్తం ఎక్కించేది ఎప్పుడు",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-01",
+      "score": 0.9052579795041316,
+      "audio_url": "/audio/5e759402902b2ebe.mp3",
+      "latency_ms": {
+        "asr": 212,
+        "retrieve": 31,
+        "generate": 1482,
+        "tts": 0,
+        "total": 1727
+      },
+      "wall_ms": 1736,
+      "ok": false
+    },
+    {
+      "round": 2,
+      "clip_id": "t02",
+      "variant": "telugu",
+      "expected": "sched-02",
+      "transcript": "వచ్చే తేదీని మార్చుకోవచ్చా",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-02",
+      "score": 0.9043677717654968,
+      "audio_url": "/audio/bd285877671eec75.mp3",
+      "latency_ms": {
+        "asr": 182,
+        "retrieve": 33,
+        "generate": 832,
+        "tts": 0,
+        "total": 1049
+      },
+      "wall_ms": 1057,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t03",
+      "variant": "telugu",
+      "expected": "sched-03",
+      "transcript": "తలసేమియా ఉన్న పిల్లలకి ఎన్ని రోజులకి ఒకసారి రక్తం ఎక్కించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-03",
+      "score": 1.0156067027982227,
+      "audio_url": "/audio/bef80c17fea0e8c9.mp3",
+      "latency_ms": {
+        "asr": 374,
+        "retrieve": 35,
+        "generate": 1872,
+        "tts": 0,
+        "total": 2283
+      },
+      "wall_ms": 2291,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t04",
+      "variant": "telugu",
+      "expected": "sched-04",
+      "transcript": "రక్తం ఎక్కించే రోజు మేము ఏం తీసుకోవాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "sched-04",
+      "score": 0.8611469363293056,
+      "audio_url": "/audio/ad5ed04d0842bdff.mp3",
+      "latency_ms": {
+        "asr": 300,
+        "retrieve": 33,
+        "generate": 2401,
+        "tts": 399,
+        "total": 3136
+      },
+      "wall_ms": 3144,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t05",
+      "variant": "telugu",
+      "expected": "elig-02",
+      "transcript": "రెండు సార్లు రక్తదానం చేయడానికి మధ్య ఎన్ని రోజులు ఆగాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-02",
+      "score": 0.9723550963757037,
+      "audio_url": "/audio/9e78eac84d5af90f.mp3",
+      "latency_ms": {
+        "asr": 270,
+        "retrieve": 28,
+        "generate": 697,
+        "tts": 0,
+        "total": 998
+      },
+      "wall_ms": 1008,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t06",
+      "variant": "telugu",
+      "expected": "elig-03",
+      "transcript": "ఎవరెవరు రక్తదానం చేయొచ్చు వయస్సు బరువు ఎంత ఉండాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-03",
+      "score": 1.0120532975402767,
+      "audio_url": "/audio/6cf21e2b9ab7e37b.mp3",
+      "latency_ms": {
+        "asr": 274,
+        "retrieve": 28,
+        "generate": 1061,
+        "tts": 1638,
+        "total": 3004
+      },
+      "wall_ms": 3013,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t07",
+      "variant": "telugu",
+      "expected": "elig-04",
+      "transcript": "కమియా ట్రేట్ ఉంది నేను రక్తదానం చేయొచ్చా",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-04",
+      "score": 0.7505756466998433,
+      "audio_url": "/audio/f57e8532ba84a647.mp3",
+      "latency_ms": {
+        "asr": 252,
+        "retrieve": 33,
+        "generate": 1136,
+        "tts": 0,
+        "total": 1423
+      },
+      "wall_ms": 1431,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t08",
+      "variant": "telugu",
+      "expected": "req-01",
+      "transcript": "నాకు ఎవరైనా రక్తదాన్ అభివృద్ధి వచ్చిందా",
+      "fallback": true,
+      "fallback_reason": "not_covered",
+      "source_id": null,
+      "score": 0.7486922738162917,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 296,
+        "retrieve": 32,
+        "generate": 739,
+        "tts": 0,
+        "total": 1069
+      },
+      "wall_ms": 1078,
+      "ok": false
+    },
+    {
+      "round": 2,
+      "clip_id": "t09",
+      "variant": "telugu",
+      "expected": "req-02",
+      "transcript": "రక్తదాన్ అభివృద్ధానికి ఒప్పుకోవాలంటే ఏం చేయాలి",
+      "fallback": true,
+      "fallback_reason": "low_confidence",
+      "source_id": null,
+      "score": 0.6173740052848172,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 343,
+        "retrieve": 34,
+        "generate": 0,
+        "tts": 0,
+        "total": 379
+      },
+      "wall_ms": 386,
+      "ok": false
+    },
+    {
+      "round": 2,
+      "clip_id": "t10",
+      "variant": "telugu",
+      "expected": "hplc-01",
+      "transcript": "హెచ్పిఎల్సీ టెస్ట్ అంటే ఏమిటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-01",
+      "score": 1.039497667290519,
+      "audio_url": "/audio/d96b3e9f9551a195.mp3",
+      "latency_ms": {
+        "asr": 302,
+        "retrieve": 32,
+        "generate": 1168,
+        "tts": 0,
+        "total": 1504
+      },
+      "wall_ms": 1512,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t11",
+      "variant": "telugu",
+      "expected": "hplc-02",
+      "transcript": "తలసేమియా క్యారియర్ టెస్ట్ ఎవరు చేయించుకోవాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-02",
+      "score": 1.061536332336658,
+      "audio_url": "/audio/9e298a36a46634e3.mp3",
+      "latency_ms": {
+        "asr": 305,
+        "retrieve": 33,
+        "generate": 1004,
+        "tts": 984,
+        "total": 2327
+      },
+      "wall_ms": 2336,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t12",
+      "variant": "telugu",
+      "expected": "gen-01",
+      "transcript": "తలసేమియా అంటే ఏమిటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "gen-01",
+      "score": 1.0784688334859616,
+      "audio_url": "/audio/bf1591af1199a713.mp3",
+      "latency_ms": {
+        "asr": 232,
+        "retrieve": 31,
+        "generate": 955,
+        "tts": 0,
+        "total": 1220
+      },
+      "wall_ms": 1230,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t13",
+      "variant": "telugu",
+      "expected": "gen-03",
+      "transcript": "మా పిల్లలకి ఎందుకు ఎప్పుడో రక్తం ఎక్కించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "gen-03",
+      "score": 1.014452861587021,
+      "audio_url": "/audio/bed6ff9f8d12ed41.mp3",
+      "latency_ms": {
+        "asr": 334,
+        "retrieve": 34,
+        "generate": 1120,
+        "tts": 1435,
+        "total": 2925
+      },
+      "wall_ms": 2936,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t14",
+      "variant": "telugu",
+      "expected": "gen-04",
+      "transcript": "నా కోఆర్డినేటర్ ని ఎలా సంప్రదించాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "gen-04",
+      "score": 1.089171930365638,
+      "audio_url": "/audio/523916c4f7ed8b26.mp3",
+      "latency_ms": {
+        "asr": 294,
+        "retrieve": 37,
+        "generate": 830,
+        "tts": 0,
+        "total": 1163
+      },
+      "wall_ms": 1169,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "t15",
+      "variant": "telugu",
+      "expected": "fallback",
+      "transcript": "ఈ మందు ఎంత నోట్లో వేసుకోవాలి",
+      "fallback": true,
+      "fallback_reason": "urgent",
+      "source_id": null,
+      "score": null,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 226,
+        "retrieve": 0,
+        "generate": 0,
+        "tts": 0,
+        "total": 227
+      },
+      "wall_ms": 234,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "c01",
+      "variant": "code_mixed",
+      "expected": "sched-01",
+      "transcript": "కన్ఫ్యూజన్ ఎప్పుడు",
+      "fallback": true,
+      "fallback_reason": "low_confidence",
+      "source_id": null,
+      "score": 0.6439079899217643,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 138,
+        "retrieve": 32,
+        "generate": 0,
+        "tts": 0,
+        "total": 171
+      },
+      "wall_ms": 179,
+      "ok": false
+    },
+    {
+      "round": 2,
+      "clip_id": "c02",
+      "variant": "code_mixed",
+      "expected": "elig-01",
+      "transcript": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "elig-01",
+      "score": 0.8466363404943367,
+      "audio_url": "/audio/9ae8e6f5d03da5e8.mp3",
+      "latency_ms": {
+        "asr": 268,
+        "retrieve": 34,
+        "generate": 822,
+        "tts": 521,
+        "total": 1648
+      },
+      "wall_ms": 1656,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "c03",
+      "variant": "code_mixed",
+      "expected": "fallback",
+      "transcript": "నా చెైలుకి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+      "fallback": true,
+      "fallback_reason": "urgent",
+      "source_id": null,
+      "score": null,
+      "audio_url": null,
+      "latency_ms": {
+        "asr": 320,
+        "retrieve": 0,
+        "generate": 0,
+        "tts": 0,
+        "total": 320
+      },
+      "wall_ms": 329,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "c04",
+      "variant": "code_mixed",
+      "expected": "hplc-01",
+      "transcript": "హెచ్పి సిఎల్ టెస్ట్ అంటే ఏంటి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "hplc-01",
+      "score": 1.0219298264531795,
+      "audio_url": "/audio/ce02618cf0842b0a.mp3",
+      "latency_ms": {
+        "asr": 251,
+        "retrieve": 32,
+        "generate": 934,
+        "tts": 871,
+        "total": 2090
+      },
+      "wall_ms": 2098,
+      "ok": true
+    },
+    {
+      "round": 2,
+      "clip_id": "c05",
+      "variant": "code_mixed",
+      "expected": "req-02",
+      "transcript": "డొనేషన్ రిక్వెస్ట్కి ఎస్ ఎలా చెప్పాలి",
+      "fallback": false,
+      "fallback_reason": null,
+      "source_id": "req-02",
+      "score": 0.8008406055441839,
+      "audio_url": "/audio/4a8cde74a1241702.mp3",
+      "latency_ms": {
+        "asr": 251,
+        "retrieve": 33,
+        "generate": 1273,
+        "tts": 1041,
+        "total": 2600
+      },
+      "wall_ms": 2606,
+      "ok": true
+    }
+  ]
+}

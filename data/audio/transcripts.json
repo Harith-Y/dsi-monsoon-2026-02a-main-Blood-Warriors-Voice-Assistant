@@ -1,0 +1,202 @@
+[
+  {
+    "clip_id": "t01",
+    "file": "t01.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "నాకు మళ్ళీ రక్తం ఎక్కించేది ఎప్పుడు",
+    "expected_kb_id": "sched-01",
+    "backup": true
+  },
+  {
+    "clip_id": "t02",
+    "file": "t02.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "రక్తం ఎక్కించే తేదీని మార్చుకోవచ్చా",
+    "expected_kb_id": "sched-02",
+    "backup": false
+  },
+  {
+    "clip_id": "t03",
+    "file": "t03.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "తలసేమియా ఉన్న పిల్లలకి ఎన్ని రోజులకి ఒకసారి రక్తం ఎక్కించాలి",
+    "expected_kb_id": "sched-03",
+    "backup": false
+  },
+  {
+    "clip_id": "t04",
+    "file": "t04.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "రక్తం ఎక్కించే రోజు మేము ఏమేం తీసుకురావాలి",
+    "expected_kb_id": "sched-04",
+    "backup": false
+  },
+  {
+    "clip_id": "t05",
+    "file": "t05.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "రెండు సార్లు రక్తదానం చేయడానికి మధ్య ఎన్ని రోజులు ఆగాలి",
+    "expected_kb_id": "elig-02",
+    "backup": false
+  },
+  {
+    "clip_id": "t06",
+    "file": "t06.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "ఎవరెవరు రక్తదానం చేయొచ్చు వయసు బరువు ఎంత ఉండాలి",
+    "expected_kb_id": "elig-03",
+    "backup": false
+  },
+  {
+    "clip_id": "t07",
+    "file": "t07.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "telugu",
+    "reference_text": "నాకు తలసేమియా ట్రెయిట్ ఉంది నేను రక్తదానం చేయొచ్చా",
+    "expected_kb_id": "elig-04",
+    "backup": true
+  },
+  {
+    "clip_id": "t08",
+    "file": "t08.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "నాకు ఏదైనా రక్తదాన అభ్యర్థన వచ్చిందా",
+    "expected_kb_id": "req-01",
+    "backup": false
+  },
+  {
+    "clip_id": "t09",
+    "file": "t09.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "రక్తదాన అభ్యర్థనకి ఒప్పుకోవాలంటే ఏం చేయాలి",
+    "expected_kb_id": "req-02",
+    "backup": false
+  },
+  {
+    "clip_id": "t10",
+    "file": "t10.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "హెచ్‌పీఎల్‌సీ పరీక్ష అంటే ఏమిటి",
+    "expected_kb_id": "hplc-01",
+    "backup": false
+  },
+  {
+    "clip_id": "t11",
+    "file": "t11.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "తలసేమియా క్యారియర్ టెస్ట్ ఎవరు చేయించుకోవాలి",
+    "expected_kb_id": "hplc-02",
+    "backup": false
+  },
+  {
+    "clip_id": "t12",
+    "file": "t12.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "తలసేమియా అంటే ఏమిటి",
+    "expected_kb_id": "gen-01",
+    "backup": false
+  },
+  {
+    "clip_id": "t13",
+    "file": "t13.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "మా పిల్లలకి ఎందుకు ఎప్పుడూ రక్తం ఎక్కించాలి",
+    "expected_kb_id": "gen-03",
+    "backup": false
+  },
+  {
+    "clip_id": "t14",
+    "file": "t14.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "నా కోఆర్డినేటర్‌ని ఎలా సంప్రదించాలి",
+    "expected_kb_id": "gen-04",
+    "backup": false
+  },
+  {
+    "clip_id": "t15",
+    "file": "t15.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "telugu",
+    "reference_text": "ఈ మందు ఎంత మోతాదులో వేసుకోవాలి",
+    "expected_kb_id": "fallback",
+    "backup": false
+  },
+  {
+    "clip_id": "c01",
+    "file": "c01.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "code_mixed",
+    "reference_text": "నెక్స్ట్ ట్రాన్స్‌ఫ్యూజన్ ఎప్పుడు",
+    "expected_kb_id": "sched-01",
+    "backup": true
+  },
+  {
+    "clip_id": "c02",
+    "file": "c02.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "code_mixed",
+    "reference_text": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+    "expected_kb_id": "elig-01",
+    "backup": true
+  },
+  {
+    "clip_id": "c03",
+    "file": "c03.wav",
+    "speaker": "S1",
+    "device": "Pixel 7",
+    "variant": "code_mixed",
+    "reference_text": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్‌ఫ్యూజన్ చేయొచ్చా",
+    "expected_kb_id": "fallback",
+    "backup": true
+  },
+  {
+    "clip_id": "c04",
+    "file": "c04.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "code_mixed",
+    "reference_text": "హెచ్‌పీఎల్‌సీ టెస్ట్ అంటే ఏంటి",
+    "expected_kb_id": "hplc-01",
+    "backup": false
+  },
+  {
+    "clip_id": "c05",
+    "file": "c05.wav",
+    "speaker": "S2",
+    "device": "iPhone 13",
+    "variant": "code_mixed",
+    "reference_text": "డొనేషన్ రిక్వెస్ట్ కి యెస్ ఎలా చెప్పాలి",
+    "expected_kb_id": "req-02",
+    "backup": false
+  }
+]

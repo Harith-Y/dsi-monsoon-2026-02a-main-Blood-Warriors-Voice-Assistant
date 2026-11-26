@@ -1,0 +1,1450 @@
+{
+  "_note": "Every user-facing string, in every supported language. The server (i18n.t) and the web UI (GET /i18n/strings.json) both read this file. Telugu and Hindi need a native speaker's review. No em dashes.",
+  "languages": {
+    "te": {"name": "తెలుగు", "name_en": "Telugu", "speech": "te-IN"},
+    "hi": {"name": "हिन्दी", "name_en": "Hindi", "speech": "hi-IN"},
+    "en": {"name": "English", "name_en": "English", "speech": "en-IN"}
+  },
+  "strings": {
+    "fallback.sent": {
+      "en": "I don't have a verified answer for this, so I have sent your question to a coordinator.",
+      "te": "దీనికి నా దగ్గర ధృవీకరించిన సమాధానం లేదు, అందుకే మీ ప్రశ్నను కోఆర్డినేటర్‌కు పంపాను.",
+      "hi": "इसका सत्यापित जवाब मेरे पास नहीं है, इसलिए मैंने आपका सवाल कोऑर्डिनेटर को भेज दिया है।"
+    },
+    "fallback.urgent": {
+      "en": "This sounds like a medical question. I have sent it to a coordinator. Please talk to them right away.",
+      "te": "ఇది వైద్యానికి సంబంధించిన ప్రశ్నలా ఉంది. దీన్ని కోఆర్డినేటర్‌కు పంపాను. దయచేసి వెంటనే వారితో మాట్లాడండి.",
+      "hi": "यह एक मेडिकल सवाल लगता है। मैंने इसे कोऑर्डिनेटर को भेज दिया है। कृपया तुरंत उनसे बात करें।"
+    },
+    "fallback.reference": {
+      "en": "Your reference code is {ref}.",
+      "te": "మీ రిఫరెన్స్ కోడ్ {ref}.",
+      "hi": "आपका रेफ़रेंस कोड {ref} है।"
+    },
+    "fallback.unsent": {
+      "en": "I don't have a verified answer for this. Please chat with your coordinator on WhatsApp.",
+      "te": "దీనికి నా దగ్గర ధృవీకరించిన సమాధానం లేదు. దయచేసి వాట్సాప్‌లో మీ కోఆర్డినేటర్‌తో చాట్ చేయండి.",
+      "hi": "इसका सत्यापित जवाब मेरे पास नहीं है। कृपया व्हाट्सऐप पर अपने कोऑर्डिनेटर से चैट करें।"
+    },
+    "clarify.question": {
+      "en": "Did you mean: {question}?",
+      "te": "మీరు అడిగింది ఇదేనా: {question}?",
+      "hi": "क्या आप यह पूछ रहे हैं: {question}?"
+    },
+    "error.no_speech": {
+      "en": "I didn't hear anything. Please tap the mic and try again.",
+      "te": "నాకు ఏమీ వినిపించలేదు. దయచేసి మైక్ నొక్కి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "मुझे कुछ सुनाई नहीं दिया। कृपया माइक दबाकर फिर से कोशिश करें।"
+    },
+    "error.asr": {
+      "en": "Sorry, I could not understand the recording. Please try again.",
+      "te": "క్షమించండి, రికార్డింగ్ అర్థం కాలేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "माफ़ कीजिए, रिकॉर्डिंग समझ नहीं आई। कृपया फिर से कोशिश करें।"
+    },
+    "whatsapp.with_ref": {
+      "en": "Hello, I asked the Blood Warriors assistant: {question}. Reference: {ref}",
+      "te": "నమస్కారం, నేను బ్లడ్ వారియర్స్ అసిస్టెంట్‌ని ఇలా అడిగాను: {question}. రిఫరెన్స్: {ref}",
+      "hi": "नमस्ते, मैंने ब्लड वॉरियर्स असिस्टेंट से पूछा: {question}. रेफ़रेंस: {ref}"
+    },
+    "whatsapp.question": {
+      "en": "Hello, I asked the Blood Warriors assistant: {question}",
+      "te": "నమస్కారం, నేను బ్లడ్ వారియర్స్ అసిస్టెంట్‌ని ఇలా అడిగాను: {question}",
+      "hi": "नमस्ते, मैंने ब्लड वॉरियर्स असिस्टेंट से पूछा: {question}"
+    },
+    "whatsapp.generic": {
+      "en": "Hello, I have a question for the Blood Warriors coordinator.",
+      "te": "నమస్కారం, బ్లడ్ వారియర్స్ కోఆర్డినేటర్‌ని ఒక ప్రశ్న అడగాలి.",
+      "hi": "नमस्ते, मुझे ब्लड वॉरियर्स कोऑर्डिनेटर से एक सवाल पूछना है।"
+    },
+    "app.name": {
+      "en": "Blood Warriors",
+      "te": "బ్లడ్ వారియర్స్",
+      "hi": "ब्लड वॉरियर्स"
+    },
+    "app.tagline": {
+      "en": "Voice Care Companion",
+      "te": "మీ వాయిస్ సహాయకుడు",
+      "hi": "आपका वॉइस सहायक"
+    },
+    "app.title": {
+      "en": "Blood Warriors Voice Assistant",
+      "te": "బ్లడ్ వారియర్స్ వాయిస్ అసిస్టెంట్",
+      "hi": "ब्लड वॉरियर्स वॉइस असिस्टेंट"
+    },
+    "nav.home": {
+      "en": "Blood Warriors, go to start",
+      "te": "బ్లడ్ వారియర్స్, మొదటికి వెళ్ళండి",
+      "hi": "ब्लड वॉरियर्स, शुरुआत पर जाएँ"
+    },
+    "lang.label": {
+      "en": "Language",
+      "te": "భాష",
+      "hi": "भाषा"
+    },
+    "lang.changed": {
+      "en": "Language set to {lang}",
+      "te": "భాష {lang} కి మార్చబడింది",
+      "hi": "भाषा {lang} कर दी गई है"
+    },
+    "wa.chat": {
+      "en": "Chat with coordinator on WhatsApp",
+      "te": "వాట్సాప్‌లో కోఆర్డినేటర్‌తో చాట్ చేయండి",
+      "hi": "व्हाट्सऐप पर कोऑर्डिनेटर से चैट करें"
+    },
+    "wa.chat_short": {
+      "en": "Chat with coordinator",
+      "te": "కోఆర్డినేటర్‌తో చాట్",
+      "hi": "कोऑर्डिनेटर से चैट"
+    },
+    "wa.shared": {
+      "en": "Your question is shared, no need to repeat it",
+      "te": "మీ ప్రశ్న వారికి పంపబడుతుంది, మళ్ళీ చెప్పనవసరం లేదు",
+      "hi": "आपका सवाल उन्हें भेजा जाएगा, दोबारा बताने की ज़रूरत नहीं"
+    },
+    "wa.new_tab": {
+      "en": "Opens WhatsApp in a new tab",
+      "te": "వాట్సాప్ కొత్త ట్యాబ్‌లో తెరుచుకుంటుంది",
+      "hi": "व्हाट्सऐप नए टैब में खुलेगा"
+    },
+    "idle.hello": {
+      "en": "Hello!",
+      "te": "నమస్కారం!",
+      "hi": "नमस्ते!"
+    },
+    "idle.title": {
+      "en": "Ask your question",
+      "te": "మీ ప్రశ్న అడగండి",
+      "hi": "अपना सवाल पूछिए"
+    },
+    "idle.sub": {
+      "en": "About transfusions, donating blood or HPLC tests",
+      "te": "ట్రాన్స్‌ఫ్యూజన్, రక్తదానం లేదా HPLC టెస్ట్ గురించి",
+      "hi": "ट्रांसफ़्यूजन, रक्तदान या HPLC टेस्ट के बारे में"
+    },
+    "idle.lang_title": {
+      "en": "Speak in the language you are comfortable with",
+      "te": "మీకు సులువైన భాషలో మాట్లాడండి",
+      "hi": "जिस भाषा में आसानी हो, उसमें बोलिए"
+    },
+    "idle.lang_sub": {
+      "en": "Mixed languages, like Telugu-English or Hindi-English, work too",
+      "te": "తెలుగు-ఇంగ్లీష్ లాంటి కలిపిన భాష కూడా సరిపోతుంది",
+      "hi": "हिंदी-अंग्रेज़ी जैसी मिली-जुली भाषा भी चलेगी"
+    },
+    "mic.tap": {
+      "en": "Tap to speak",
+      "te": "నొక్కి మాట్లాడండి",
+      "hi": "दबाकर बोलिए"
+    },
+    "mic.tap_sub": {
+      "en": "Tap the mic and ask your question out loud",
+      "te": "మైక్ నొక్కి మీ ప్రశ్నను గట్టిగా అడగండి",
+      "hi": "माइक दबाइए और अपना सवाल बोलकर पूछिए"
+    },
+    "trust": {
+      "en": "Answers come only from verified Blood Warriors information",
+      "te": "సమాధానాలు బ్లడ్ వారియర్స్ ధృవీకరించిన సమాచారం నుండి మాత్రమే",
+      "hi": "जवाब सिर्फ़ ब्लड वॉरियर्स की जाँची हुई जानकारी से आते हैं"
+    },
+    "examples.title": {
+      "en": "Example questions",
+      "te": "ఉదాహరణ ప్రశ్నలు",
+      "hi": "उदाहरण के सवाल"
+    },
+    "examples.sub": {
+      "en": "Or tap a question to try it",
+      "te": "లేదా ఒక ప్రశ్నను నొక్కి చూడండి",
+      "hi": "या कोई सवाल दबाकर देखिए"
+    },
+    "ex.1.q": {
+      "en": "When is my next transfusion?",
+      "te": "నా తర్వాతి ట్రాన్స్‌ఫ్యూజన్ ఎప్పుడు?",
+      "hi": "मेरा अगला ट्रांसफ़्यूजन कब है?"
+    },
+    "ex.1.c": {
+      "en": "Transfusion schedule",
+      "te": "ట్రాన్స్‌ఫ్యూజన్ తేదీలు",
+      "hi": "ट्रांसफ़्यूजन की तारीख"
+    },
+    "ex.2.q": {
+      "en": "When can I donate blood next?",
+      "te": "నేను మళ్ళీ ఎప్పుడు రక్తదానం చేయొచ్చు?",
+      "hi": "मैं अगली बार रक्तदान कब कर सकता हूँ?"
+    },
+    "ex.2.c": {
+      "en": "Donor eligibility",
+      "te": "దాత అర్హత",
+      "hi": "दाता की योग्यता"
+    },
+    "ex.3.q": {
+      "en": "Do I have a donation request?",
+      "te": "నాకు ఏదైనా డొనేషన్ రిక్వెస్ట్ ఉందా?",
+      "hi": "क्या मेरे लिए कोई डोनेशन रिक्वेस्ट है?"
+    },
+    "ex.3.c": {
+      "en": "Donation requests",
+      "te": "డొనేషన్ రిక్వెస్ట్‌లు",
+      "hi": "डोनेशन रिक्वेस्ट"
+    },
+    "ex.4.q": {
+      "en": "What is an HPLC test?",
+      "te": "HPLC టెస్ట్ అంటే ఏమిటి?",
+      "hi": "HPLC टेस्ट क्या है?"
+    },
+    "ex.4.c": {
+      "en": "Health information",
+      "te": "ఆరోగ్య సమాచారం",
+      "hi": "स्वास्थ्य जानकारी"
+    },
+    "ex.5.q": {
+      "en": "My child has a fever. Can we still do the transfusion?",
+      "te": "మా పాపకి జ్వరం ఉంది. ట్రాన్స్‌ఫ్యూజన్ చేయించవచ్చా?",
+      "hi": "मेरे बच्चे को बुखार है। क्या ट्रांसफ़्यूजन करवा सकते हैं?"
+    },
+    "ex.5.c": {
+      "en": "Shows the safety check",
+      "te": "భద్రతా తనిఖీ చూపిస్తుంది",
+      "hi": "सुरक्षा जाँच दिखाता है"
+    },
+    "help.title": {
+      "en": "Talk to a coordinator",
+      "te": "కోఆర్డినేటర్‌తో మాట్లాడండి",
+      "hi": "कोऑर्डिनेटर से बात करें"
+    },
+    "help.sub": {
+      "en": "A Blood Warriors coordinator replies on WhatsApp",
+      "te": "బ్లడ్ వారియర్స్ కోఆర్డినేటర్ వాట్సాప్‌లో జవాబిస్తారు",
+      "hi": "ब्लड वॉरियर्स कोऑर्डिनेटर व्हाट्सऐप पर जवाब देते हैं"
+    },
+    "checkcta.title": {
+      "en": "Already asked a coordinator?",
+      "te": "ఇప్పటికే కోఆర్డినేటర్‌ని అడిగారా?",
+      "hi": "कोऑर्डिनेटर से पहले ही पूछ चुके हैं?"
+    },
+    "checkcta.sub": {
+      "en": "Hear their reply with your reference code",
+      "te": "మీ రిఫరెన్స్ కోడ్‌తో వారి జవాబు వినండి",
+      "hi": "अपने रेफ़रेंस कोड से उनका जवाब सुनिए"
+    },
+    "checkcta.btn": {
+      "en": "Check my reply",
+      "te": "నా జవాబు చూడండి",
+      "hi": "मेरा जवाब देखें"
+    },
+    "listen.status": {
+      "en": "Recording",
+      "te": "రికార్డ్ అవుతోంది",
+      "hi": "रिकॉर्ड हो रहा है"
+    },
+    "listen.ready": {
+      "en": "Getting the mic ready...",
+      "te": "మైక్ సిద్ధం చేస్తున్నాను...",
+      "hi": "माइक तैयार कर रहा हूँ..."
+    },
+    "listen.title": {
+      "en": "Listening...",
+      "te": "వింటున్నాను...",
+      "hi": "सुन रहा हूँ..."
+    },
+    "listen.hint": {
+      "en": "Speak clearly. I will stop when you finish.",
+      "te": "స్పష్టంగా మాట్లాడండి. మీరు ఆపగానే నేను ఆగుతాను.",
+      "hi": "साफ़ बोलिए। आप रुकेंगे तो मैं भी रुक जाऊँगा।"
+    },
+    "listen.words": {
+      "en": "Your words",
+      "te": "మీ మాటలు",
+      "hi": "आपके शब्द"
+    },
+    "listen.placeholder": {
+      "en": "Your words will appear here when you finish speaking",
+      "te": "మీరు మాట్లాడటం ఆపాక మీ మాటలు ఇక్కడ కనిపిస్తాయి",
+      "hi": "बोलना खत्म होने पर आपके शब्द यहाँ दिखेंगे"
+    },
+    "listen.done": {
+      "en": "Done, get answer",
+      "te": "అయిపోయింది, జవాబు ఇవ్వండి",
+      "hi": "हो गया, जवाब दीजिए"
+    },
+    "listen.cancel": {
+      "en": "Cancel",
+      "te": "రద్దు చేయండి",
+      "hi": "रद्द करें"
+    },
+    "think.status": {
+      "en": "Thinking",
+      "te": "ఆలోచిస్తున్నాను",
+      "hi": "सोच रहा हूँ"
+    },
+    "think.title": {
+      "en": "Finding your answer...",
+      "te": "మీ జవాబు వెతుకుతున్నాను...",
+      "hi": "आपका जवाब ढूँढ रहा हूँ..."
+    },
+    "think.hint": {
+      "en": "Checking verified Blood Warriors information",
+      "te": "బ్లడ్ వారియర్స్ ధృవీకరించిన సమాచారం చూస్తున్నాను",
+      "hi": "ब्लड वॉरियर्स की जाँची हुई जानकारी देख रहा हूँ"
+    },
+    "think.heard": {
+      "en": "You said",
+      "te": "మీరు అన్నది",
+      "hi": "आपने कहा"
+    },
+    "answer.your_q": {
+      "en": "Your question",
+      "te": "మీ ప్రశ్న",
+      "hi": "आपका सवाल"
+    },
+    "answer.verified": {
+      "en": "Verified information",
+      "te": "ధృవీకరించిన సమాచారం",
+      "hi": "जाँची हुई जानकारी"
+    },
+    "answer.sample": {
+      "en": "Sample data",
+      "te": "నమూనా డేటా",
+      "hi": "नमूना डेटा"
+    },
+    "answer.sample_note": {
+      "en": "This answer uses a fictional sample family, not a real person's record.",
+      "te": "ఈ జవాబు కల్పిత నమూనా కుటుంబం వివరాలతో ఉంది, నిజమైన వ్యక్తి రికార్డు కాదు.",
+      "hi": "यह जवाब एक काल्पनिक नमूना परिवार पर आधारित है, किसी असली व्यक्ति का रिकॉर्ड नहीं।"
+    },
+    "answer.play": {
+      "en": "Play answer",
+      "te": "జవాబు వినండి",
+      "hi": "जवाब सुनिए"
+    },
+    "answer.no_audio": {
+      "en": "Audio is not available right now. Please read the answer.",
+      "te": "ఇప్పుడు ఆడియో అందుబాటులో లేదు. దయచేసి జవాబు చదవండి.",
+      "hi": "अभी ऑडियो उपलब्ध नहीं है। कृपया जवाब पढ़िए।"
+    },
+    "answer.again": {
+      "en": "Say it again",
+      "te": "మళ్ళీ చెప్పండి",
+      "hi": "फिर से बोलिए"
+    },
+    "answer.simpler": {
+      "en": "Say it simpler",
+      "te": "ఇంకా సులువుగా చెప్పండి",
+      "hi": "और आसान बोलिए"
+    },
+    "answer.simpler_chip": {
+      "en": "In simpler words",
+      "te": "సులువైన మాటల్లో",
+      "hi": "आसान शब्दों में"
+    },
+    "answer.simpler_fail": {
+      "en": "Sorry, I could not make it simpler right now.",
+      "te": "క్షమించండి, ఇప్పుడు ఇంకా సులువుగా చెప్పలేకపోయాను.",
+      "hi": "माफ़ कीजिए, अभी इसे और आसान नहीं कर सका।"
+    },
+    "answer.in_english": {
+      "en": "In English",
+      "te": "ఇంగ్లీష్‌లో",
+      "hi": "अंग्रेज़ी में"
+    },
+    "answer.source": {
+      "en": "Source: {source}",
+      "te": "మూలం: {source}",
+      "hi": "स्रोत: {source}"
+    },
+    "answer.ask_title": {
+      "en": "Ask another question",
+      "te": "ఇంకో ప్రశ్న అడగండి",
+      "hi": "दूसरा सवाल पूछिए"
+    },
+    "answer.ask_sub": {
+      "en": "Tap the mic to ask again",
+      "te": "మళ్ళీ అడగడానికి మైక్ నొక్కండి",
+      "hi": "फिर पूछने के लिए माइक दबाइए"
+    },
+    "clarify.chip": {
+      "en": "Please check",
+      "te": "దయచేసి చూడండి",
+      "hi": "कृपया देखिए"
+    },
+    "clarify.yes": {
+      "en": "Yes, that's it",
+      "te": "అవును, అదే",
+      "hi": "हाँ, यही"
+    },
+    "clarify.no": {
+      "en": "No, ask again",
+      "te": "కాదు, మళ్ళీ అడుగుతాను",
+      "hi": "नहीं, फिर पूछूँगा"
+    },
+    "clarify.say": {
+      "en": "Say yes or no",
+      "te": "అవును లేదా కాదు అని చెప్పండి",
+      "hi": "हाँ या नहीं बोलिए"
+    },
+    "clarify.say_sub": {
+      "en": "Or tap a button below",
+      "te": "లేదా కింద బటన్ నొక్కండి",
+      "hi": "या नीचे बटन दबाइए"
+    },
+    "fb.chip_care": {
+      "en": "Care safety check",
+      "te": "భద్రతా తనిఖీ",
+      "hi": "सुरक्षा जाँच"
+    },
+    "fb.chip_sent": {
+      "en": "Sent to a coordinator",
+      "te": "కోఆర్డినేటర్‌కు పంపబడింది",
+      "hi": "कोऑर्डिनेटर को भेजा गया"
+    },
+    "fb.title_urgent": {
+      "en": "Please talk to a coordinator now",
+      "te": "దయచేసి ఇప్పుడే కోఆర్డినేటర్‌తో మాట్లాడండి",
+      "hi": "कृपया अभी कोऑर्डिनेटर से बात करें"
+    },
+    "fb.title": {
+      "en": "I've sent your question to a coordinator",
+      "te": "మీ ప్రశ్నను కోఆర్డినేటర్‌కు పంపాను",
+      "hi": "मैंने आपका सवाल कोऑर्डिनेटर को भेज दिया है"
+    },
+    "fb.title_unsent": {
+      "en": "Sorry, I don't have a verified answer for this",
+      "te": "క్షమించండి, దీనికి నా దగ్గర ధృవీకరించిన జవాబు లేదు",
+      "hi": "माफ़ कीजिए, इसका जाँचा हुआ जवाब मेरे पास नहीं है"
+    },
+    "fb.ref_label": {
+      "en": "Your reference code",
+      "te": "మీ రిఫరెన్స్ కోడ్",
+      "hi": "आपका रेफ़रेंस कोड"
+    },
+    "fb.ref_hint": {
+      "en": "Keep this code. Use it to hear the coordinator's reply.",
+      "te": "ఈ కోడ్ గుర్తుంచుకోండి. కోఆర్డినేటర్ జవాబు వినడానికి ఇది కావాలి.",
+      "hi": "यह कोड संभालकर रखिए। कोऑर्डिनेटर का जवाब सुनने के लिए यह चाहिए।"
+    },
+    "fb.sent_title": {
+      "en": "Your question has been sent to the coordinator",
+      "te": "మీ ప్రశ్న కోఆర్డినేటర్‌కు చేరింది",
+      "hi": "आपका सवाल कोऑर्डिनेटर तक पहुँच गया है"
+    },
+    "fb.sent_sub": {
+      "en": "You won't need to repeat it",
+      "te": "మీరు మళ్ళీ చెప్పనవసరం లేదు",
+      "hi": "आपको दोबारा बताने की ज़रूरत नहीं"
+    },
+    "fb.listen": {
+      "en": "Listen",
+      "te": "వినండి",
+      "hi": "सुनिए"
+    },
+    "fb.team": {
+      "en": "Blood Warriors care team",
+      "te": "బ్లడ్ వారియర్స్ కేర్ టీమ్",
+      "hi": "ब्लड वॉरियर्स केयर टीम"
+    },
+    "fb.team_sub": {
+      "en": "Coordinators in Hyderabad",
+      "te": "హైదరాబాద్‌లోని కోఆర్డినేటర్లు",
+      "hi": "हैदराबाद के कोऑर्डिनेटर"
+    },
+    "fb.wa_note": {
+      "en": "Replies come on WhatsApp",
+      "te": "జవాబులు వాట్సాప్‌లో వస్తాయి",
+      "hi": "जवाब व्हाट्सऐप पर आते हैं"
+    },
+    "fb.hint": {
+      "en": "You can also ask about transfusion dates or where to donate.",
+      "te": "ట్రాన్స్‌ఫ్యూజన్ తేదీలు లేదా ఎక్కడ రక్తదానం చేయాలో కూడా అడగవచ్చు.",
+      "hi": "आप ट्रांसफ़्यूजन की तारीख या रक्तदान कहाँ करें, यह भी पूछ सकते हैं।"
+    },
+    "err.chip": {
+      "en": "Something went wrong",
+      "te": "ఏదో సమస్య వచ్చింది",
+      "hi": "कुछ गड़बड़ हुई"
+    },
+    "err.retry": {
+      "en": "Try again",
+      "te": "మళ్ళీ ప్రయత్నించండి",
+      "hi": "फिर से कोशिश करें"
+    },
+    "err.back": {
+      "en": "Go back",
+      "te": "వెనక్కి వెళ్ళండి",
+      "hi": "वापस जाएँ"
+    },
+    "err.mic_denied.title": {
+      "en": "I can't use the microphone",
+      "te": "మైక్రోఫోన్ వాడలేకపోతున్నాను",
+      "hi": "माइक्रोफ़ोन इस्तेमाल नहीं कर पा रहा"
+    },
+    "err.no_mic.title": {
+      "en": "No microphone found",
+      "te": "మైక్రోఫోన్ కనిపించలేదు",
+      "hi": "माइक्रोफ़ोन नहीं मिला"
+    },
+    "err.insecure.title": {
+      "en": "The microphone needs a safe link",
+      "te": "మైక్‌కు సురక్షితమైన లింక్ కావాలి",
+      "hi": "माइक के लिए सुरक्षित लिंक चाहिए"
+    },
+    "error.insecure": {
+      "en": "The browser only allows the microphone on a safe link. Please open this page with https, or as localhost on this computer.",
+      "te": "బ్రౌజర్ సురక్షితమైన లింక్‌లో మాత్రమే మైక్‌ను అనుమతిస్తుంది. దయచేసి ఈ పేజీని https తో, లేదా ఈ కంప్యూటర్‌లో localhost గా తెరవండి.",
+      "hi": "ब्राउज़र सिर्फ़ सुरक्षित लिंक पर माइक की अनुमति देता है। कृपया यह पेज https से, या इसी कंप्यूटर पर localhost से खोलें।"
+    },
+    "err.unsupported.title": {
+      "en": "This browser can't record",
+      "te": "ఈ బ్రౌజర్ రికార్డ్ చేయలేదు",
+      "hi": "यह ब्राउज़र रिकॉर्ड नहीं कर सकता"
+    },
+    "err.no_speech.title": {
+      "en": "I didn't hear anything",
+      "te": "నాకు ఏమీ వినిపించలేదు",
+      "hi": "मुझे कुछ सुनाई नहीं दिया"
+    },
+    "err.network.title": {
+      "en": "No connection",
+      "te": "కనెక్షన్ లేదు",
+      "hi": "कनेक्शन नहीं है"
+    },
+    "err.asr.title": {
+      "en": "I couldn't understand that",
+      "te": "నాకు అర్థం కాలేదు",
+      "hi": "मैं समझ नहीं पाया"
+    },
+    "error.mic_denied": {
+      "en": "Please allow the microphone for this page in your browser settings, then try again.",
+      "te": "దయచేసి బ్రౌజర్ సెట్టింగ్స్‌లో ఈ పేజీకి మైక్రోఫోన్ అనుమతి ఇచ్చి, మళ్ళీ ప్రయత్నించండి.",
+      "hi": "कृपया ब्राउज़र सेटिंग में इस पेज को माइक्रोफ़ोन की अनुमति दें, फिर कोशिश करें।"
+    },
+    "error.no_mic": {
+      "en": "I could not find a microphone on this device. Please connect one and try again.",
+      "te": "ఈ పరికరంలో మైక్రోఫోన్ కనిపించలేదు. దయచేసి ఒకటి కనెక్ట్ చేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "इस डिवाइस में माइक्रोफ़ोन नहीं मिला। कृपया एक जोड़ें और फिर कोशिश करें।"
+    },
+    "error.unsupported": {
+      "en": "This browser can't record audio. Please open this page in Chrome or Safari.",
+      "te": "ఈ బ్రౌజర్ ఆడియో రికార్డ్ చేయలేదు. దయచేసి ఈ పేజీని Chrome లేదా Safari లో తెరవండి.",
+      "hi": "यह ब्राउज़र ऑडियो रिकॉर्ड नहीं कर सकता। कृपया यह पेज Chrome या Safari में खोलें।"
+    },
+    "error.network": {
+      "en": "I can't reach the assistant right now. Please check your internet and try again.",
+      "te": "ఇప్పుడు అసిస్టెంట్‌ని చేరలేకపోతున్నాను. దయచేసి ఇంటర్నెట్ చూసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "अभी असिस्टेंट तक नहीं पहुँच पा रहा। कृपया इंटरनेट देखें और फिर कोशिश करें।"
+    },
+    "check.title": {
+      "en": "Check my reply",
+      "te": "నా జవాబు చూడండి",
+      "hi": "मेरा जवाब देखें"
+    },
+    "check.sub": {
+      "en": "Say your reference code, for example: B W 1 0 4 2",
+      "te": "మీ రిఫరెన్స్ కోడ్ చెప్పండి, ఉదాహరణకు: B W 1 0 4 2",
+      "hi": "अपना रेफ़रेंस कोड बोलिए, जैसे: B W 1 0 4 2"
+    },
+    "check.say": {
+      "en": "Tap and say your code",
+      "te": "నొక్కి మీ కోడ్ చెప్పండి",
+      "hi": "दबाकर अपना कोड बोलिए"
+    },
+    "check.say_sub": {
+      "en": "One letter or number at a time",
+      "te": "ఒక్కో అక్షరం లేదా అంకె విడిగా",
+      "hi": "एक-एक अक्षर या अंक करके"
+    },
+    "check.recent": {
+      "en": "Or tap one of your codes",
+      "te": "లేదా మీ కోడ్‌లలో ఒకటి నొక్కండి",
+      "hi": "या अपने कोड में से एक दबाइए"
+    },
+    "check.recent_none": {
+      "en": "Codes you get on this phone will appear here.",
+      "te": "ఈ ఫోన్‌లో మీకు వచ్చే కోడ్‌లు ఇక్కడ కనిపిస్తాయి.",
+      "hi": "इस फ़ोन पर मिले कोड यहाँ दिखेंगे।"
+    },
+    "check.asked_on": {
+      "en": "Asked {when}",
+      "te": "{when} అడిగారు",
+      "hi": "{when} पूछा"
+    },
+    "check.listening": {
+      "en": "Say your code now",
+      "te": "ఇప్పుడు మీ కోడ్ చెప్పండి",
+      "hi": "अब अपना कोड बोलिए"
+    },
+    "check.not_found": {
+      "en": "I couldn't find that code. Please say it again, one letter or number at a time.",
+      "te": "ఆ కోడ్ దొరకలేదు. దయచేసి ఒక్కో అక్షరం, అంకె విడిగా మళ్ళీ చెప్పండి.",
+      "hi": "वह कोड नहीं मिला। कृपया एक-एक अक्षर या अंक करके फिर से बोलिए।"
+    },
+    "check.not_found_title": {
+      "en": "I couldn't find that code",
+      "te": "ఆ కోడ్ దొరకలేదు",
+      "hi": "वह कोड नहीं मिला"
+    },
+    "check.heard": {
+      "en": "I heard: {heard}",
+      "te": "నాకు వినిపించింది: {heard}",
+      "hi": "मैंने सुना: {heard}"
+    },
+    "check.open": {
+      "en": "The coordinator has not replied to {ref} yet. Please check again later, or chat with them on WhatsApp.",
+      "te": "{ref} కి కోఆర్డినేటర్ ఇంకా జవాబు ఇవ్వలేదు. దయచేసి కొంతసేపటి తర్వాత మళ్ళీ చూడండి, లేదా వాట్సాప్‌లో వారితో చాట్ చేయండి.",
+      "hi": "{ref} का जवाब कोऑर्डिनेटर ने अभी नहीं दिया है। कृपया थोड़ी देर बाद फिर देखिए, या व्हाट्सऐप पर उनसे चैट कीजिए।"
+    },
+    "check.open_title": {
+      "en": "No reply yet",
+      "te": "ఇంకా జవాబు రాలేదు",
+      "hi": "अभी जवाब नहीं आया"
+    },
+    "check.open_chip": {
+      "en": "Waiting for coordinator",
+      "te": "కోఆర్డినేటర్ కోసం వేచి ఉంది",
+      "hi": "कोऑर्डिनेटर का इंतज़ार"
+    },
+    "check.replied_chip": {
+      "en": "Reply from your coordinator",
+      "te": "మీ కోఆర్డినేటర్ జవాబు",
+      "hi": "आपके कोऑर्डिनेटर का जवाब"
+    },
+    "check.closed": {
+      "en": "This question is closed.",
+      "te": "ఈ ప్రశ్న ముగిసింది.",
+      "hi": "यह सवाल बंद हो चुका है।"
+    },
+    "check.play": {
+      "en": "Play reply",
+      "te": "జవాబు వినండి",
+      "hi": "जवाब सुनिए"
+    },
+    "check.another": {
+      "en": "Check another code",
+      "te": "ఇంకో కోడ్ చూడండి",
+      "hi": "दूसरा कोड देखें"
+    },
+    "time.today": {
+      "en": "Today, {time}",
+      "te": "ఈ రోజు, {time}",
+      "hi": "आज, {time}"
+    },
+    "a11y.play": {
+      "en": "Play audio",
+      "te": "ఆడియో ప్లే చేయండి",
+      "hi": "ऑडियो चलाएँ"
+    },
+    "a11y.pause": {
+      "en": "Pause audio",
+      "te": "ఆడియో ఆపండి",
+      "hi": "ऑडियो रोकें"
+    },
+    "a11y.stop": {
+      "en": "Stop recording",
+      "te": "రికార్డింగ్ ఆపండి",
+      "hi": "रिकॉर्डिंग रोकें"
+    },
+    "dash.doc": {
+      "en": "Coordinator dashboard | Blood Warriors",
+      "te": "కోఆర్డినేటర్ డాష్‌బోర్డ్ | బ్లడ్ వారియర్స్",
+      "hi": "कोऑर्डिनेटर डैशबोर्ड | ब्लड वॉरियर्स"
+    },
+    "dash.sub": {
+      "en": "Coordinator dashboard",
+      "te": "కోఆర్డినేటర్ డాష్‌బోర్డ్",
+      "hi": "कोऑर्डिनेटर डैशबोर्ड"
+    },
+    "dash.signout": {
+      "en": "Sign out",
+      "te": "సైన్ అవుట్",
+      "hi": "साइन आउट"
+    },
+    "dash.staff_only": {
+      "en": "For Blood Warriors coordinators only",
+      "te": "బ్లడ్ వారియర్స్ కోఆర్డినేటర్‌లకు మాత్రమే",
+      "hi": "सिर्फ़ ब्लड वॉरियर्स कोऑर्डिनेटर के लिए"
+    },
+    "login.title": {
+      "en": "Coordinator sign in",
+      "te": "కోఆర్డినేటర్ సైన్ ఇన్",
+      "hi": "कोऑर्डिनेटर साइन इन"
+    },
+    "login.sub": {
+      "en": "Say your passcode, one number at a time",
+      "te": "మీ పాస్‌కోడ్‌ను ఒక్కో అంకె చొప్పున చెప్పండి",
+      "hi": "अपना पासकोड एक-एक अंक करके बोलें"
+    },
+    "login.say": {
+      "en": "Tap and say the passcode",
+      "te": "నొక్కి పాస్‌కోడ్ చెప్పండి",
+      "hi": "दबाएँ और पासकोड बोलें"
+    },
+    "login.keypad": {
+      "en": "Or tap the numbers",
+      "te": "లేదా అంకెలను నొక్కండి",
+      "hi": "या अंक दबाएँ"
+    },
+    "login.go": {
+      "en": "Sign in",
+      "te": "సైన్ ఇన్",
+      "hi": "साइन इन"
+    },
+    "login.delete": {
+      "en": "Delete last number",
+      "te": "చివరి అంకె తొలగించండి",
+      "hi": "आख़िरी अंक हटाएँ"
+    },
+    "login.entered": {
+      "en": "{n} numbers entered",
+      "te": "{n} అంకెలు నమోదయ్యాయి",
+      "hi": "{n} अंक डाले गए"
+    },
+    "login.checking": {
+      "en": "Checking the passcode...",
+      "te": "పాస్‌కోడ్ తనిఖీ చేస్తున్నాను...",
+      "hi": "पासकोड जाँच रहा हूँ..."
+    },
+    "login.wrong": {
+      "en": "That passcode did not match. Please try again.",
+      "te": "ఆ పాస్‌కోడ్ సరిపోలలేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "यह पासकोड मेल नहीं खाया। कृपया फिर से कोशिश करें।"
+    },
+    "login.no_digits": {
+      "en": "I did not hear any numbers. Please say the passcode one number at a time.",
+      "te": "నాకు అంకెలు వినిపించలేదు. దయచేసి పాస్‌కోడ్‌ను ఒక్కో అంకె చొప్పున చెప్పండి.",
+      "hi": "मुझे कोई अंक सुनाई नहीं दिया। कृपया पासकोड एक-एक अंक करके बोलें।"
+    },
+    "login.locked": {
+      "en": "Too many tries. Please wait a minute and try again.",
+      "te": "చాలా సార్లు ప్రయత్నించారు. దయచేసి ఒక నిమిషం ఆగి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "बहुत बार कोशिश हो गई। कृपया एक मिनट रुककर फिर कोशिश करें।"
+    },
+    "login.not_set": {
+      "en": "Coordinator sign in is not set up on this server yet.",
+      "te": "ఈ సర్వర్‌లో కోఆర్డినేటర్ సైన్ ఇన్ ఇంకా ఏర్పాటు చేయలేదు.",
+      "hi": "इस सर्वर पर कोऑर्डिनेटर साइन इन अभी सेट नहीं है।"
+    },
+    "login.ok": {
+      "en": "You are signed in.",
+      "te": "మీరు సైన్ ఇన్ అయ్యారు.",
+      "hi": "आप साइन इन हो गए हैं।"
+    },
+    "week.title": {
+      "en": "This week",
+      "te": "ఈ వారం",
+      "hi": "इस हफ़्ते"
+    },
+    "week.since": {
+      "en": "Since Monday {date}",
+      "te": "సోమవారం {date} నుండి",
+      "hi": "सोमवार {date} से"
+    },
+    "week.answered": {
+      "en": "Answered by the assistant",
+      "te": "అసిస్టెంట్ జవాబు ఇచ్చినవి",
+      "hi": "असिस्टेंट ने जवाब दिए"
+    },
+    "week.handed": {
+      "en": "Sent to coordinators",
+      "te": "కోఆర్డినేటర్‌లకు పంపినవి",
+      "hi": "कोऑर्डिनेटर को भेजे गए"
+    },
+    "week.replied": {
+      "en": "{n} replies sent",
+      "te": "{n} జవాబులు పంపారు",
+      "hi": "{n} जवाब भेजे गए"
+    },
+    "week.avg": {
+      "en": "Average reply time",
+      "te": "సగటు జవాబు సమయం",
+      "hi": "जवाब देने का औसत समय"
+    },
+    "week.avg_none": {
+      "en": "No replies yet",
+      "te": "ఇంకా జవాబులు లేవు",
+      "hi": "अभी कोई जवाब नहीं"
+    },
+    "week.langs": {
+      "en": "Languages used",
+      "te": "వాడిన భాషలు",
+      "hi": "इस्तेमाल हुई भाषाएँ"
+    },
+    "week.langs_none": {
+      "en": "No questions yet",
+      "te": "ఇంకా ప్రశ్నలు లేవు",
+      "hi": "अभी कोई सवाल नहीं"
+    },
+    "dur.min": {
+      "en": "{n} min",
+      "te": "{n} నిమి",
+      "hi": "{n} मिनट"
+    },
+    "dur.hr": {
+      "en": "{h} h {m} min",
+      "te": "{h} గం {m} నిమి",
+      "hi": "{h} घंटे {m} मिनट"
+    },
+    "dur.day": {
+      "en": "{d} days {h} h",
+      "te": "{d} రోజులు {h} గం",
+      "hi": "{d} दिन {h} घंटे"
+    },
+    "queue.title": {
+      "en": "Questions from caregivers",
+      "te": "సంరక్షకుల నుండి ప్రశ్నలు",
+      "hi": "देखभाल करने वालों के सवाल"
+    },
+    "queue.open": {
+      "en": "Waiting",
+      "te": "ఎదురుచూస్తున్నవి",
+      "hi": "इंतज़ार में"
+    },
+    "queue.replied": {
+      "en": "Replied",
+      "te": "జవాబిచ్చినవి",
+      "hi": "जवाब दिया"
+    },
+    "queue.closed": {
+      "en": "Closed",
+      "te": "ముగిసినవి",
+      "hi": "बंद"
+    },
+    "queue.refresh": {
+      "en": "Refresh",
+      "te": "రిఫ్రెష్",
+      "hi": "रीफ़्रेश"
+    },
+    "queue.loading": {
+      "en": "Loading questions...",
+      "te": "ప్రశ్నలు లోడ్ అవుతున్నాయి...",
+      "hi": "सवाल लोड हो रहे हैं..."
+    },
+    "queue.empty_open": {
+      "en": "No questions waiting. Every caregiver has a reply.",
+      "te": "ఎదురుచూస్తున్న ప్రశ్నలు లేవు. అందరికీ జవాబు అందింది.",
+      "hi": "कोई सवाल इंतज़ार में नहीं है। सबको जवाब मिल गया है।"
+    },
+    "queue.empty_replied": {
+      "en": "No replies yet.",
+      "te": "ఇంకా జవాబులు లేవు.",
+      "hi": "अभी कोई जवाब नहीं।"
+    },
+    "queue.empty_closed": {
+      "en": "Nothing is closed yet.",
+      "te": "ఇంకా ఏదీ ముగించలేదు.",
+      "hi": "अभी कुछ बंद नहीं हुआ।"
+    },
+    "queue.load_fail": {
+      "en": "Could not load the questions. Check the connection and tap Refresh.",
+      "te": "ప్రశ్నలు లోడ్ కాలేదు. కనెక్షన్ చూసి రిఫ్రెష్ నొక్కండి.",
+      "hi": "सवाल लोड नहीं हो पाए। कनेक्शन देखकर रीफ़्रेश दबाएँ।"
+    },
+    "ago.now": {
+      "en": "Just now",
+      "te": "ఇప్పుడే",
+      "hi": "अभी"
+    },
+    "ago.min": {
+      "en": "{n} min ago",
+      "te": "{n} నిమిషాల క్రితం",
+      "hi": "{n} मिनट पहले"
+    },
+    "ago.hr": {
+      "en": "{n} h ago",
+      "te": "{n} గంటల క్రితం",
+      "hi": "{n} घंटे पहले"
+    },
+    "ago.day": {
+      "en": "{n} days ago",
+      "te": "{n} రోజుల క్రితం",
+      "hi": "{n} दिन पहले"
+    },
+    "urg.high": {
+      "en": "Urgent",
+      "te": "అత్యవసరం",
+      "hi": "ज़रूरी"
+    },
+    "urg.medium": {
+      "en": "Reply today",
+      "te": "ఈ రోజే జవాబివ్వండి",
+      "hi": "आज जवाब दें"
+    },
+    "urg.low": {
+      "en": "Routine",
+      "te": "సాధారణం",
+      "hi": "सामान्य"
+    },
+    "reason.urgent": {
+      "en": "Medical or safety question",
+      "te": "వైద్య లేదా భద్రత ప్రశ్న",
+      "hi": "मेडिकल या सुरक्षा का सवाल"
+    },
+    "reason.low_confidence": {
+      "en": "No close match in the verified answers",
+      "te": "ధృవీకరించిన జవాబుల్లో దగ్గరి జవాబు లేదు",
+      "hi": "सत्यापित जवाबों में कोई मिलता-जुलता जवाब नहीं"
+    },
+    "reason.not_covered": {
+      "en": "Not in the verified answers",
+      "te": "ధృవీకరించిన జవాబుల్లో లేదు",
+      "hi": "सत्यापित जवाबों में नहीं है"
+    },
+    "reason.llm_error": {
+      "en": "The assistant could not answer",
+      "te": "అసిస్టెంట్ జవాబు ఇవ్వలేకపోయింది",
+      "hi": "असिस्टेंट जवाब नहीं दे पाया"
+    },
+    "req.asked": {
+      "en": "Caregiver asked",
+      "te": "సంరక్షకులు అడిగింది",
+      "hi": "देखभाल करने वाले ने पूछा"
+    },
+    "req.listen": {
+      "en": "Hear the question",
+      "te": "ప్రశ్న వినండి",
+      "hi": "सवाल सुनें"
+    },
+    "req.listen_tts": {
+      "en": "Hear the question, read aloud",
+      "te": "ప్రశ్న వినండి, చదివి వినిపిస్తుంది",
+      "hi": "सवाल सुनें, पढ़कर सुनाया जाएगा"
+    },
+    "req.reply": {
+      "en": "Reply by voice",
+      "te": "గొంతుతో జవాబివ్వండి",
+      "hi": "बोलकर जवाब दें"
+    },
+    "req.reply_change": {
+      "en": "Change the reply",
+      "te": "జవాబు మార్చండి",
+      "hi": "जवाब बदलें"
+    },
+    "req.close": {
+      "en": "Close",
+      "te": "ముగించండి",
+      "hi": "बंद करें"
+    },
+    "req.reopen": {
+      "en": "Reopen",
+      "te": "మళ్ళీ తెరవండి",
+      "hi": "फिर से खोलें"
+    },
+    "req.you_said": {
+      "en": "You said",
+      "te": "మీరు చెప్పింది",
+      "hi": "आपने कहा"
+    },
+    "req.they_hear": {
+      "en": "The caregiver hears, in {language}",
+      "te": "సంరక్షకులు {language}లో వింటారు",
+      "hi": "देखभाल करने वाले {language} में सुनेंगे"
+    },
+    "req.play_reply": {
+      "en": "Play the reply",
+      "te": "జవాబు వినండి",
+      "hi": "जवाब सुनें"
+    },
+    "req.replied_at": {
+      "en": "Replied {when}",
+      "te": "జవాబిచ్చారు: {when}",
+      "hi": "जवाब दिया: {when}"
+    },
+    "req.closed_toast": {
+      "en": "{ref} closed",
+      "te": "{ref} ముగించారు",
+      "hi": "{ref} बंद किया"
+    },
+    "req.reopened_toast": {
+      "en": "{ref} reopened",
+      "te": "{ref} మళ్ళీ తెరిచారు",
+      "hi": "{ref} फिर से खोला"
+    },
+    "req.no_summary": {
+      "en": "Summary not ready yet",
+      "te": "సారాంశం ఇంకా సిద్ధం కాలేదు",
+      "hi": "सारांश अभी तैयार नहीं"
+    },
+    "req.action_fail": {
+      "en": "That did not work. Please try again.",
+      "te": "అది పని చేయలేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "यह नहीं हो पाया। कृपया फिर से कोशिश करें।"
+    },
+    "reply.title": {
+      "en": "Reply to {ref}",
+      "te": "{ref}కు జవాబు",
+      "hi": "{ref} का जवाब"
+    },
+    "reply.say": {
+      "en": "Say your reply",
+      "te": "మీ జవాబు చెప్పండి",
+      "hi": "अपना जवाब बोलें"
+    },
+    "reply.hint": {
+      "en": "Speak in {mine}. The caregiver will hear it in {theirs}.",
+      "te": "{mine}లో మాట్లాడండి. సంరక్షకులు దీన్ని {theirs}లో వింటారు.",
+      "hi": "{mine} में बोलें। देखभाल करने वाले इसे {theirs} में सुनेंगे।"
+    },
+    "reply.stop": {
+      "en": "Finished speaking",
+      "te": "మాట్లాడటం అయిపోయింది",
+      "hi": "बोलना हो गया"
+    },
+    "reply.thinking": {
+      "en": "Understanding your reply...",
+      "te": "మీ జవాబును అర్థం చేసుకుంటున్నాను...",
+      "hi": "आपका जवाब समझ रहा हूँ..."
+    },
+    "reply.check": {
+      "en": "Check your reply",
+      "te": "మీ జవాబు సరిచూడండి",
+      "hi": "अपना जवाब जाँचें"
+    },
+    "reply.readback": {
+      "en": "I understood: {reply}. Should I send this to the caregiver?",
+      "te": "నేను అర్థం చేసుకుంది: {reply}. దీన్ని సంరక్షకులకు పంపనా?",
+      "hi": "मैंने समझा: {reply}। क्या मैं इसे देखभाल करने वाले को भेज दूँ?"
+    },
+    "reply.readback_label": {
+      "en": "Read back",
+      "te": "చదివి వినిపించడం",
+      "hi": "पढ़कर सुनाना"
+    },
+    "reply.confirm_hint": {
+      "en": "Say yes to send, no to cancel, or change to record again.",
+      "te": "పంపడానికి అవును అనండి, వద్దంటే కాదు అనండి, మళ్ళీ చెప్పాలంటే మార్చు అనండి.",
+      "hi": "भेजने के लिए हाँ बोलें, रद्द करने के लिए नहीं, दोबारा बोलने के लिए बदलो।"
+    },
+    "reply.confirm_say": {
+      "en": "Tap and say yes or no",
+      "te": "నొక్కి అవును లేదా కాదు అనండి",
+      "hi": "दबाएँ और हाँ या नहीं बोलें"
+    },
+    "reply.listening_yes": {
+      "en": "Listening for yes or no...",
+      "te": "అవును లేదా కాదు కోసం వింటున్నాను...",
+      "hi": "हाँ या नहीं सुन रहा हूँ..."
+    },
+    "reply.approve": {
+      "en": "Approve and send",
+      "te": "ఆమోదించి పంపండి",
+      "hi": "मंज़ूर करें और भेजें"
+    },
+    "reply.again": {
+      "en": "Record again",
+      "te": "మళ్ళీ రికార్డ్ చేయండి",
+      "hi": "फिर से रिकॉर्ड करें"
+    },
+    "reply.cancel": {
+      "en": "Cancel",
+      "te": "రద్దు చేయండి",
+      "hi": "रद्द करें"
+    },
+    "reply.sending": {
+      "en": "Sending...",
+      "te": "పంపుతున్నాను...",
+      "hi": "भेज रहा हूँ..."
+    },
+    "reply.sent_title": {
+      "en": "Reply sent",
+      "te": "జవాబు పంపారు",
+      "hi": "जवाब भेज दिया"
+    },
+    "reply.sent": {
+      "en": "Sent. The caregiver will hear your reply when they check {ref}.",
+      "te": "పంపాను. సంరక్షకులు {ref} తో చూసినప్పుడు మీ జవాబు వింటారు.",
+      "hi": "भेज दिया। देखभाल करने वाले {ref} से जाँचेंगे तो आपका जवाब सुनेंगे।"
+    },
+    "reply.not_sent": {
+      "en": "Not sent. Nothing was saved.",
+      "te": "పంపలేదు. ఏదీ సేవ్ కాలేదు.",
+      "hi": "नहीं भेजा। कुछ भी सेव नहीं हुआ।"
+    },
+    "reply.say_again": {
+      "en": "Please say yes or no.",
+      "te": "దయచేసి అవును లేదా కాదు అనండి.",
+      "hi": "कृपया हाँ या नहीं बोलें।"
+    },
+    "reply.translate_fail": {
+      "en": "I could not translate the reply right now. Please try again.",
+      "te": "ఇప్పుడు జవాబును అనువదించలేకపోయాను. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "अभी जवाब का अनुवाद नहीं हो पाया। कृपया फिर से कोशिश करें।"
+    },
+    "reply.done": {
+      "en": "Done",
+      "te": "పూర్తయింది",
+      "hi": "हो गया"
+    },
+    "langname.te": {
+      "en": "Telugu",
+      "te": "తెలుగు",
+      "hi": "तेलुगु"
+    },
+    "langname.hi": {
+      "en": "Hindi",
+      "te": "హిందీ",
+      "hi": "हिंदी"
+    },
+    "langname.en": {
+      "en": "English",
+      "te": "ఇంగ్లీష్",
+      "hi": "अंग्रेज़ी"
+    },
+    "dash.nav_label": {
+      "en": "Coordinator pages",
+      "te": "కోఆర్డినేటర్ పేజీలు",
+      "hi": "कोऑर्डिनेटर पेज"
+    },
+    "dash.nav_queue": {
+      "en": "Questions",
+      "te": "ప్రశ్నలు",
+      "hi": "सवाल"
+    },
+    "dash.nav_teach": {
+      "en": "Teach",
+      "te": "నేర్పండి",
+      "hi": "सिखाएँ"
+    },
+    "req.faq": {
+      "en": "Make this an FAQ",
+      "te": "దీన్ని FAQ గా చేయండి",
+      "hi": "इसे FAQ बनाएँ"
+    },
+    "teach.doc": {
+      "en": "Teach the assistant | Blood Warriors",
+      "te": "అసిస్టెంట్‌కు నేర్పండి | బ్లడ్ వారియర్స్",
+      "hi": "असिस्टेंट को सिखाएँ | ब्लड वॉरियर्स"
+    },
+    "teach.sub": {
+      "en": "Teach the assistant",
+      "te": "అసిస్టెంట్‌కు నేర్పండి",
+      "hi": "असिस्टेंट को सिखाएँ"
+    },
+    "teach.title": {
+      "en": "Teach the assistant",
+      "te": "అసిస్టెంట్‌కు నేర్పండి",
+      "hi": "असिस्टेंट को सिखाएँ"
+    },
+    "teach.intro": {
+      "en": "Say a question and its answer. I will read it back and save it only when you say yes.",
+      "te": "ఒక ప్రశ్న, దాని జవాబు చెప్పండి. నేను మళ్ళీ చదివి వినిపిస్తాను, మీరు అవును అంటేనే సేవ్ చేస్తాను.",
+      "hi": "एक सवाल और उसका जवाब बोलें। मैं उसे पढ़कर सुनाऊँगा और आपके हाँ कहने पर ही सेव करूँगा।"
+    },
+    "teach.say": {
+      "en": "Tap and teach an answer",
+      "te": "నొక్కి ఒక జవాబు నేర్పండి",
+      "hi": "दबाएँ और एक जवाब सिखाएँ"
+    },
+    "teach.mic_hint": {
+      "en": "Say the question first, then the answer",
+      "te": "ముందు ప్రశ్న, తర్వాత జవాబు చెప్పండి",
+      "hi": "पहले सवाल, फिर जवाब बोलें"
+    },
+    "teach.tips_title": {
+      "en": "You can say",
+      "te": "మీరు ఇలా చెప్పవచ్చు",
+      "hi": "आप ऐसे बोल सकते हैं"
+    },
+    "teach.tip_new": {
+      "en": "A new question, then its answer",
+      "te": "ఒక కొత్త ప్రశ్న, తర్వాత దాని జవాబు",
+      "hi": "एक नया सवाल, फिर उसका जवाब"
+    },
+    "teach.tip_edit": {
+      "en": "Which question to change, and the new answer",
+      "te": "ఏ ప్రశ్న మార్చాలి, కొత్త జవాబు ఏమిటి",
+      "hi": "कौन सा सवाल बदलना है, और नया जवाब"
+    },
+    "teach.tip_undo": {
+      "en": "\"Undo the last change\"",
+      "te": "\"చివరి మార్పు వెనక్కి తీసుకో\"",
+      "hi": "\"पिछला बदलाव वापस लो\""
+    },
+    "teach.listen_prompt": {
+      "en": "Say the question, then the answer",
+      "te": "ప్రశ్న, తర్వాత జవాబు చెప్పండి",
+      "hi": "सवाल, फिर जवाब बोलें"
+    },
+    "teach.listen_hint": {
+      "en": "Or say what to change. Take your time, then tap Finished speaking.",
+      "te": "లేదా ఏమి మార్చాలో చెప్పండి. నెమ్మదిగా చెప్పి, మాట్లాడటం అయిపోయింది నొక్కండి.",
+      "hi": "या बताएँ क्या बदलना है। आराम से बोलें, फिर बोलना पूरा हुआ दबाएँ।"
+    },
+    "teach.thinking": {
+      "en": "Writing down what you said...",
+      "te": "మీరు చెప్పింది రాసుకుంటున్నాను...",
+      "hi": "आपकी बात लिख रहा हूँ..."
+    },
+    "teach.faq_thinking": {
+      "en": "Turning {ref} into an FAQ...",
+      "te": "{ref} ను FAQ గా మారుస్తున్నాను...",
+      "hi": "{ref} को FAQ बना रहा हूँ..."
+    },
+    "teach.check": {
+      "en": "Check before saving",
+      "te": "సేవ్ చేసే ముందు చూడండి",
+      "hi": "सेव करने से पहले जाँचें"
+    },
+    "teach.kind_new": {
+      "en": "New question",
+      "te": "కొత్త ప్రశ్న",
+      "hi": "नया सवाल"
+    },
+    "teach.kind_edit": {
+      "en": "Change to an answer",
+      "te": "జవాబులో మార్పు",
+      "hi": "जवाब में बदलाव"
+    },
+    "teach.kind_undo": {
+      "en": "Undo the last change",
+      "te": "చివరి మార్పు వెనక్కి",
+      "hi": "पिछला बदलाव वापस"
+    },
+    "teach.q_label": {
+      "en": "Question",
+      "te": "ప్రశ్న",
+      "hi": "सवाल"
+    },
+    "teach.a_label": {
+      "en": "Answer",
+      "te": "జవాబు",
+      "hi": "जवाब"
+    },
+    "teach.before": {
+      "en": "It says now",
+      "te": "ఇప్పుడు ఇలా ఉంది",
+      "hi": "अभी ऐसा है"
+    },
+    "teach.after": {
+      "en": "After the change",
+      "te": "మార్పు తర్వాత",
+      "hi": "बदलाव के बाद"
+    },
+    "teach.phrasings": {
+      "en": "Other ways people ask",
+      "te": "ప్రజలు అడిగే ఇతర విధాలు",
+      "hi": "लोग ऐसे भी पूछते हैं"
+    },
+    "teach.category": {
+      "en": "Topic",
+      "te": "విషయం",
+      "hi": "विषय"
+    },
+    "teach.from_ref": {
+      "en": "From {ref}",
+      "te": "{ref} నుండి",
+      "hi": "{ref} से"
+    },
+    "teach.to_coord_note": {
+      "en": "For safety, questions like this always go to a coordinator first, so the assistant will not speak this answer.",
+      "te": "భద్రత కోసం, ఇలాంటి ప్రశ్నలు ఎప్పుడూ ముందుగా కోఆర్డినేటర్‌కు వెళ్తాయి. అందుకే అసిస్టెంట్ ఈ జవాబు చెప్పదు.",
+      "hi": "सुरक्षा के लिए ऐसे सवाल हमेशा पहले कोऑर्डिनेटर के पास जाते हैं, इसलिए असिस्टेंट यह जवाब नहीं बोलेगा।"
+    },
+    "teach.undo_was_new": {
+      "en": "This removes the question it added:",
+      "te": "ఇది జోడించిన ఈ ప్రశ్నను తీసేస్తుంది:",
+      "hi": "यह जोड़ा गया यह सवाल हटा देगा:"
+    },
+    "teach.undo_was_edit": {
+      "en": "This puts back the earlier answer to:",
+      "te": "ఈ ప్రశ్నకు పాత జవాబును తిరిగి పెడుతుంది:",
+      "hi": "इस सवाल का पुराना जवाब वापस लगाएगा:"
+    },
+    "teach.readback_label": {
+      "en": "Read back",
+      "te": "మళ్ళీ చదివి వినిపించడం",
+      "hi": "पढ़कर सुनाना"
+    },
+    "teach.approve": {
+      "en": "Approve and save",
+      "te": "ఆమోదించి సేవ్ చేయండి",
+      "hi": "मंज़ूर करें और सेव करें"
+    },
+    "teach.approve_undo": {
+      "en": "Undo it",
+      "te": "వెనక్కి తీసుకోండి",
+      "hi": "वापस लें"
+    },
+    "teach.saving": {
+      "en": "Saving in every language...",
+      "te": "అన్ని భాషల్లో సేవ్ చేస్తున్నాను...",
+      "hi": "हर भाषा में सेव कर रहा हूँ..."
+    },
+    "teach.saved_title": {
+      "en": "Saved",
+      "te": "సేవ్ అయింది",
+      "hi": "सेव हो गया"
+    },
+    "teach.undone_title": {
+      "en": "Undone",
+      "te": "వెనక్కి తీసుకున్నాం",
+      "hi": "वापस ले लिया"
+    },
+    "teach.undo_btn": {
+      "en": "Undo last change",
+      "te": "చివరి మార్పు వెనక్కి",
+      "hi": "पिछला बदलाव वापस लें"
+    },
+    "teach.history_title": {
+      "en": "Recent changes",
+      "te": "ఇటీవలి మార్పులు",
+      "hi": "हाल के बदलाव"
+    },
+    "teach.history_empty": {
+      "en": "No changes yet. What you teach will show here.",
+      "te": "ఇంకా మార్పులు లేవు. మీరు నేర్పినవి ఇక్కడ కనిపిస్తాయి.",
+      "hi": "अभी कोई बदलाव नहीं। आप जो सिखाएँगे वह यहाँ दिखेगा।"
+    },
+    "teach.history_fail": {
+      "en": "Could not load recent changes.",
+      "te": "ఇటీవలి మార్పులు చూపించలేకపోయాను.",
+      "hi": "हाल के बदलाव नहीं दिखा सका।"
+    },
+    "teach.count": {
+      "en": "The assistant knows {n} answers",
+      "te": "అసిస్టెంట్‌కు {n} జవాబులు తెలుసు",
+      "hi": "असिस्टेंट को {n} जवाब पता हैं"
+    },
+    "teach.act_create": {
+      "en": "Added",
+      "te": "జోడించారు",
+      "hi": "जोड़ा"
+    },
+    "teach.act_edit": {
+      "en": "Changed",
+      "te": "మార్చారు",
+      "hi": "बदला"
+    },
+    "teach.act_undo": {
+      "en": "Undid a change",
+      "te": "ఒక మార్పు వెనక్కి తీసుకున్నారు",
+      "hi": "एक बदलाव वापस लिया"
+    },
+    "teach.undone_tag": {
+      "en": "Undone",
+      "te": "వెనక్కి తీసుకున్నారు",
+      "hi": "वापस लिया गया"
+    },
+    "teach.translate_fail": {
+      "en": "I could not translate it just now. Your draft is kept, so please tap Approve again.",
+      "te": "ఇప్పుడు అనువదించలేకపోయాను. మీ డ్రాఫ్ట్ ఉంచాను, దయచేసి మళ్ళీ ఆమోదించండి నొక్కండి.",
+      "hi": "अभी अनुवाद नहीं कर सका। आपका ड्राफ़्ट रखा है, कृपया फिर से मंज़ूर करें दबाएँ।"
+    },
+    "teach.save_fail": {
+      "en": "I could not save it just now. Your draft is kept, so please tap Approve again.",
+      "te": "ఇప్పుడు సేవ్ చేయలేకపోయాను. మీ డ్రాఫ్ట్ ఉంచాను, దయచేసి మళ్ళీ ఆమోదించండి నొక్కండి.",
+      "hi": "अभी सेव नहीं कर सका। आपका ड्राफ़्ट रखा है, कृपया फिर से मंज़ूर करें दबाएँ।"
+    },
+    "teach.error": {
+      "en": "I could not understand that just now. Please try again.",
+      "te": "ఇప్పుడు అది అర్థం చేసుకోలేకపోయాను. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "अभी यह समझ नहीं सका। कृपया फिर से कोशिश करें।"
+    },
+    "teach.readback_new": {
+      "en": "I understood a new question. Question: {question} Answer: {answer} Should I save this?",
+      "te": "కొత్త ప్రశ్న అర్థమైంది. ప్రశ్న: {question} జవాబు: {answer} దీన్ని సేవ్ చేయమంటారా?",
+      "hi": "मैंने एक नया सवाल समझा। सवाल: {question} जवाब: {answer} क्या मैं इसे सेव करूँ?"
+    },
+    "teach.readback_edit": {
+      "en": "I understood a change to an answer. Question: {question} Answer: {answer} Should I save this?",
+      "te": "జవాబులో మార్పు అర్థమైంది. ప్రశ్న: {question} జవాబు: {answer} దీన్ని సేవ్ చేయమంటారా?",
+      "hi": "मैंने जवाब में बदलाव समझा। सवाल: {question} जवाब: {answer} क्या मैं इसे सेव करूँ?"
+    },
+    "teach.readback_undo_new": {
+      "en": "The last change added this question: {question} Should I undo it?",
+      "te": "చివరి మార్పులో ఈ ప్రశ్న జోడించారు: {question} దాన్ని వెనక్కి తీసుకోమంటారా?",
+      "hi": "पिछले बदलाव में यह सवाल जोड़ा गया था: {question} क्या मैं इसे वापस ले लूँ?"
+    },
+    "teach.readback_undo_edit": {
+      "en": "The last change updated this question: {question} Should I undo it and put back the earlier answer?",
+      "te": "చివరి మార్పులో ఈ ప్రశ్న మార్చారు: {question} దాన్ని వెనక్కి తీసుకుని పాత జవాబు పెట్టమంటారా?",
+      "hi": "पिछले बदलाव में यह सवाल बदला गया था: {question} क्या मैं इसे वापस लेकर पुराना जवाब लगा दूँ?"
+    },
+    "teach.nothing_to_undo": {
+      "en": "There is no change to undo.",
+      "te": "వెనక్కి తీసుకోవడానికి ఏ మార్పూ లేదు.",
+      "hi": "वापस लेने के लिए कोई बदलाव नहीं है।"
+    },
+    "teach.no_reply": {
+      "en": "This question has no reply yet. Reply to the caregiver first, then make it an FAQ.",
+      "te": "ఈ ప్రశ్నకు ఇంకా జవాబు లేదు. ముందు కేర్‌గివర్‌కు జవాబు ఇచ్చి, తర్వాత FAQ గా చేయండి.",
+      "hi": "इस सवाल का अभी जवाब नहीं है। पहले देखभाल करने वाले को जवाब दें, फिर इसे FAQ बनाएँ।"
+    },
+    "teach.no_calls": {
+      "en": "Blood Warriors asked for no phone calls. Please say the answer again without asking people to call.",
+      "te": "బ్లడ్ వారియర్స్ ఫోన్ కాల్స్ వద్దన్నారు. దయచేసి ఫోన్ చేయమని చెప్పకుండా జవాబు మళ్ళీ చెప్పండి.",
+      "hi": "ब्लड वॉरियर्स ने फ़ोन कॉल के लिए मना किया है। कृपया कॉल करने को कहे बिना जवाब फिर से बोलें।"
+    },
+    "teach.unclear": {
+      "en": "I could not find a question and an answer. Please say the question first, then the answer.",
+      "te": "నాకు ప్రశ్న, జవాబు రెండూ దొరకలేదు. దయచేసి ముందు ప్రశ్న, తర్వాత జవాబు చెప్పండి.",
+      "hi": "मुझे सवाल और जवाब दोनों नहीं मिले। कृपया पहले सवाल, फिर जवाब बोलें।"
+    },
+    "teach.faq_unclear": {
+      "en": "I could not make a general FAQ from this reply. You can say a general question and its answer instead.",
+      "te": "ఈ జవాబు నుండి అందరికీ పనికొచ్చే FAQ చేయలేకపోయాను. బదులుగా ఒక సాధారణ ప్రశ్న, దాని జవాబు చెప్పవచ్చు.",
+      "hi": "इस जवाब से सबके काम का FAQ नहीं बना सका। इसके बजाय आप एक आम सवाल और उसका जवाब बोल सकते हैं।"
+    },
+    "teach.confirm_hint": {
+      "en": "Say yes to save, no to cancel, or change to say it again.",
+      "te": "సేవ్ చేయడానికి అవును అనండి, వద్దంటే కాదు అనండి, మళ్ళీ చెప్పాలంటే మార్చు అనండి.",
+      "hi": "सेव करने के लिए हाँ बोलें, रद्द करने के लिए नहीं, या फिर से बोलने के लिए बदलो बोलें।"
+    },
+    "teach.draft_gone": {
+      "en": "That draft is no longer here. Please say it again.",
+      "te": "ఆ డ్రాఫ్ట్ ఇప్పుడు లేదు. దయచేసి మళ్ళీ చెప్పండి.",
+      "hi": "वह ड्राफ़्ट अब नहीं है। कृपया फिर से बोलें।"
+    },
+    "teach.not_saved": {
+      "en": "Okay, I did not save it.",
+      "te": "సరే, నేను సేవ్ చేయలేదు.",
+      "hi": "ठीक है, मैंने सेव नहीं किया।"
+    },
+    "teach.not_undone": {
+      "en": "Okay, nothing was undone.",
+      "te": "సరే, ఏదీ వెనక్కి తీసుకోలేదు.",
+      "hi": "ठीक है, कुछ भी वापस नहीं लिया।"
+    },
+    "teach.stale": {
+      "en": "Something changed in the meantime, so I did not save. Please try again.",
+      "te": "ఈలోగా ఏదో మారింది, అందుకే సేవ్ చేయలేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+      "hi": "इस बीच कुछ बदल गया, इसलिए सेव नहीं किया। कृपया फिर से कोशिश करें।"
+    },
+    "teach.undone": {
+      "en": "Done. The last change is undone.",
+      "te": "అయిపోయింది. చివరి మార్పు వెనక్కి తీసుకున్నాను.",
+      "hi": "हो गया। पिछला बदलाव वापस ले लिया।"
+    },
+    "teach.saved": {
+      "en": "Saved. The assistant can answer this question now, in Telugu, Hindi and English.",
+      "te": "సేవ్ అయింది. అసిస్టెంట్ ఇప్పుడు ఈ ప్రశ్నకు తెలుగు, హిందీ, ఇంగ్లీష్‌లో జవాబు చెప్పగలదు.",
+      "hi": "सेव हो गया। असिस्टेंट अब इस सवाल का जवाब तेलुगु, हिंदी और अंग्रेज़ी में दे सकता है।"
+    },
+    "teach.updated": {
+      "en": "Saved. The assistant now gives the new answer, in Telugu, Hindi and English.",
+      "te": "సేవ్ అయింది. అసిస్టెంట్ ఇప్పుడు కొత్త జవాబు తెలుగు, హిందీ, ఇంగ్లీష్‌లో చెబుతుంది.",
+      "hi": "सेव हो गया। असिस्टेंट अब नया जवाब तेलुगु, हिंदी और अंग्रेज़ी में देगा।"
+    },
+    "cat.transfusion_schedule": {
+      "en": "Transfusion schedule",
+      "te": "ట్రాన్స్‌ఫ్యూజన్ షెడ్యూల్",
+      "hi": "ट्रांसफ़्यूजन का समय"
+    },
+    "cat.donor_eligibility": {
+      "en": "Who can donate",
+      "te": "ఎవరు రక్తదానం చేయవచ్చు",
+      "hi": "कौन रक्तदान कर सकता है"
+    },
+    "cat.donation_request": {
+      "en": "Asking for blood",
+      "te": "రక్తం కోసం అభ్యర్థన",
+      "hi": "खून के लिए अनुरोध"
+    },
+    "cat.hplc_testing": {
+      "en": "HPLC testing",
+      "te": "HPLC టెస్ట్",
+      "hi": "HPLC जाँच"
+    },
+    "cat.general": {
+      "en": "General",
+      "te": "సాధారణం",
+      "hi": "सामान्य"
+    }
+  }
+}

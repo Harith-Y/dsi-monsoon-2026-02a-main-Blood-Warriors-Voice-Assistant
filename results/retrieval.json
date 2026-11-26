@@ -1,0 +1,1841 @@
+{
+  "summary": {
+    "in_scope": {
+      "n": 58,
+      "hit@1": 0.81,
+      "hit@3": 0.879,
+      "mrr": 0.845
+    },
+    "by_set": {
+      "holdout": {
+        "n": 10,
+        "hit@1": 0.8,
+        "hit@3": 0.8,
+        "mrr": 0.8
+      },
+      "kb15": {
+        "n": 22,
+        "hit@1": 0.682,
+        "hit@3": 0.818,
+        "mrr": 0.75
+      },
+      "main": {
+        "n": 26,
+        "hit@1": 0.923,
+        "hit@3": 0.962,
+        "mrr": 0.942
+      }
+    },
+    "by_variant": {
+      "code_mixed": {
+        "n": 24,
+        "hit@1": 0.792,
+        "hit@3": 0.917,
+        "mrr": 0.854
+      },
+      "informal": {
+        "n": 13,
+        "hit@1": 0.846,
+        "hit@3": 0.846,
+        "mrr": 0.846
+      },
+      "rephrase": {
+        "n": 18,
+        "hit@1": 0.778,
+        "hit@3": 0.833,
+        "mrr": 0.806
+      },
+      "telugu": {
+        "n": 3,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "mrr": 1.0
+      }
+    },
+    "misses_at_1": [
+      {
+        "id": "q11",
+        "expected": "elig-03",
+        "got": "elig-17"
+      },
+      {
+        "id": "q22",
+        "expected": "gen-01",
+        "got": "gen-07"
+      },
+      {
+        "id": "q39",
+        "expected": "elig-03",
+        "got": "elig-19"
+      },
+      {
+        "id": "q43",
+        "expected": "hplc-03",
+        "got": "elig-21"
+      },
+      {
+        "id": "q49",
+        "expected": "elig-06",
+        "got": "elig-17"
+      },
+      {
+        "id": "q51",
+        "expected": "elig-08",
+        "got": "elig-11"
+      },
+      {
+        "id": "q52",
+        "expected": "elig-09",
+        "got": "elig-05"
+      },
+      {
+        "id": "q53",
+        "expected": "elig-10",
+        "got": "elig-11"
+      },
+      {
+        "id": "q57",
+        "expected": "elig-14",
+        "got": "elig-02"
+      },
+      {
+        "id": "q58",
+        "expected": "elig-15",
+        "got": "elig-05"
+      },
+      {
+        "id": "q66",
+        "expected": "hplc-04",
+        "got": "hplc-01"
+      }
+    ],
+    "scores": {
+      "in_scope_correct_top1_min": 0.584,
+      "in_scope_correct_top1_median": 0.883,
+      "out_of_scope_or_medical_top_max": 0.998,
+      "out_of_scope_or_medical_top": {
+        "q27": 0.575,
+        "q28": 0.452,
+        "q29": 0.606,
+        "q30": 0.588,
+        "q31": 0.618,
+        "q32": 0.756,
+        "q33": 0.585,
+        "q34": 0.576,
+        "q35": 0.662,
+        "q46": 0.723,
+        "q47": 0.711,
+        "q70": 0.998,
+        "q71": 0.808
+      }
+    },
+    "answer_threshold": 0.73,
+    "model": "sentence-transformers/LaBSE"
+  },
+  "results": [
+    {
+      "id": "q01",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "మా బాబుకి మళ్ళీ రక్తం ఎక్కించేది ఏ రోజు?",
+      "expected_kb_id": "sched-01",
+      "rank": 1,
+      "top_score": 0.772,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.772
+        },
+        {
+          "id": "gen-03",
+          "score": 0.712
+        },
+        {
+          "id": "sched-03",
+          "score": 0.663
+        }
+      ],
+      "retrieve_ms": 286
+    },
+    {
+      "id": "q02",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Next transfusion eppudu?",
+      "expected_kb_id": "sched-01",
+      "rank": 1,
+      "top_score": 0.908,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.908
+        },
+        {
+          "id": "sched-03",
+          "score": 0.801
+        },
+        {
+          "id": "sched-04",
+          "score": 0.784
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q03",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ డేట్ ఎప్పుడు, ఏ హాస్పిటల్?",
+      "expected_kb_id": "sched-01",
+      "rank": 1,
+      "top_score": 0.798,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.798
+        },
+        {
+          "id": "sched-02",
+          "score": 0.773
+        },
+        {
+          "id": "elig-15",
+          "score": 0.68
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q04",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "ఆ రోజు నేను రాలేను, ట్రాన్స్‌ఫ్యూజన్ వేరే రోజుకి మార్చగలమా?",
+      "expected_kb_id": "sched-02",
+      "rank": 1,
+      "top_score": 0.881,
+      "top_hits": [
+        {
+          "id": "sched-02",
+          "score": 0.881
+        },
+        {
+          "id": "sched-01",
+          "score": 0.702
+        },
+        {
+          "id": "sched-04",
+          "score": 0.695
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q05",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Thalassemia pillalaki entha frequent ga transfusion kavali?",
+      "expected_kb_id": "sched-03",
+      "rank": 1,
+      "top_score": 0.783,
+      "top_hits": [
+        {
+          "id": "sched-03",
+          "score": 0.783
+        },
+        {
+          "id": "gen-08",
+          "score": 0.763
+        },
+        {
+          "id": "elig-04",
+          "score": 0.762
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q06",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "ట్రాన్స్‌ఫ్యూజన్‌కి వెళ్ళేటప్పుడు ఏం పట్టుకెళ్ళాలి?",
+      "expected_kb_id": "sched-04",
+      "rank": 1,
+      "top_score": 0.913,
+      "top_hits": [
+        {
+          "id": "sched-04",
+          "score": 0.913
+        },
+        {
+          "id": "sched-01",
+          "score": 0.698
+        },
+        {
+          "id": "req-03",
+          "score": 0.642
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q07",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Nenu blood donate cheyacha? Last time July lo ichanu.",
+      "expected_kb_id": "elig-01",
+      "rank": 1,
+      "top_score": 0.82,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.82
+        },
+        {
+          "id": "elig-07",
+          "score": 0.768
+        },
+        {
+          "id": "elig-11",
+          "score": 0.729
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q08",
+      "set": "main",
+      "variant_type": "telugu",
+      "question": "జూలైలో రక్తదానం చేశాను, ఇప్పుడు మళ్ళీ ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-01",
+      "rank": 1,
+      "top_score": 0.873,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.873
+        },
+        {
+          "id": "elig-06",
+          "score": 0.727
+        },
+        {
+          "id": "elig-12",
+          "score": 0.723
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q09",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "ఒకసారి రక్తం ఇచ్చాక మళ్ళీ ఇవ్వడానికి ఎన్ని నెలలు ఆగాలి?",
+      "expected_kb_id": "elig-02",
+      "rank": 1,
+      "top_score": 0.906,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.906
+        },
+        {
+          "id": "sched-03",
+          "score": 0.829
+        },
+        {
+          "id": "sched-01",
+          "score": 0.729
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q10",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Women ki blood donation gap enni days?",
+      "expected_kb_id": "elig-02",
+      "rank": 1,
+      "top_score": 0.805,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.805
+        },
+        {
+          "id": "elig-07",
+          "score": 0.774
+        },
+        {
+          "id": "elig-03",
+          "score": 0.714
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q11",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "నాకు 17 ఏళ్ళు, నేను రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-03",
+      "rank": null,
+      "top_score": 0.802,
+      "top_hits": [
+        {
+          "id": "elig-17",
+          "score": 0.802
+        },
+        {
+          "id": "elig-19",
+          "score": 0.775
+        },
+        {
+          "id": "elig-18",
+          "score": 0.758
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q12",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "బరువు తక్కువ ఉంటే బ్లడ్ ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-03",
+      "rank": 1,
+      "top_score": 0.958,
+      "top_hits": [
+        {
+          "id": "elig-03",
+          "score": 0.958
+        },
+        {
+          "id": "elig-18",
+          "score": 0.836
+        },
+        {
+          "id": "elig-08",
+          "score": 0.815
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q13",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Naaku thalassemia minor undi, blood donate cheyocha?",
+      "expected_kb_id": "elig-04",
+      "rank": 1,
+      "top_score": 0.96,
+      "top_hits": [
+        {
+          "id": "elig-04",
+          "score": 0.96
+        },
+        {
+          "id": "elig-11",
+          "score": 0.83
+        },
+        {
+          "id": "elig-14",
+          "score": 0.787
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q14",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "ఎవరికైనా నా బ్లడ్ కావాలని రిక్వెస్ట్ వచ్చిందా?",
+      "expected_kb_id": "req-01",
+      "rank": 1,
+      "top_score": 1.013,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 1.013
+        },
+        {
+          "id": "elig-18",
+          "score": 0.654
+        },
+        {
+          "id": "elig-03",
+          "score": 0.647
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q15",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Naku emaina donation request vachinda?",
+      "expected_kb_id": "req-01",
+      "rank": 1,
+      "top_score": 0.904,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 0.904
+        },
+        {
+          "id": "elig-01",
+          "score": 0.779
+        },
+        {
+          "id": "req-02",
+          "score": 0.774
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q16",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "ఈసారి నేను డొనేట్ చేయలేను, ఎవరికి చెప్పాలి?",
+      "expected_kb_id": "req-02",
+      "rank": 1,
+      "top_score": 0.791,
+      "top_hits": [
+        {
+          "id": "req-02",
+          "score": 0.791
+        },
+        {
+          "id": "gen-04",
+          "score": 0.714
+        },
+        {
+          "id": "elig-01",
+          "score": 0.598
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q17",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "డొనేషన్ ముందు ఏమైనా తినాలా?",
+      "expected_kb_id": "req-03",
+      "rank": 1,
+      "top_score": 0.773,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.773
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.636
+        },
+        {
+          "id": "req-01",
+          "score": 0.612
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q18",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "HPLC test ante enti?",
+      "expected_kb_id": "hplc-01",
+      "rank": 1,
+      "top_score": 0.965,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 0.965
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.876
+        },
+        {
+          "id": "gen-06",
+          "score": 0.71
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q19",
+      "set": "main",
+      "variant_type": "telugu",
+      "question": "హెచ్‌పీఎల్‌సీ పరీక్ష ఎందుకు చేస్తారు?",
+      "expected_kb_id": "hplc-01",
+      "rank": 1,
+      "top_score": 1.03,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 1.03
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.805
+        },
+        {
+          "id": "gen-03",
+          "score": 0.676
+        }
+      ],
+      "retrieve_ms": 12
+    },
+    {
+      "id": "q20",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "పెళ్ళికి ముందు తలసేమియా టెస్ట్ చేయించుకోవాలా?",
+      "expected_kb_id": "hplc-02",
+      "rank": 1,
+      "top_score": 1.084,
+      "top_hits": [
+        {
+          "id": "hplc-02",
+          "score": 1.084
+        },
+        {
+          "id": "hplc-01",
+          "score": 0.642
+        },
+        {
+          "id": "req-03",
+          "score": 0.636
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q21",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "నాకు, నా భార్యకి ఇద్దరికీ ట్రెయిట్ ఉంది, పుట్టబోయే బిడ్డకి వస్తుందా?",
+      "expected_kb_id": "hplc-03",
+      "rank": 1,
+      "top_score": 0.654,
+      "top_hits": [
+        {
+          "id": "hplc-03",
+          "score": 0.654
+        },
+        {
+          "id": "elig-06",
+          "score": 0.6
+        },
+        {
+          "id": "elig-04",
+          "score": 0.594
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q22",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Thalassemia ante enti?",
+      "expected_kb_id": "gen-01",
+      "rank": 2,
+      "top_score": 1.066,
+      "top_hits": [
+        {
+          "id": "gen-07",
+          "score": 1.066
+        },
+        {
+          "id": "gen-01",
+          "score": 0.938
+        },
+        {
+          "id": "gen-08",
+          "score": 0.896
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q23",
+      "set": "main",
+      "variant_type": "rephrase",
+      "question": "తలసేమియా క్యారియర్ అయితే నా ఆరోగ్యానికి ఏమైనా ప్రమాదమా?",
+      "expected_kb_id": "gen-02",
+      "rank": 1,
+      "top_score": 0.838,
+      "top_hits": [
+        {
+          "id": "gen-02",
+          "score": 0.838
+        },
+        {
+          "id": "hplc-03",
+          "score": 0.63
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.581
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q24",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "ప్రతి నెలా బ్లడ్ ఎందుకు ఎక్కించాలి?",
+      "expected_kb_id": "gen-03",
+      "rank": 1,
+      "top_score": 1.07,
+      "top_hits": [
+        {
+          "id": "gen-03",
+          "score": 1.07
+        },
+        {
+          "id": "sched-03",
+          "score": 0.818
+        },
+        {
+          "id": "elig-02",
+          "score": 0.744
+        }
+      ],
+      "retrieve_ms": 17
+    },
+    {
+      "id": "q25",
+      "set": "main",
+      "variant_type": "code_mixed",
+      "question": "Coordinator number enti?",
+      "expected_kb_id": "gen-04",
+      "rank": 1,
+      "top_score": 0.847,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.847
+        },
+        {
+          "id": "elig-02",
+          "score": 0.457
+        },
+        {
+          "id": "gen-05",
+          "score": 0.456
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q26",
+      "set": "main",
+      "variant_type": "informal",
+      "question": "నువ్వు ఏమేం చెప్పగలవు?",
+      "expected_kb_id": "gen-05",
+      "rank": 1,
+      "top_score": 0.931,
+      "top_hits": [
+        {
+          "id": "gen-05",
+          "score": 0.931
+        },
+        {
+          "id": "gen-04",
+          "score": 0.578
+        },
+        {
+          "id": "gen-01",
+          "score": 0.527
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q27",
+      "set": "main",
+      "variant_type": "out_of_scope",
+      "question": "హైదరాబాద్‌లో ఈరోజు వాతావరణం ఎలా ఉంది?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.575,
+      "top_hits": [
+        {
+          "id": "sched-04",
+          "score": 0.575
+        },
+        {
+          "id": "gen-04",
+          "score": 0.56
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.539
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q28",
+      "set": "main",
+      "variant_type": "out_of_scope",
+      "question": "Cricket match score enti?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.452,
+      "top_hits": [
+        {
+          "id": "hplc-04",
+          "score": 0.452
+        },
+        {
+          "id": "elig-21",
+          "score": 0.449
+        },
+        {
+          "id": "hplc-01",
+          "score": 0.43
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q29",
+      "set": "main",
+      "variant_type": "out_of_scope",
+      "question": "దగ్గరలో ATM ఎక్కడ ఉంది?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.606,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.606
+        },
+        {
+          "id": "gen-05",
+          "score": 0.578
+        },
+        {
+          "id": "elig-01",
+          "score": 0.553
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q30",
+      "set": "main",
+      "variant_type": "out_of_scope",
+      "question": "బోన్ మ్యారో ట్రాన్స్‌ప్లాంట్‌కి ఎంత ఖర్చు అవుతుంది?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.588,
+      "top_hits": [
+        {
+          "id": "sched-03",
+          "score": 0.588
+        },
+        {
+          "id": "sched-01",
+          "score": 0.574
+        },
+        {
+          "id": "sched-04",
+          "score": 0.551
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q31",
+      "set": "main",
+      "variant_type": "out_of_scope",
+      "question": "Blood Warriors lo volunteer ga ela join avvali?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.618,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.618
+        },
+        {
+          "id": "elig-18",
+          "score": 0.607
+        },
+        {
+          "id": "elig-16",
+          "score": 0.573
+        }
+      ],
+      "retrieve_ms": 17
+    },
+    {
+      "id": "q32",
+      "set": "main",
+      "variant_type": "medical",
+      "question": "Naa child ki fever undi, transfusion cheyacha?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.756,
+      "top_hits": [
+        {
+          "id": "elig-06",
+          "score": 0.756
+        },
+        {
+          "id": "elig-11",
+          "score": 0.677
+        },
+        {
+          "id": "elig-22",
+          "score": 0.672
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q33",
+      "set": "main",
+      "variant_type": "medical",
+      "question": "మా పాపకి ఊపిరి ఆడటం లేదు, ఏం చేయాలి?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.585,
+      "top_hits": [
+        {
+          "id": "req-02",
+          "score": 0.585
+        },
+        {
+          "id": "sched-01",
+          "score": 0.574
+        },
+        {
+          "id": "gen-03",
+          "score": 0.555
+        }
+      ],
+      "retrieve_ms": 18
+    },
+    {
+      "id": "q34",
+      "set": "main",
+      "variant_type": "medical",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ తర్వాత బాబుకి ముక్కు నుండి రక్తం కారుతోంది",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.576,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.576
+        },
+        {
+          "id": "gen-03",
+          "score": 0.551
+        },
+        {
+          "id": "elig-06",
+          "score": 0.54
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q35",
+      "set": "main",
+      "variant_type": "medical",
+      "question": "మా బిడ్డకి ఐరన్ తగ్గించే మందు డోస్ ఎంత ఇవ్వాలి?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.662,
+      "top_hits": [
+        {
+          "id": "hplc-03",
+          "score": 0.662
+        },
+        {
+          "id": "gen-03",
+          "score": 0.652
+        },
+        {
+          "id": "sched-03",
+          "score": 0.608
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q36",
+      "set": "holdout",
+      "variant_type": "code_mixed",
+      "question": "Aarav ki next blood transfusion ye roju?",
+      "expected_kb_id": "sched-01",
+      "rank": 1,
+      "top_score": 0.883,
+      "top_hits": [
+        {
+          "id": "sched-01",
+          "score": 0.883
+        },
+        {
+          "id": "elig-11",
+          "score": 0.775
+        },
+        {
+          "id": "sched-03",
+          "score": 0.72
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q37",
+      "set": "holdout",
+      "variant_type": "telugu",
+      "question": "ట్రాన్స్‌ఫ్యూజన్ ఎంత తరచుగా అవసరం?",
+      "expected_kb_id": "sched-03",
+      "rank": 1,
+      "top_score": 0.778,
+      "top_hits": [
+        {
+          "id": "sched-03",
+          "score": 0.778
+        },
+        {
+          "id": "sched-01",
+          "score": 0.76
+        },
+        {
+          "id": "sched-04",
+          "score": 0.711
+        }
+      ],
+      "retrieve_ms": 13
+    },
+    {
+      "id": "q38",
+      "set": "holdout",
+      "variant_type": "informal",
+      "question": "లాస్ట్ డొనేషన్ అయిపోయి మూడు నెలలు అయింది, ఇప్పుడు ఇవ్వనా?",
+      "expected_kb_id": "elig-01",
+      "rank": 1,
+      "top_score": 0.584,
+      "top_hits": [
+        {
+          "id": "elig-01",
+          "score": 0.584
+        },
+        {
+          "id": "elig-06",
+          "score": 0.58
+        },
+        {
+          "id": "elig-11",
+          "score": 0.554
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q39",
+      "set": "holdout",
+      "variant_type": "code_mixed",
+      "question": "50 kg unna, blood ivvacha?",
+      "expected_kb_id": "elig-03",
+      "rank": null,
+      "top_score": 0.696,
+      "top_hits": [
+        {
+          "id": "elig-19",
+          "score": 0.696
+        },
+        {
+          "id": "elig-06",
+          "score": 0.635
+        },
+        {
+          "id": "elig-05",
+          "score": 0.621
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q40",
+      "set": "holdout",
+      "variant_type": "informal",
+      "question": "ఎవరైనా బ్లడ్ అడిగారా నన్ను?",
+      "expected_kb_id": "req-01",
+      "rank": 1,
+      "top_score": 0.883,
+      "top_hits": [
+        {
+          "id": "req-01",
+          "score": 0.883
+        },
+        {
+          "id": "elig-01",
+          "score": 0.681
+        },
+        {
+          "id": "elig-18",
+          "score": 0.678
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q41",
+      "set": "holdout",
+      "variant_type": "code_mixed",
+      "question": "Blood ichche mundu breakfast cheyala?",
+      "expected_kb_id": "req-03",
+      "rank": 1,
+      "top_score": 0.74,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.74
+        },
+        {
+          "id": "elig-17",
+          "score": 0.702
+        },
+        {
+          "id": "req-01",
+          "score": 0.701
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q42",
+      "set": "holdout",
+      "variant_type": "rephrase",
+      "question": "హిమోగ్లోబిన్ రకాలు చూసే టెస్ట్ ఏది?",
+      "expected_kb_id": "hplc-01",
+      "rank": 1,
+      "top_score": 0.756,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 0.756
+        },
+        {
+          "id": "gen-07",
+          "score": 0.68
+        },
+        {
+          "id": "hplc-02",
+          "score": 0.598
+        }
+      ],
+      "retrieve_ms": 18
+    },
+    {
+      "id": "q43",
+      "set": "holdout",
+      "variant_type": "code_mixed",
+      "question": "Iddariki trait unte pillalaki chance entha?",
+      "expected_kb_id": "hplc-03",
+      "rank": null,
+      "top_score": 0.632,
+      "top_hits": [
+        {
+          "id": "elig-21",
+          "score": 0.632
+        },
+        {
+          "id": "elig-03",
+          "score": 0.552
+        },
+        {
+          "id": "elig-02",
+          "score": 0.544
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q44",
+      "set": "holdout",
+      "variant_type": "rephrase",
+      "question": "తలసేమియా అనే జబ్బు ఏంటి?",
+      "expected_kb_id": "gen-01",
+      "rank": 1,
+      "top_score": 1.094,
+      "top_hits": [
+        {
+          "id": "gen-01",
+          "score": 1.094
+        },
+        {
+          "id": "gen-07",
+          "score": 0.815
+        },
+        {
+          "id": "gen-08",
+          "score": 0.707
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q45",
+      "set": "holdout",
+      "variant_type": "informal",
+      "question": "కోఆర్డినేటర్‌తో మాట్లాడాలి, ఎలా?",
+      "expected_kb_id": "gen-04",
+      "rank": 1,
+      "top_score": 0.913,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.913
+        },
+        {
+          "id": "req-02",
+          "score": 0.525
+        },
+        {
+          "id": "gen-05",
+          "score": 0.473
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q46",
+      "set": "holdout",
+      "variant_type": "out_of_scope",
+      "question": "Blood bank timings enti?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.723,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.723
+        },
+        {
+          "id": "elig-03",
+          "score": 0.69
+        },
+        {
+          "id": "elig-18",
+          "score": 0.662
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q47",
+      "set": "holdout",
+      "variant_type": "out_of_scope",
+      "question": "నా పాన్ కార్డ్ ఎలా అప్‌డేట్ చేయాలి?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.711,
+      "top_hits": [
+        {
+          "id": "gen-04",
+          "score": 0.711
+        },
+        {
+          "id": "req-02",
+          "score": 0.692
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.658
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q48",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Last month tattoo veyinchukunna, ippudu donate cheyacha?",
+      "expected_kb_id": "elig-05",
+      "rank": 1,
+      "top_score": 0.705,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.705
+        },
+        {
+          "id": "elig-08",
+          "score": 0.678
+        },
+        {
+          "id": "elig-22",
+          "score": 0.659
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q49",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "బాలింతలు రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-06",
+      "rank": null,
+      "top_score": 0.858,
+      "top_hits": [
+        {
+          "id": "elig-17",
+          "score": 0.858
+        },
+        {
+          "id": "elig-19",
+          "score": 0.826
+        },
+        {
+          "id": "elig-04",
+          "score": 0.803
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q50",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Periods time lo blood ivvadam safe aa?",
+      "expected_kb_id": "elig-07",
+      "rank": 1,
+      "top_score": 0.866,
+      "top_hits": [
+        {
+          "id": "elig-07",
+          "score": 0.866
+        },
+        {
+          "id": "elig-08",
+          "score": 0.651
+        },
+        {
+          "id": "elig-15",
+          "score": 0.648
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q51",
+      "set": "kb15",
+      "variant_type": "informal",
+      "question": "నాకు జలుబు చేసింది, రేపు డొనేట్ చేయనా?",
+      "expected_kb_id": "elig-08",
+      "rank": null,
+      "top_score": 0.76,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.76
+        },
+        {
+          "id": "elig-17",
+          "score": 0.733
+        },
+        {
+          "id": "elig-05",
+          "score": 0.687
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q52",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Dentist dagra pannu teeyinchukunna, blood ivvocha?",
+      "expected_kb_id": "elig-09",
+      "rank": 2,
+      "top_score": 0.874,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.874
+        },
+        {
+          "id": "elig-09",
+          "score": 0.819
+        },
+        {
+          "id": "elig-11",
+          "score": 0.805
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q53",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "రెండు నెలల క్రితం చిన్న ఆపరేషన్ అయింది, ఇప్పుడు డొనేట్ చేయొచ్చా?",
+      "expected_kb_id": "elig-10",
+      "rank": 2,
+      "top_score": 0.671,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.671
+        },
+        {
+          "id": "elig-10",
+          "score": 0.666
+        },
+        {
+          "id": "elig-06",
+          "score": 0.621
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q54",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Gatha samvatsaram naaku blood ekkincharu, ippudu donate cheyyocha?",
+      "expected_kb_id": "elig-11",
+      "rank": 1,
+      "top_score": 0.986,
+      "top_hits": [
+        {
+          "id": "elig-11",
+          "score": 0.986
+        },
+        {
+          "id": "elig-22",
+          "score": 0.812
+        },
+        {
+          "id": "elig-14",
+          "score": 0.751
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q55",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "మలేరియా తగ్గి నెల అయింది, రక్తం ఇవ్వొచ్చా?",
+      "expected_kb_id": "elig-12",
+      "rank": 1,
+      "top_score": 1.021,
+      "top_hits": [
+        {
+          "id": "elig-12",
+          "score": 1.021
+        },
+        {
+          "id": "elig-07",
+          "score": 0.807
+        },
+        {
+          "id": "elig-14",
+          "score": 0.804
+        }
+      ],
+      "retrieve_ms": 18
+    },
+    {
+      "id": "q56",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Typhoid vachi taggindi, blood eppudu ivvali?",
+      "expected_kb_id": "elig-13",
+      "rank": 1,
+      "top_score": 0.919,
+      "top_hits": [
+        {
+          "id": "elig-13",
+          "score": 0.919
+        },
+        {
+          "id": "elig-12",
+          "score": 0.784
+        },
+        {
+          "id": "elig-22",
+          "score": 0.766
+        }
+      ],
+      "retrieve_ms": 17
+    },
+    {
+      "id": "q57",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "డెంగ్యూ తర్వాత రక్తదానానికి ఎంత గ్యాప్?",
+      "expected_kb_id": "elig-14",
+      "rank": null,
+      "top_score": 0.8,
+      "top_hits": [
+        {
+          "id": "elig-02",
+          "score": 0.8
+        },
+        {
+          "id": "elig-13",
+          "score": 0.734
+        },
+        {
+          "id": "elig-06",
+          "score": 0.71
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q58",
+      "set": "kb15",
+      "variant_type": "informal",
+      "question": "నిన్న టీకా వేశారు, బ్లడ్ డొనేట్ చేయొచ్చా?",
+      "expected_kb_id": "elig-15",
+      "rank": null,
+      "top_score": 0.879,
+      "top_hits": [
+        {
+          "id": "elig-05",
+          "score": 0.879
+        },
+        {
+          "id": "elig-11",
+          "score": 0.839
+        },
+        {
+          "id": "elig-17",
+          "score": 0.8
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q59",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Lorry driver ni, duty mundu blood ivvocha?",
+      "expected_kb_id": "elig-16",
+      "rank": 1,
+      "top_score": 0.902,
+      "top_hits": [
+        {
+          "id": "elig-16",
+          "score": 0.902
+        },
+        {
+          "id": "elig-12",
+          "score": 0.68
+        },
+        {
+          "id": "elig-17",
+          "score": 0.677
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q60",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "షుగర్ పేషెంట్లు రక్తదానం చేయొచ్చా?",
+      "expected_kb_id": "elig-17",
+      "rank": 1,
+      "top_score": 0.883,
+      "top_hits": [
+        {
+          "id": "elig-17",
+          "score": 0.883
+        },
+        {
+          "id": "elig-19",
+          "score": 0.861
+        },
+        {
+          "id": "elig-16",
+          "score": 0.725
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q61",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "BP unna kuda blood donate cheyocha?",
+      "expected_kb_id": "elig-18",
+      "rank": 1,
+      "top_score": 1.127,
+      "top_hits": [
+        {
+          "id": "elig-18",
+          "score": 1.127
+        },
+        {
+          "id": "elig-07",
+          "score": 0.845
+        },
+        {
+          "id": "elig-22",
+          "score": 0.823
+        }
+      ],
+      "retrieve_ms": 14
+    },
+    {
+      "id": "q62",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "హెపటైటిస్ సి ఉంటే డొనేషన్ చేయొచ్చా?",
+      "expected_kb_id": "elig-19",
+      "rank": 1,
+      "top_score": 0.839,
+      "top_hits": [
+        {
+          "id": "elig-19",
+          "score": 0.839
+        },
+        {
+          "id": "elig-17",
+          "score": 0.714
+        },
+        {
+          "id": "elig-08",
+          "score": 0.678
+        }
+      ],
+      "retrieve_ms": 17
+    },
+    {
+      "id": "q63",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Antibiotic course ayyi oka week ayyindi, donate cheyocha?",
+      "expected_kb_id": "elig-20",
+      "rank": 1,
+      "top_score": 0.805,
+      "top_hits": [
+        {
+          "id": "elig-20",
+          "score": 0.805
+        },
+        {
+          "id": "elig-15",
+          "score": 0.766
+        },
+        {
+          "id": "elig-22",
+          "score": 0.657
+        }
+      ],
+      "retrieve_ms": 17
+    },
+    {
+      "id": "q64",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "ప్లేట్‌లెట్ డొనేషన్ వారానికి ఎన్నిసార్లు చేయొచ్చు?",
+      "expected_kb_id": "elig-21",
+      "rank": 1,
+      "top_score": 0.927,
+      "top_hits": [
+        {
+          "id": "elig-21",
+          "score": 0.927
+        },
+        {
+          "id": "sched-03",
+          "score": 0.799
+        },
+        {
+          "id": "elig-02",
+          "score": 0.702
+        }
+      ],
+      "retrieve_ms": 18
+    },
+    {
+      "id": "q65",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Ammavaru (chickenpox) vachi taggindi, blood ivvocha?",
+      "expected_kb_id": "elig-22",
+      "rank": 1,
+      "top_score": 0.889,
+      "top_hits": [
+        {
+          "id": "elig-22",
+          "score": 0.889
+        },
+        {
+          "id": "elig-12",
+          "score": 0.853
+        },
+        {
+          "id": "elig-15",
+          "score": 0.78
+        }
+      ],
+      "retrieve_ms": 21
+    },
+    {
+      "id": "q66",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "HPLC report vachindi, adi chusi cheppagalara?",
+      "expected_kb_id": "hplc-04",
+      "rank": 2,
+      "top_score": 1.009,
+      "top_hits": [
+        {
+          "id": "hplc-01",
+          "score": 1.009
+        },
+        {
+          "id": "hplc-04",
+          "score": 0.889
+        },
+        {
+          "id": "elig-18",
+          "score": 0.506
+        }
+      ],
+      "retrieve_ms": 18
+    },
+    {
+      "id": "q67",
+      "set": "kb15",
+      "variant_type": "rephrase",
+      "question": "శరీరంలో ఐరన్ తగ్గించే ట్రీట్‌మెంట్ పేరు ఏంటి?",
+      "expected_kb_id": "gen-06",
+      "rank": 1,
+      "top_score": 0.747,
+      "top_hits": [
+        {
+          "id": "gen-06",
+          "score": 0.747
+        },
+        {
+          "id": "gen-03",
+          "score": 0.71
+        },
+        {
+          "id": "elig-03",
+          "score": 0.542
+        }
+      ],
+      "retrieve_ms": 15
+    },
+    {
+      "id": "q68",
+      "set": "kb15",
+      "variant_type": "code_mixed",
+      "question": "Beta thalassemia major ante enti?",
+      "expected_kb_id": "gen-07",
+      "rank": 1,
+      "top_score": 1.109,
+      "top_hits": [
+        {
+          "id": "gen-07",
+          "score": 1.109
+        },
+        {
+          "id": "gen-08",
+          "score": 0.77
+        },
+        {
+          "id": "gen-01",
+          "score": 0.765
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q69",
+      "set": "kb15",
+      "variant_type": "informal",
+      "question": "మా బాబుకి తలసేమియా ఎప్పటికైనా నయం అవుతుందా?",
+      "expected_kb_id": "gen-08",
+      "rank": 1,
+      "top_score": 0.678,
+      "top_hits": [
+        {
+          "id": "gen-08",
+          "score": 0.678
+        },
+        {
+          "id": "hplc-03",
+          "score": 0.678
+        },
+        {
+          "id": "gen-02",
+          "score": 0.549
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q70",
+      "set": "kb15",
+      "variant_type": "out_of_scope",
+      "question": "Donation tarvata emi tinali?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.998,
+      "top_hits": [
+        {
+          "id": "req-03",
+          "score": 0.998
+        },
+        {
+          "id": "elig-02",
+          "score": 0.882
+        },
+        {
+          "id": "elig-01",
+          "score": 0.811
+        }
+      ],
+      "retrieve_ms": 16
+    },
+    {
+      "id": "q71",
+      "set": "kb15",
+      "variant_type": "out_of_scope",
+      "question": "Blood donate chesthe certificate istara?",
+      "expected_kb_id": null,
+      "rank": null,
+      "top_score": 0.808,
+      "top_hits": [
+        {
+          "id": "elig-18",
+          "score": 0.808
+        },
+        {
+          "id": "elig-05",
+          "score": 0.801
+        },
+        {
+          "id": "elig-07",
+          "score": 0.775
+        }
+      ],
+      "retrieve_ms": 16
+    }
+  ]
+}

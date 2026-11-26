@@ -1,0 +1,22 @@
+# Blood Warriors voice assistant.
+#
+#   cp .env.example .env        # fill in GROQ_API_KEY, HF_TOKEN, COORDINATOR_PASSCODE, COORDINATOR_WHATSAPP
+#   docker compose up --build   # then open http://localhost:8000  (/dashboard and /teach for coordinators)
+#
+# The first start downloads LaBSE and IndicConformer (a few GB) into the "models" volume; later starts reuse them.
+
+services:
+  app:
+    build: .
+    image: blood-warriors-voice:latest
+    ports:
+      - "8000:8000"
+    env_file: .env            # read at run time, never copied into the image
+    volumes:
+      - models:/models        # Hugging Face cache: LaBSE (retrieval) and IndicConformer (speech-to-text)
+      - data:/data            # live KB + version history, coordinator requests, logs, audio
+    restart: unless-stopped
+
+volumes:
+  models:
+  data:

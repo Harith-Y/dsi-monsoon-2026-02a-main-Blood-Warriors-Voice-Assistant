@@ -1,0 +1,35 @@
+# Secrets: passed at run time with env_file, never in the image
+.env
+.env.*
+!.env.example
+
+# Local environments, caches and runtime data (the container keeps these in its volumes)
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+data/runtime/
+data/index/
+data/audio/
+models/
+tts/cache/
+logs/
+
+# Not needed to run the app
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+tests/
+docs/
+results/
+*.pdf
+CLAUDE.md
+PROMPT.md
+context/
+blood-warriors-prototype.html
+Dockerfile
+docker-compose.yml
+.dockerignore

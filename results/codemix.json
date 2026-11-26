@@ -1,0 +1,88 @@
+{
+  "clips": 5,
+  "per_clip": [
+    {
+      "clip_id": "c01",
+      "expected": "sched-01",
+      "reference": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+      "raw": {
+        "hypothesis": "కన్ఫ్యూజన్ ఎప్పుడు",
+        "top_hit": "sched-01",
+        "score": 0.644
+      },
+      "normalised": {
+        "hypothesis": "కన్ఫ్యూజన్ ఎప్పుడు",
+        "top_hit": "sched-01",
+        "score": 0.644
+      }
+    },
+    {
+      "clip_id": "c02",
+      "expected": "elig-01",
+      "reference": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+      "raw": {
+        "hypothesis": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను",
+        "top_hit": "elig-01",
+        "score": 0.847
+      },
+      "normalised": {
+        "hypothesis": "donate చేయొచ్చా last time Julyలో ఇచ్చాను",
+        "top_hit": "elig-01",
+        "score": 0.742
+      }
+    },
+    {
+      "clip_id": "c03",
+      "expected": "fallback",
+      "reference": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+      "raw": {
+        "hypothesis": "నా చెైలుకి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+        "top_hit": "elig-11",
+        "score": 0.759
+      },
+      "normalised": {
+        "hypothesis": "నా చెైలుకి fever ఉంది transfusion చేయొచ్చా",
+        "top_hit": "elig-11",
+        "score": 0.789
+      }
+    },
+    {
+      "clip_id": "c04",
+      "expected": "hplc-01",
+      "reference": "హెచ్పీఎల్సీ టెస్ట్ అంటే ఏంటి",
+      "raw": {
+        "hypothesis": "హెచ్పి సిఎల్ టెస్ట్ అంటే ఏంటి",
+        "top_hit": "hplc-01",
+        "score": 1.022
+      },
+      "normalised": {
+        "hypothesis": "HPLC test అంటే ఏంటి",
+        "top_hit": "hplc-01",
+        "score": 1.051
+      }
+    },
+    {
+      "clip_id": "c05",
+      "expected": "req-02",
+      "reference": "డొనేషన్ రిక్వెస్ట్ కి యెస్ ఎలా చెప్పాలి",
+      "raw": {
+        "hypothesis": "డొనేషన్ రిక్వెస్ట్కి ఎస్ ఎలా చెప్పాలి",
+        "top_hit": "req-02",
+        "score": 0.801
+      },
+      "normalised": {
+        "hypothesis": "donation requestకి ఎస్ ఎలా చెప్పాలి",
+        "top_hit": "req-02",
+        "score": 0.751
+      }
+    }
+  ],
+  "raw": {
+    "wer": 0.483,
+    "hit@1": 0.8
+  },
+  "normalised": {
+    "wer": 0.379,
+    "hit@1": 0.8
+  }
+}

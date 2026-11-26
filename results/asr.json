@@ -1,0 +1,575 @@
+{
+  "summary": {
+    "model": "indicconformer",
+    "overall": {
+      "clips": 20,
+      "wer": 0.306,
+      "cer": 0.135,
+      "target_met": false
+    },
+    "by_variant": {
+      "code_mixed": {
+        "clips": 5,
+        "wer": 0.483,
+        "cer": 0.209
+      },
+      "telugu": {
+        "clips": 15,
+        "wer": 0.244,
+        "cer": 0.11
+      }
+    },
+    "target_wer": 0.3,
+    "seconds_per_clip": {
+      "mean": 0.27,
+      "max": 0.36
+    },
+    "retrieval_on_reference_text": {
+      "in_scope": 18,
+      "hit@1": 0.944,
+      "hit@3": 1.0,
+      "fallback_clips_routed_to_coordinator": "2/2"
+    },
+    "retrieval_on_asr_transcript": {
+      "in_scope": 18,
+      "hit@1": 0.944,
+      "hit@3": 0.944,
+      "fallback_clips_routed_to_coordinator": "2/2"
+    },
+    "worst_clips": [
+      {
+        "clip_id": "c01",
+        "wer": 0.667,
+        "reference": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+        "hypothesis": "కన్ఫ్యూజన్ ఎప్పుడు"
+      },
+      {
+        "clip_id": "t08",
+        "wer": 0.6,
+        "reference": "నాకు ఏదైనా రక్తదాన అభ్యర్థన వచ్చిందా",
+        "hypothesis": "నాకు ఎవరైనా రక్తదాన్ అభివృద్ధి వచ్చిందా"
+      },
+      {
+        "clip_id": "c02",
+        "wer": 0.556,
+        "reference": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+        "hypothesis": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను"
+      },
+      {
+        "clip_id": "t02",
+        "wer": 0.5,
+        "reference": "రక్తం ఎక్కించే తేదీని మార్చుకోవచ్చా",
+        "hypothesis": "వచ్చే తేదీని మార్చుకోవచ్చా"
+      },
+      {
+        "clip_id": "t10",
+        "wer": 0.5,
+        "reference": "హెచ్పీఎల్సీ పరీక్ష అంటే ఏమిటి",
+        "hypothesis": "హెచ్పిఎల్సీ టెస్ట్ అంటే ఏమిటి"
+      }
+    ],
+    "model_load_seconds": 4.3
+  },
+  "results": [
+    {
+      "clip_id": "t01",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "sched-01",
+      "seconds": 0.22,
+      "reference": "నాకు మళ్ళీ రక్తం ఎక్కించేది ఎప్పుడు",
+      "hypothesis": "మళ్ళీ రక్తం ఎక్కించేది ఎప్పుడు",
+      "wer": 0.2,
+      "cer": 0.143,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "sched-01",
+        "score": 0.852,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "sched-01",
+        "score": 0.905,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t02",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "sched-02",
+      "seconds": 0.18,
+      "reference": "రక్తం ఎక్కించే తేదీని మార్చుకోవచ్చా",
+      "hypothesis": "వచ్చే తేదీని మార్చుకోవచ్చా",
+      "wer": 0.5,
+      "cer": 0.314,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "sched-02",
+        "score": 0.901,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "sched-02",
+        "score": 0.904,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t03",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "sched-03",
+      "seconds": 0.36,
+      "reference": "తలసేమియా ఉన్న పిల్లలకి ఎన్ని రోజులకి ఒకసారి రక్తం ఎక్కించాలి",
+      "hypothesis": "తలసేమియా ఉన్న పిల్లలకి ఎన్ని రోజులకి ఒకసారి రక్తం ఎక్కించాలి",
+      "wer": 0.0,
+      "cer": 0.0,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "sched-03",
+        "score": 1.016,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "sched-03",
+        "score": 1.016,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t04",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "sched-04",
+      "seconds": 0.3,
+      "reference": "రక్తం ఎక్కించే రోజు మేము ఏమేం తీసుకురావాలి",
+      "hypothesis": "రక్తం ఎక్కించే రోజు మేము ఏం తీసుకోవాలి",
+      "wer": 0.333,
+      "cer": 0.119,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "sched-04",
+        "score": 0.944,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "sched-04",
+        "score": 0.861,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t05",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "elig-02",
+      "seconds": 0.26,
+      "reference": "రెండు సార్లు రక్తదానం చేయడానికి మధ్య ఎన్ని రోజులు ఆగాలి",
+      "hypothesis": "రెండు సార్లు రక్తదానం చేయడానికి మధ్య ఎన్ని రోజులు ఆగాలి",
+      "wer": 0.0,
+      "cer": 0.0,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "elig-02",
+        "score": 0.972,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "elig-02",
+        "score": 0.972,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t06",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "elig-03",
+      "seconds": 0.27,
+      "reference": "ఎవరెవరు రక్తదానం చేయొచ్చు వయసు బరువు ఎంత ఉండాలి",
+      "hypothesis": "ఎవరెవరు రక్తదానం చేయొచ్చు వయస్సు బరువు ఎంత ఉండాలి",
+      "wer": 0.143,
+      "cer": 0.043,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "elig-03",
+        "score": 1.015,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "elig-03",
+        "score": 1.012,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t07",
+      "variant": "telugu",
+      "speaker": "S1",
+      "expected_kb_id": "elig-04",
+      "seconds": 0.24,
+      "reference": "నాకు తలసేమియా ట్రెయిట్ ఉంది నేను రక్తదానం చేయొచ్చా",
+      "hypothesis": "కమియా ట్రేట్ ఉంది నేను రక్తదానం చేయొచ్చా",
+      "wer": 0.429,
+      "cer": 0.22,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "elig-04",
+        "score": 1.004,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "elig-04",
+        "score": 0.751,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t08",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "req-01",
+      "seconds": 0.29,
+      "reference": "నాకు ఏదైనా రక్తదాన అభ్యర్థన వచ్చిందా",
+      "hypothesis": "నాకు ఎవరైనా రక్తదాన్ అభివృద్ధి వచ్చిందా",
+      "wer": 0.6,
+      "cer": 0.278,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "req-01",
+        "score": 0.985,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "req-01",
+        "score": 0.749,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t09",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "req-02",
+      "seconds": 0.34,
+      "reference": "రక్తదాన అభ్యర్థనకి ఒప్పుకోవాలంటే ఏం చేయాలి",
+      "hypothesis": "రక్తదాన్ అభివృద్ధానికి ఒప్పుకోవాలంటే ఏం చేయాలి",
+      "wer": 0.4,
+      "cer": 0.19,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "req-03",
+        "score": 0.628,
+        "rank": 2,
+        "ok": false
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "req-03",
+        "score": 0.617,
+        "rank": null,
+        "ok": false
+      }
+    },
+    {
+      "clip_id": "t10",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "hplc-01",
+      "seconds": 0.3,
+      "reference": "హెచ్పీఎల్సీ పరీక్ష అంటే ఏమిటి",
+      "hypothesis": "హెచ్పిఎల్సీ టెస్ట్ అంటే ఏమిటి",
+      "wer": 0.5,
+      "cer": 0.241,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "hplc-01",
+        "score": 1.02,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "hplc-01",
+        "score": 1.039,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t11",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "hplc-02",
+      "seconds": 0.3,
+      "reference": "తలసేమియా క్యారియర్ టెస్ట్ ఎవరు చేయించుకోవాలి",
+      "hypothesis": "తలసేమియా క్యారియర్ టెస్ట్ ఎవరు చేయించుకోవాలి",
+      "wer": 0.0,
+      "cer": 0.0,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "hplc-02",
+        "score": 1.062,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "hplc-02",
+        "score": 1.062,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t12",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "gen-01",
+      "seconds": 0.23,
+      "reference": "తలసేమియా అంటే ఏమిటి",
+      "hypothesis": "తలసేమియా అంటే ఏమిటి",
+      "wer": 0.0,
+      "cer": 0.0,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "gen-01",
+        "score": 1.078,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "gen-01",
+        "score": 1.078,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t13",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "gen-03",
+      "seconds": 0.33,
+      "reference": "మా పిల్లలకి ఎందుకు ఎప్పుడూ రక్తం ఎక్కించాలి",
+      "hypothesis": "మా పిల్లలకి ఎందుకు ఎప్పుడో రక్తం ఎక్కించాలి",
+      "wer": 0.167,
+      "cer": 0.023,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "gen-03",
+        "score": 1.022,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "gen-03",
+        "score": 1.014,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t14",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "gen-04",
+      "seconds": 0.29,
+      "reference": "నా కోఆర్డినేటర్ని ఎలా సంప్రదించాలి",
+      "hypothesis": "నా కోఆర్డినేటర్ ని ఎలా సంప్రదించాలి",
+      "wer": 0.5,
+      "cer": 0.029,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "gen-04",
+        "score": 1.088,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "gen-04",
+        "score": 1.089,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "t15",
+      "variant": "telugu",
+      "speaker": "S2",
+      "expected_kb_id": "fallback",
+      "seconds": 0.22,
+      "reference": "ఈ మందు ఎంత మోతాదులో వేసుకోవాలి",
+      "hypothesis": "ఈ మందు ఎంత నోట్లో వేసుకోవాలి",
+      "wer": 0.2,
+      "cer": 0.167,
+      "retrieval_reference": {
+        "urgent": true,
+        "top": null,
+        "score": null,
+        "rank": null,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": true,
+        "top": null,
+        "score": null,
+        "rank": null,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "c01",
+      "variant": "code_mixed",
+      "speaker": "S1",
+      "expected_kb_id": "sched-01",
+      "seconds": 0.13,
+      "reference": "నెక్స్ట్ ట్రాన్స్ఫ్యూజన్ ఎప్పుడు",
+      "hypothesis": "కన్ఫ్యూజన్ ఎప్పుడు",
+      "wer": 0.667,
+      "cer": 0.438,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "sched-01",
+        "score": 0.977,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "sched-01",
+        "score": 0.644,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "c02",
+      "variant": "code_mixed",
+      "speaker": "S1",
+      "expected_kb_id": "elig-01",
+      "seconds": 0.26,
+      "reference": "నేను బ్లడ్ డొనేట్ చేయొచ్చా లాస్ట్ టైమ్ జూలై లో ఇచ్చాను",
+      "hypothesis": "డొనేట్ చేయొచ్చా లాస్ట్ టైం జూలైలో ఇచ్చాను",
+      "wer": 0.556,
+      "cer": 0.259,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "elig-01",
+        "score": 0.995,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "elig-01",
+        "score": 0.847,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "c03",
+      "variant": "code_mixed",
+      "speaker": "S1",
+      "expected_kb_id": "fallback",
+      "seconds": 0.32,
+      "reference": "నా చైల్డ్ కి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+      "hypothesis": "నా చెైలుకి ఫీవర్ ఉంది ట్రాన్స్ఫ్యూజన్ చేయొచ్చా",
+      "wer": 0.286,
+      "cer": 0.104,
+      "retrieval_reference": {
+        "urgent": true,
+        "top": null,
+        "score": null,
+        "rank": null,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": true,
+        "top": null,
+        "score": null,
+        "rank": null,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "c04",
+      "variant": "code_mixed",
+      "speaker": "S2",
+      "expected_kb_id": "hplc-01",
+      "seconds": 0.25,
+      "reference": "హెచ్పీఎల్సీ టెస్ట్ అంటే ఏంటి",
+      "hypothesis": "హెచ్పి సిఎల్ టెస్ట్ అంటే ఏంటి",
+      "wer": 0.5,
+      "cer": 0.214,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "hplc-01",
+        "score": 1.068,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "hplc-01",
+        "score": 1.022,
+        "rank": 1,
+        "ok": true
+      }
+    },
+    {
+      "clip_id": "c05",
+      "variant": "code_mixed",
+      "speaker": "S2",
+      "expected_kb_id": "req-02",
+      "seconds": 0.25,
+      "reference": "డొనేషన్ రిక్వెస్ట్ కి యెస్ ఎలా చెప్పాలి",
+      "hypothesis": "డొనేషన్ రిక్వెస్ట్కి ఎస్ ఎలా చెప్పాలి",
+      "wer": 0.5,
+      "cer": 0.077,
+      "retrieval_reference": {
+        "urgent": false,
+        "top": "req-02",
+        "score": 0.796,
+        "rank": 1,
+        "ok": true
+      },
+      "retrieval_asr": {
+        "urgent": false,
+        "top": "req-02",
+        "score": 0.801,
+        "rank": 1,
+        "ok": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#B3163A">
+<title data-i18n-doc="app.title">Blood Warriors Voice Assistant</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23B3163A' d='M12 2.7c-3.3 4.2-6 7.6-6 11.1a6 6 0 0 0 12 0c0-3.5-2.7-6.9-6-11.1z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600;700&family=Hind+Guntur:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/bw.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position: absolute" aria-hidden="true">
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.7c-3.3 4.2-6 7.6-6 11.1a6 6 0 0 0 12 0c0-3.5-2.7-6.9-6-11.1z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-mic-off" viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M15 9.3V5a3 3 0 0 0-5.7-1.3"/><path d="M9 9v2a3 3 0 0 0 5.1 2.1"/><path d="M19 10v1a7 7 0 0 1-.9 3.4"/><path d="M5 10v1a7 7 0 0 0 11.2 5.6"/><path d="M12 18v4"/></symbol>
+  <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.8a15 15 0 0 1 4.2-2.6"/><path d="M10.7 5.1A15 15 0 0 1 22 8.8"/><path d="M5 12.9a10 10 0 0 1 5.2-2.7"/><path d="M16.8 13.2A10 10 0 0 1 19 12.9"/><path d="M12 20h.01"/></symbol>
+  <symbol id="i-ear" viewBox="0 0 24 24"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2z"/><path d="M3 15a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8"/><path d="M22 21a7 7 0 0 0-4-6.3"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+  <symbol id="i-feather" viewBox="0 0 24 24"><path d="M20.2 12.2a6 6 0 0 0-8.5-8.5L5 10.5V19h8.5z"/><path d="M16 8 2 22"/><path d="M17.5 15H9"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></symbol>
+  <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2v6L4 18a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 18l-5-10V2"/><path d="M8 2h8M7 15h10"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+</svg>
+
+<div class="app">
+
+<header class="app-header">
+  <button type="button" class="brand" id="homeBtn" data-i18n-aria="nav.home">
+    <span class="logo"><svg class="i" aria-hidden="true"><use href="#i-drop"/></svg></span>
+    <span>
+      <span class="brand-name" data-i18n="app.name">Blood Warriors</span>
+      <span class="brand-sub" data-i18n="app.tagline">Voice Care Companion</span>
+    </span>
+  </button>
+  <div class="header-actions">
+    <label class="lang">
+      <svg class="i" style="width:18px;height:18px" aria-hidden="true"><use href="#i-globe"/></svg>
+      <span class="sr-only" data-i18n="lang.label">Language</span>
+      <select id="langSel"></select>
+      <svg class="i chev" aria-hidden="true"><use href="#i-chev-down"/></svg>
+    </label>
+    <a class="btn btn-outline hdr-call wa-generic" href="#" target="_blank" rel="noopener" hidden><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="wa.chat_short">Chat with coordinator</span></a>
+  </div>
+</header>
+
+<main class="app-main">
+
+<!-- Idle -->
+<section class="screen split" id="s-idle" aria-labelledby="h-idle">
+  <div class="col">
+    <div class="card greet">
+      <div class="greet-text">
+        <p class="hello" data-i18n="idle.hello">Hello!</p>
+        <h1 class="idle-title" id="h-idle" tabindex="-1" data-i18n="idle.title">Ask your question</h1>
+        <p class="sub" data-i18n="idle.sub">About transfusions, donating blood or HPLC tests</p>
+      </div>
+      <div class="lang-chip">
+        <svg class="i" aria-hidden="true"><use href="#i-globe"/></svg>
+        <div>
+          <strong data-i18n="idle.lang_title">Speak in the language you are comfortable with</strong>
+          <span data-i18n="idle.lang_sub">Mixed languages work too</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mic-panel">
+      <button type="button" class="mic-big" id="micBtn" data-i18n-aria="mic.tap">
+        <span class="mid"><span class="core"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></span></span>
+      </button>
+      <div class="mic-panel-text">
+        <div>
+          <p class="mic-title" data-i18n="mic.tap">Tap to speak</p>
+          <p class="sub" data-i18n="mic.tap_sub">Tap the mic and ask your question out loud</p>
+        </div>
+        <p class="trust"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="trust">Answers come only from verified Blood Warriors information</span></p>
+      </div>
+    </div>
+
+    <div class="card helpline">
+      <div class="helpline-top">
+        <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>
+        <div>
+          <strong data-i18n="checkcta.title">Already asked a coordinator?</strong>
+          <span data-i18n="checkcta.sub">Hear their reply with your reference code</span>
+        </div>
+      </div>
+      <button type="button" class="btn btn-soft" id="checkBtn"><svg class="i" aria-hidden="true"><use href="#i-ear"/></svg><span data-i18n="checkcta.btn">Check my reply</span></button>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="examples-head">
+      <h2 data-i18n="examples.title">Example questions</h2>
+      <p class="sub" data-i18n="examples.sub">Or tap a question to try it</p>
+    </div>
+    <div class="examples" id="examples">
+      <button type="button" class="q-item" data-ex="1"><span><span class="t" data-i18n="ex.1.q"></span><span class="c" data-i18n="ex.1.c"></span></span><span class="go"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <button type="button" class="q-item" data-ex="2"><span><span class="t" data-i18n="ex.2.q"></span><span class="c" data-i18n="ex.2.c"></span></span><span class="go"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <button type="button" class="q-item" data-ex="3"><span><span class="t" data-i18n="ex.3.q"></span><span class="c" data-i18n="ex.3.c"></span></span><span class="go"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <button type="button" class="q-item" data-ex="4"><span><span class="t" data-i18n="ex.4.q"></span><span class="c" data-i18n="ex.4.c"></span></span><span class="go"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <button type="button" class="q-item" data-ex="5"><span><span class="t" data-i18n="ex.5.q"></span><span class="c" data-i18n="ex.5.c"></span></span><span class="go"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+    </div>
+
+    <div class="card helpline">
+      <div class="helpline-top">
+        <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-headset"/></svg></span>
+        <div>
+          <strong data-i18n="help.title">Talk to a coordinator</strong>
+          <span data-i18n="help.sub">A Blood Warriors coordinator replies on WhatsApp</span>
+        </div>
+      </div>
+      <a class="btn btn-outline wa-generic" href="#" target="_blank" rel="noopener" hidden><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="wa.chat">Chat with coordinator on WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Listening and thinking -->
+<section class="screen split" id="s-listen" aria-labelledby="h-listen" hidden>
+  <div class="col center">
+    <span class="status-chip"><span class="dot"></span><span id="statusText" data-i18n="listen.status">Recording</span></span>
+    <button type="button" class="mic-live" id="stopMic" data-i18n-aria="a11y.stop">
+      <span class="ring"></span><span class="ring late"></span><span class="halo"></span>
+      <span class="core"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></span>
+    </button>
+    <div class="wave" id="wave" aria-hidden="true">
+      <span style="--d:0s"></span><span style="--d:.15s"></span><span style="--d:.3s"></span><span style="--d:.1s"></span>
+      <span style="--d:.25s"></span><span style="--d:.05s"></span><span style="--d:.35s"></span><span style="--d:.2s"></span>
+      <span style="--d:.4s"></span><span style="--d:.12s"></span><span style="--d:.28s"></span><span style="--d:.08s"></span>
+    </div>
+    <div>
+      <h1 class="listen-title" id="h-listen" tabindex="-1" data-i18n="listen.title">Listening...</h1>
+      <p class="sub" id="listenHint"></p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card transcript">
+      <span class="label"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg><span id="transcriptLabel" data-i18n="listen.words">Your words</span></span>
+      <p class="transcript-text" id="transcript" aria-live="polite"></p>
+    </div>
+    <div class="btn-col" id="listenBtns">
+      <button type="button" class="btn btn-primary" id="doneBtn"><svg class="i i-fill" aria-hidden="true"><use href="#i-stop"/></svg><span data-i18n="listen.done">Done, get answer</span></button>
+      <button type="button" class="btn btn-ghost" id="cancelBtn" data-i18n="listen.cancel">Cancel</button>
+    </div>
+  </div>
+</section>
+
+<!-- Answer (also the "did you mean ...?" check) -->
+<section class="screen answer-grid" id="s-answer" aria-labelledby="h-answer" hidden>
+  <div class="q-wrap area-q">
+    <div class="q-bubble">
+      <span class="label"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="answer.your_q">Your question</span></span>
+      <p id="ansQ"></p>
+    </div>
+    <span class="time" id="ansTime"></span>
+  </div>
+  <div class="card answer-card area-card">
+    <div class="chip-row" id="ansChips"></div>
+    <h1 id="h-answer" tabindex="-1"></h1>
+    <div class="caption" id="ansCaption" hidden>
+      <span class="label"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="answer.in_english">In English</span></span>
+      <p id="ansCaptionText" lang="en"></p>
+    </div>
+    <div class="player" id="ansPlayer">
+      <button type="button" class="play" data-i18n-aria="a11y.play"><svg class="i i-fill" aria-hidden="true"><use href="#i-play"/></svg></button>
+      <div class="player-mid"><span data-i18n="answer.play">Play answer</span><div class="progress"><div class="bar"></div></div></div>
+      <span class="ptime">0:00</span>
+    </div>
+    <p class="note" id="ansNoAudio" hidden><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="answer.no_audio"></span></p>
+    <div class="actions" id="ansActions">
+      <button type="button" class="btn btn-soft" id="againBtn"><svg class="i" aria-hidden="true"><use href="#i-replay"/></svg><span data-i18n="answer.again">Say it again</span></button>
+      <button type="button" class="btn btn-soft" id="simplerBtn"><svg class="i" aria-hidden="true"><use href="#i-feather"/></svg><span data-i18n="answer.simpler">Say it simpler</span></button>
+    </div>
+    <div class="actions" id="clarifyActions" hidden>
+      <button type="button" class="btn btn-primary" id="yesBtn"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="clarify.yes">Yes, that's it</span></button>
+      <button type="button" class="btn btn-outline" id="noBtn"><svg class="i" aria-hidden="true"><use href="#i-refresh"/></svg><span data-i18n="clarify.no">No, ask again</span></button>
+    </div>
+    <p class="note" id="ansSampleNote" hidden><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="answer.sample_note"></span></p>
+    <div class="divider" id="ansDivider"></div>
+    <p class="source" id="ansSource"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg><span></span></p>
+  </div>
+  <div class="ask-again area-ask">
+    <button type="button" class="mic-small" id="askMicBtn" data-i18n-aria="answer.ask_title"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></button>
+    <div>
+      <p class="ask-title" id="askTitle" data-i18n="answer.ask_title">Ask another question</p>
+      <p class="sub" id="askSub" data-i18n="answer.ask_sub">Tap the mic to ask again</p>
+    </div>
+  </div>
+  <a class="btn btn-outline area-call" id="ansWa" href="#" target="_blank" rel="noopener" hidden><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="wa.chat">Chat with coordinator on WhatsApp</span></a>
+</section>
+
+<!-- Fallback: handed to a coordinator -->
+<section class="screen split" id="s-fallback" aria-labelledby="h-fb" hidden>
+  <div class="col">
+    <div class="q-wrap">
+      <div class="q-bubble">
+        <span class="label"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="answer.your_q">Your question</span></span>
+        <p id="fbQ"></p>
+      </div>
+      <span class="time" id="fbTime"></span>
+    </div>
+    <div class="card cream">
+      <span class="chip"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span id="fbChip"></span></span>
+      <h1 id="h-fb" tabindex="-1"></h1>
+      <p class="inner" id="fbMsg"></p>
+      <div class="ref-box" id="fbRefBox">
+        <span class="label" data-i18n="fb.ref_label">Your reference code</span>
+        <span class="ref-code" id="fbRef"></span>
+        <span class="hint-line" data-i18n="fb.ref_hint"></span>
+      </div>
+      <div class="player" id="fbPlayer">
+        <button type="button" class="play" data-i18n-aria="a11y.play"><svg class="i i-fill" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <div class="player-mid"><span data-i18n="fb.listen">Listen</span><div class="progress"><div class="bar"></div></div></div>
+        <span class="ptime">0:00</span>
+      </div>
+      <div class="caption" id="fbCaption" hidden>
+        <span class="label"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="answer.in_english">In English</span></span>
+        <p id="fbCaptionText" lang="en"></p>
+      </div>
+    </div>
+    <div class="sent" id="fbSent">
+      <svg class="i" aria-hidden="true"><use href="#i-check"/></svg>
+      <div>
+        <strong data-i18n="fb.sent_title">Your question has been sent to the coordinator</strong>
+        <span data-i18n="fb.sent_sub">You won't need to repeat it</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card coord" id="fbCoord">
+      <span class="avail"><span class="dot"></span><span data-i18n="fb.wa_note">Replies come on WhatsApp</span></span>
+      <div class="person">
+        <span class="avatar"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <div>
+          <strong data-i18n="fb.team">Blood Warriors care team</strong>
+          <span class="role" data-i18n="fb.team_sub">Coordinators in Hyderabad</span>
+        </div>
+      </div>
+      <a class="big-link wa-primary" id="fbWa" href="#" target="_blank" rel="noopener">
+        <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <span class="txt"><strong data-i18n="wa.chat">Chat with coordinator on WhatsApp</strong><span data-i18n="wa.shared">Your question is shared, no need to repeat it</span></span>
+        <svg class="i" aria-hidden="true"><use href="#i-chev-right"/></svg>
+      </a>
+    </div>
+    <button type="button" class="btn btn-soft" id="fbCheckBtn"><svg class="i" aria-hidden="true"><use href="#i-ear"/></svg><span data-i18n="checkcta.btn">Check my reply</span></button>
+    <button type="button" class="btn btn-soft fb-again" id="fbAgainBtn"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg><span data-i18n="answer.ask_title">Ask another question</span></button>
+    <p class="hint" data-i18n="fb.hint"></p>
+  </div>
+</section>
+
+<!-- Error: mic denied, no speech, network, not understood -->
+<section class="screen split" id="s-error" aria-labelledby="h-err" hidden>
+  <div class="col">
+    <div class="card cream err-card">
+      <span class="err-icon" id="errIcon"></span>
+      <span class="chip"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="err.chip">Something went wrong</span></span>
+      <h1 id="h-err" tabindex="-1"></h1>
+      <p class="inner" id="errMsg"></p>
+      <div class="player" id="errPlayer" hidden>
+        <button type="button" class="play" data-i18n-aria="a11y.play"><svg class="i i-fill" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <div class="player-mid"><span data-i18n="fb.listen">Listen</span><div class="progress"><div class="bar"></div></div></div>
+        <span class="ptime">0:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary" id="retryBtn"><svg class="i" aria-hidden="true"><use href="#i-refresh"/></svg><span data-i18n="err.retry">Try again</span></button>
+    <button type="button" class="btn btn-ghost" id="errBackBtn"><svg class="i" aria-hidden="true"><use href="#i-back"/></svg><span data-i18n="err.back">Go back</span></button>
+    <div class="card helpline">
+      <div class="helpline-top">
+        <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-headset"/></svg></span>
+        <div>
+          <strong data-i18n="help.title">Talk to a coordinator</strong>
+          <span data-i18n="help.sub">A Blood Warriors coordinator replies on WhatsApp</span>
+        </div>
+      </div>
+      <a class="btn btn-outline wa-generic" href="#" target="_blank" rel="noopener" hidden><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="wa.chat">Chat with coordinator on WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Check my reply: say or pick the reference code -->
+<section class="screen split" id="s-check" aria-labelledby="h-check" hidden>
+  <div class="col">
+    <div class="card greet">
+      <div class="greet-text">
+        <h1 class="idle-title" id="h-check" tabindex="-1" data-i18n="check.title">Check my reply</h1>
+        <p class="sub" data-i18n="check.sub">Say your reference code</p>
+      </div>
+    </div>
+    <div class="mic-panel">
+      <button type="button" class="mic-big" id="checkMicBtn" data-i18n-aria="check.say">
+        <span class="mid"><span class="core"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></span></span>
+      </button>
+      <div class="mic-panel-text">
+        <div>
+          <p class="mic-title" data-i18n="check.say">Tap and say your code</p>
+          <p class="sub" data-i18n="check.say_sub">One letter or number at a time</p>
+        </div>
+      </div>
+    </div>
+    <div class="inline-msg" id="checkMsg" role="status" hidden><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><div><strong id="checkMsgTitle"></strong><div id="checkMsgText"></div></div></div>
+  </div>
+  <div class="col">
+    <div class="examples-head"><h2 data-i18n="check.recent">Or tap one of your codes</h2></div>
+    <div class="recent" id="recentCodes"></div>
+    <p class="sub" id="recentNone" data-i18n="check.recent_none" hidden></p>
+  </div>
+</section>
+
+<!-- Coordinator reply -->
+<section class="screen answer-grid" id="s-reply" aria-labelledby="h-reply" hidden>
+  <div class="q-wrap area-q">
+    <div class="q-bubble">
+      <span class="label"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="answer.your_q">Your question</span></span>
+      <p id="repQ"></p>
+    </div>
+    <span class="time" id="repRef"></span>
+  </div>
+  <div class="card answer-card area-card" id="repCard">
+    <div class="chip-row"><span class="chip" id="repChip"></span></div>
+    <h1 id="h-reply" tabindex="-1"></h1>
+    <div class="player" id="repPlayer">
+      <button type="button" class="play" data-i18n-aria="a11y.play"><svg class="i i-fill" aria-hidden="true"><use href="#i-play"/></svg></button>
+      <div class="player-mid"><span data-i18n="check.play">Play reply</span><div class="progress"><div class="bar"></div></div></div>
+      <span class="ptime">0:00</span>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn btn-soft" id="repAgainBtn"><svg class="i" aria-hidden="true"><use href="#i-replay"/></svg><span data-i18n="answer.again">Say it again</span></button>
+      <button type="button" class="btn btn-soft" id="repOtherBtn"><svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg><span data-i18n="check.another">Check another code</span></button>
+    </div>
+  </div>
+  <div class="ask-again area-ask">
+    <button type="button" class="mic-small" id="repMicBtn" data-i18n-aria="answer.ask_title"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></button>
+    <div>
+      <p class="ask-title" data-i18n="answer.ask_title">Ask another question</p>
+      <p class="sub" data-i18n="answer.ask_sub">Tap the mic to ask again</p>
+    </div>
+  </div>
+  <a class="btn btn-outline area-call" id="repWa" href="#" target="_blank" rel="noopener" hidden><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="wa.chat">Chat with coordinator on WhatsApp</span></a>
+</section>
+
+</main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sr-only" id="sr-status" role="status" aria-live="polite"></div>
+
+<script src="js/common.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

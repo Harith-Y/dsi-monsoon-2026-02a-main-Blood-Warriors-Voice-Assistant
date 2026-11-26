@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Generated / runtime data
+logs/*
+!logs/.gitkeep
+data/index/*
+!data/index/.gitkeep
+data/runtime/
+models/
+tts/cache/
+tts/cache/*.wav
+tts/cache/*.mp3
+
+# Local reference material (not part of the project deliverable)
+context/
+CLAUDE.md
+PROMPT.md
+
+# JavaScript tooling (the site needs no build step or npm packages)
+node_modules/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Raw recordings before conversion (#11)
+data/audio/raw/
